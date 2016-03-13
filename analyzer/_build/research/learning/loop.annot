@@ -1,0 +1,405 @@
+"research/learning/loop.ml" 4 26 30 "research/learning/loop.ml" 4 26 43
+type(
+  IntraCfg.t -> IntraCfg.node BatSet.t
+)
+ident(
+  def sccs_from_cfg "research/learning/loop.ml" 11 241 241 "research/learning/loop.ml" 1 0 -1
+)
+"research/learning/loop.ml" 5 74 79 "research/learning/loop.ml" 5 74 82
+type(
+  IntraCfg.t
+)
+ident(
+  def cfg "research/learning/loop.ml" 6 87 88 "research/learning/loop.ml" 9 176 239
+)
+"research/learning/loop.ml" 6 87 92 "research/learning/loop.ml" 6 87 96
+type(
+  IntraCfg.node list list
+)
+ident(
+  def sccs "research/learning/loop.ml" 7 115 116 "research/learning/loop.ml" 9 176 239
+)
+"research/learning/loop.ml" 6 87 99 "research/learning/loop.ml" 6 87 102
+type(
+  IntraCfg.t
+)
+ident(
+  int_ref cfg "research/learning/loop.ml" 5 74 79 "research/learning/loop.ml" 5 74 82
+)
+"research/learning/loop.ml" 6 87 99 "research/learning/loop.ml" 6 87 111
+type(
+  IntraCfg.node list list
+)
+"research/learning/loop.ml" 7 115 116 "research/learning/loop.ml" 7 115 125
+type(
+  (IntraCfg.node list -> IntraCfg.node BatSet.t -> IntraCfg.node BatSet.t) ->
+  IntraCfg.node list list -> IntraCfg.node BatSet.t -> IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref Vocab.list_fold
+)
+"research/learning/loop.ml" 7 115 131 "research/learning/loop.ml" 7 115 134
+type(
+  IntraCfg.node list
+)
+ident(
+  def scc "research/learning/loop.ml" 7 115 135 "research/learning/loop.ml" 9 176 220
+)
+"research/learning/loop.ml" 7 115 135 "research/learning/loop.ml" 7 115 138
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def acc "research/learning/loop.ml" 8 142 144 "research/learning/loop.ml" 9 176 220
+)
+"research/learning/loop.ml" 8 142 147 "research/learning/loop.ml" 8 142 158
+type(
+  IntraCfg.node list -> int
+)
+ident(
+  ext_ref List.length
+)
+"research/learning/loop.ml" 8 142 159 "research/learning/loop.ml" 8 142 162
+type(
+  IntraCfg.node list
+)
+ident(
+  int_ref scc "research/learning/loop.ml" 7 115 131 "research/learning/loop.ml" 7 115 134
+)
+"research/learning/loop.ml" 8 142 147 "research/learning/loop.ml" 8 142 162
+call(
+  stack
+)
+type(
+  int
+)
+"research/learning/loop.ml" 8 142 163 "research/learning/loop.ml" 8 142 164
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"research/learning/loop.ml" 8 142 165 "research/learning/loop.ml" 8 142 166
+type(
+  int
+)
+"research/learning/loop.ml" 8 142 147 "research/learning/loop.ml" 8 142 166
+type(
+  bool
+)
+"research/learning/loop.ml" 8 142 172 "research/learning/loop.ml" 8 142 175
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref acc "research/learning/loop.ml" 7 115 135 "research/learning/loop.ml" 7 115 138
+)
+"research/learning/loop.ml" 9 176 183 "research/learning/loop.ml" 9 176 195
+type(
+  IntraCfg.node BatSet.t -> IntraCfg.node BatSet.t -> IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref BatSet.union
+)
+"research/learning/loop.ml" 9 176 197 "research/learning/loop.ml" 9 176 211
+type(
+  IntraCfg.node list -> IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref BatSet.of_list
+)
+"research/learning/loop.ml" 9 176 212 "research/learning/loop.ml" 9 176 215
+type(
+  IntraCfg.node list
+)
+ident(
+  int_ref scc "research/learning/loop.ml" 7 115 131 "research/learning/loop.ml" 7 115 134
+)
+"research/learning/loop.ml" 9 176 196 "research/learning/loop.ml" 9 176 216
+call(
+  stack
+)
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/loop.ml" 9 176 217 "research/learning/loop.ml" 9 176 220
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref acc "research/learning/loop.ml" 7 115 135 "research/learning/loop.ml" 7 115 138
+)
+"research/learning/loop.ml" 9 176 183 "research/learning/loop.ml" 9 176 220
+call(
+  tail
+)
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/loop.ml" 8 142 144 "research/learning/loop.ml" 9 176 220
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/loop.ml" 7 115 126 "research/learning/loop.ml" 9 176 221
+type(
+  IntraCfg.node list -> IntraCfg.node BatSet.t -> IntraCfg.node BatSet.t
+)
+"research/learning/loop.ml" 9 176 222 "research/learning/loop.ml" 9 176 226
+type(
+  IntraCfg.node list list
+)
+ident(
+  int_ref sccs "research/learning/loop.ml" 6 87 92 "research/learning/loop.ml" 6 87 96
+)
+"research/learning/loop.ml" 9 176 227 "research/learning/loop.ml" 9 176 239
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref BatSet.empty
+)
+"research/learning/loop.ml" 7 115 116 "research/learning/loop.ml" 9 176 239
+call(
+  tail
+)
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/loop.ml" 6 87 88 "research/learning/loop.ml" 9 176 239
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/loop.ml" 5 74 75 "research/learning/loop.ml" 9 176 239
+type(
+  IntraCfg.t -> IntraCfg.node BatSet.t
+)
+type(
+  IntraCfg.t -> IntraCfg.node BatSet.t
+)
+"research/learning/loop.ml" 11 241 245 "research/learning/loop.ml" 11 241 255
+type(
+  IntraCfg.node list list -> string
+)
+ident(
+  def scc_to_str "research/learning/loop.ml" 16 427 462 "research/learning/loop.ml" 1 0 -1
+)
+"research/learning/loop.ml" 12 283 288 "research/learning/loop.ml" 12 283 292
+type(
+  IntraCfg.node list list
+)
+ident(
+  def sccs "research/learning/loop.ml" 13 296 297 "research/learning/loop.ml" 16 427 462
+)
+"research/learning/loop.ml" 13 296 297 "research/learning/loop.ml" 13 296 306
+type(
+  (IntraCfg.node list -> string -> string) ->
+  IntraCfg.node list list -> string -> string
+)
+ident(
+  ext_ref Vocab.list_fold
+)
+"research/learning/loop.ml" 13 296 312 "research/learning/loop.ml" 13 296 315
+type(
+  IntraCfg.node list
+)
+ident(
+  def scc "research/learning/loop.ml" 13 296 316 "research/learning/loop.ml" 16 427 453
+)
+"research/learning/loop.ml" 13 296 316 "research/learning/loop.ml" 13 296 319
+type(
+  string
+)
+ident(
+  def acc "research/learning/loop.ml" 14 323 325 "research/learning/loop.ml" 16 427 453
+)
+"research/learning/loop.ml" 14 323 329 "research/learning/loop.ml" 14 323 339
+type(
+  string
+)
+ident(
+  def str_of_scc "research/learning/loop.ml" 16 427 430 "research/learning/loop.ml" 16 427 453
+)
+"research/learning/loop.ml" 14 323 342 "research/learning/loop.ml" 14 323 351
+type(
+  (IntraCfg.node -> string -> string) ->
+  IntraCfg.node list -> string -> string
+)
+ident(
+  ext_ref Vocab.list_fold
+)
+"research/learning/loop.ml" 14 323 357 "research/learning/loop.ml" 14 323 361
+type(
+  IntraCfg.node
+)
+ident(
+  def node "research/learning/loop.ml" 14 323 362 "research/learning/loop.ml" 15 370 415
+)
+"research/learning/loop.ml" 14 323 362 "research/learning/loop.ml" 14 323 365
+type(
+  string
+)
+ident(
+  def acc "research/learning/loop.ml" 15 370 373 "research/learning/loop.ml" 15 370 415
+)
+"research/learning/loop.ml" 15 370 373 "research/learning/loop.ml" 15 370 376
+type(
+  string
+)
+ident(
+  int_ref acc "research/learning/loop.ml" 14 323 362 "research/learning/loop.ml" 14 323 365
+)
+"research/learning/loop.ml" 15 370 377 "research/learning/loop.ml" 15 370 378
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/loop.ml" 15 370 380 "research/learning/loop.ml" 15 370 403
+type(
+  IntraCfg.node -> string
+)
+ident(
+  ext_ref IntraCfg.Node.to_string
+)
+"research/learning/loop.ml" 15 370 404 "research/learning/loop.ml" 15 370 408
+type(
+  IntraCfg.node
+)
+ident(
+  int_ref node "research/learning/loop.ml" 14 323 357 "research/learning/loop.ml" 14 323 361
+)
+"research/learning/loop.ml" 15 370 379 "research/learning/loop.ml" 15 370 409
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/loop.ml" 15 370 410 "research/learning/loop.ml" 15 370 411
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/loop.ml" 15 370 412 "research/learning/loop.ml" 15 370 415
+type(
+  string
+)
+"research/learning/loop.ml" 15 370 379 "research/learning/loop.ml" 15 370 415
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/loop.ml" 15 370 373 "research/learning/loop.ml" 15 370 415
+call(
+  tail
+)
+type(
+  string
+)
+"research/learning/loop.ml" 14 323 352 "research/learning/loop.ml" 15 370 416
+type(
+  IntraCfg.node -> string -> string
+)
+"research/learning/loop.ml" 15 370 417 "research/learning/loop.ml" 15 370 420
+type(
+  IntraCfg.node list
+)
+ident(
+  int_ref scc "research/learning/loop.ml" 13 296 312 "research/learning/loop.ml" 13 296 315
+)
+"research/learning/loop.ml" 15 370 421 "research/learning/loop.ml" 15 370 423
+type(
+  string
+)
+"research/learning/loop.ml" 14 323 342 "research/learning/loop.ml" 15 370 423
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/loop.ml" 16 427 430 "research/learning/loop.ml" 16 427 433
+type(
+  string
+)
+ident(
+  int_ref acc "research/learning/loop.ml" 13 296 316 "research/learning/loop.ml" 13 296 319
+)
+"research/learning/loop.ml" 16 427 434 "research/learning/loop.ml" 16 427 435
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/loop.ml" 16 427 436 "research/learning/loop.ml" 16 427 446
+type(
+  string
+)
+ident(
+  int_ref str_of_scc "research/learning/loop.ml" 14 323 329 "research/learning/loop.ml" 14 323 339
+)
+"research/learning/loop.ml" 16 427 447 "research/learning/loop.ml" 16 427 448
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/loop.ml" 16 427 449 "research/learning/loop.ml" 16 427 453
+type(
+  string
+)
+"research/learning/loop.ml" 16 427 436 "research/learning/loop.ml" 16 427 453
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/loop.ml" 16 427 430 "research/learning/loop.ml" 16 427 453
+call(
+  tail
+)
+type(
+  string
+)
+"research/learning/loop.ml" 14 323 325 "research/learning/loop.ml" 16 427 453
+type(
+  string
+)
+"research/learning/loop.ml" 13 296 307 "research/learning/loop.ml" 16 427 454
+type(
+  IntraCfg.node list -> string -> string
+)
+"research/learning/loop.ml" 16 427 455 "research/learning/loop.ml" 16 427 459
+type(
+  IntraCfg.node list list
+)
+ident(
+  int_ref sccs "research/learning/loop.ml" 12 283 288 "research/learning/loop.ml" 12 283 292
+)
+"research/learning/loop.ml" 16 427 460 "research/learning/loop.ml" 16 427 462
+type(
+  string
+)
+"research/learning/loop.ml" 13 296 297 "research/learning/loop.ml" 16 427 462
+call(
+  tail
+)
+type(
+  string
+)
+"research/learning/loop.ml" 12 283 284 "research/learning/loop.ml" 16 427 462
+type(
+  IntraCfg.node list list -> string
+)
+type(
+  IntraCfg.node list list -> string
+)

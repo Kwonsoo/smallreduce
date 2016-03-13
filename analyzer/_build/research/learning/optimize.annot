@@ -1,0 +1,3492 @@
+"research/learning/optimize.ml" 14 235 239 "research/learning/optimize.ml" 14 235 246
+type(
+  string ref
+)
+ident(
+  def tmp_tst "research/learning/optimize.ml" 15 256 256 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 14 235 249 "research/learning/optimize.ml" 14 235 252
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"research/learning/optimize.ml" 14 235 253 "research/learning/optimize.ml" 14 235 255
+type(
+  string
+)
+"research/learning/optimize.ml" 14 235 249 "research/learning/optimize.ml" 14 235 255
+type(
+  string ref
+)
+"research/learning/optimize.ml" 15 256 260 "research/learning/optimize.ml" 15 256 275
+type(
+  string
+)
+ident(
+  def classifier_path "research/learning/optimize.ml" 17 316 316 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 15 256 278 "research/learning/optimize.ml" 15 256 314
+type(
+  string
+)
+"research/learning/optimize.ml" 17 316 320 "research/learning/optimize.ml" 17 316 335
+type(
+  CF.ORD_SET.t -> string -> unit
+)
+ident(
+  def marshal_feature "research/learning/optimize.ml" 24 519 519 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 18 368 373 "research/learning/optimize.ml" 18 368 381
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def features "research/learning/optimize.ml" 18 368 382 "research/learning/optimize.ml" 22 514 517
+)
+"research/learning/optimize.ml" 18 368 382 "research/learning/optimize.ml" 18 368 390
+type(
+  string
+)
+ident(
+  def filename "research/learning/optimize.ml" 19 394 395 "research/learning/optimize.ml" 22 514 517
+)
+"research/learning/optimize.ml" 19 394 399 "research/learning/optimize.ml" 19 394 402
+type(
+  out_channel
+)
+ident(
+  def out "research/learning/optimize.ml" 20 430 431 "research/learning/optimize.ml" 22 514 517
+)
+"research/learning/optimize.ml" 19 394 405 "research/learning/optimize.ml" 19 394 417
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out_bin
+)
+"research/learning/optimize.ml" 19 394 418 "research/learning/optimize.ml" 19 394 426
+type(
+  string
+)
+ident(
+  int_ref filename "research/learning/optimize.ml" 18 368 382 "research/learning/optimize.ml" 18 368 390
+)
+"research/learning/optimize.ml" 19 394 405 "research/learning/optimize.ml" 19 394 426
+call(
+  stack
+)
+type(
+  out_channel
+)
+"research/learning/optimize.ml" 20 430 435 "research/learning/optimize.ml" 20 430 436
+type(
+  unit
+)
+"research/learning/optimize.ml" 20 430 439 "research/learning/optimize.ml" 20 430 457
+type(
+  out_channel -> CF.ORD_SET.t -> Marshal.extern_flags list -> unit
+)
+ident(
+  ext_ref Marshal.to_channel
+)
+"research/learning/optimize.ml" 20 430 458 "research/learning/optimize.ml" 20 430 461
+type(
+  out_channel
+)
+ident(
+  int_ref out "research/learning/optimize.ml" 19 394 399 "research/learning/optimize.ml" 19 394 402
+)
+"research/learning/optimize.ml" 20 430 462 "research/learning/optimize.ml" 20 430 470
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref features "research/learning/optimize.ml" 18 368 373 "research/learning/optimize.ml" 18 368 381
+)
+"research/learning/optimize.ml" 20 430 471 "research/learning/optimize.ml" 20 430 473
+type(
+  Marshal.extern_flags list
+)
+"research/learning/optimize.ml" 20 430 439 "research/learning/optimize.ml" 20 430 473
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/optimize.ml" 21 477 482 "research/learning/optimize.ml" 21 477 483
+type(
+  unit
+)
+"research/learning/optimize.ml" 21 477 486 "research/learning/optimize.ml" 21 477 495
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"research/learning/optimize.ml" 21 477 496 "research/learning/optimize.ml" 21 477 499
+type(
+  out_channel
+)
+ident(
+  int_ref out "research/learning/optimize.ml" 19 394 399 "research/learning/optimize.ml" 19 394 402
+)
+"research/learning/optimize.ml" 21 477 486 "research/learning/optimize.ml" 21 477 499
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/optimize.ml" 21 477 501 "research/learning/optimize.ml" 21 477 506
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"research/learning/optimize.ml" 21 477 507 "research/learning/optimize.ml" 21 477 510
+type(
+  out_channel
+)
+ident(
+  int_ref out "research/learning/optimize.ml" 19 394 399 "research/learning/optimize.ml" 19 394 402
+)
+"research/learning/optimize.ml" 21 477 501 "research/learning/optimize.ml" 21 477 510
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/optimize.ml" 21 477 486 "research/learning/optimize.ml" 21 477 510
+type(
+  unit
+)
+"research/learning/optimize.ml" 22 514 515 "research/learning/optimize.ml" 22 514 517
+type(
+  unit
+)
+"research/learning/optimize.ml" 21 477 478 "research/learning/optimize.ml" 22 514 517
+type(
+  unit
+)
+"research/learning/optimize.ml" 20 430 431 "research/learning/optimize.ml" 22 514 517
+type(
+  unit
+)
+"research/learning/optimize.ml" 19 394 395 "research/learning/optimize.ml" 22 514 517
+type(
+  unit
+)
+"research/learning/optimize.ml" 18 368 369 "research/learning/optimize.ml" 22 514 517
+type(
+  CF.ORD_SET.t -> string -> unit
+)
+type(
+  CF.ORD_SET.t -> string -> unit
+)
+"research/learning/optimize.ml" 24 519 523 "research/learning/optimize.ml" 24 519 540
+type(
+  string -> CF.ORD_SET.t
+)
+ident(
+  def unmarshal_feature "research/learning/optimize.ml" 30 677 677 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 25 566 571 "research/learning/optimize.ml" 25 566 579
+type(
+  string
+)
+ident(
+  def filename "research/learning/optimize.ml" 26 583 584 "research/learning/optimize.ml" 28 666 675
+)
+"research/learning/optimize.ml" 26 583 588 "research/learning/optimize.ml" 26 583 593
+type(
+  in_channel
+)
+ident(
+  def input "research/learning/optimize.ml" 27 620 621 "research/learning/optimize.ml" 28 666 675
+)
+"research/learning/optimize.ml" 26 583 596 "research/learning/optimize.ml" 26 583 607
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in_bin
+)
+"research/learning/optimize.ml" 26 583 608 "research/learning/optimize.ml" 26 583 616
+type(
+  string
+)
+ident(
+  int_ref filename "research/learning/optimize.ml" 25 566 571 "research/learning/optimize.ml" 25 566 579
+)
+"research/learning/optimize.ml" 26 583 596 "research/learning/optimize.ml" 26 583 616
+call(
+  stack
+)
+type(
+  in_channel
+)
+"research/learning/optimize.ml" 27 620 625 "research/learning/optimize.ml" 27 620 633
+type(
+  'a
+)
+ident(
+  def features "research/learning/optimize.ml" 28 666 667 "research/learning/optimize.ml" 28 666 675
+)
+"research/learning/optimize.ml" 27 620 636 "research/learning/optimize.ml" 27 620 656
+type(
+  in_channel -> 'a
+)
+ident(
+  ext_ref Marshal.from_channel
+)
+"research/learning/optimize.ml" 27 620 657 "research/learning/optimize.ml" 27 620 662
+type(
+  in_channel
+)
+ident(
+  int_ref input "research/learning/optimize.ml" 26 583 588 "research/learning/optimize.ml" 26 583 593
+)
+"research/learning/optimize.ml" 27 620 636 "research/learning/optimize.ml" 27 620 662
+call(
+  tail
+)
+type(
+  'a
+)
+"research/learning/optimize.ml" 28 666 667 "research/learning/optimize.ml" 28 666 675
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref features "research/learning/optimize.ml" 27 620 625 "research/learning/optimize.ml" 27 620 633
+)
+"research/learning/optimize.ml" 27 620 621 "research/learning/optimize.ml" 28 666 675
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 26 583 584 "research/learning/optimize.ml" 28 666 675
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 25 566 567 "research/learning/optimize.ml" 28 666 675
+type(
+  string -> CF.ORD_SET.t
+)
+type(
+  string -> CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 30 677 681 "research/learning/optimize.ml" 30 677 696
+type(
+  bool list -> string
+)
+ident(
+  def fbvector_to_str "research/learning/optimize.ml" 40 909 909 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 31 719 724 "research/learning/optimize.ml" 31 719 732
+type(
+  bool list
+)
+ident(
+  def fbvector "research/learning/optimize.ml" 32 736 737 "research/learning/optimize.ml" 38 885 907
+)
+"research/learning/optimize.ml" 32 736 741 "research/learning/optimize.ml" 32 736 750
+type(
+  string
+)
+ident(
+  def as_string "research/learning/optimize.ml" 38 885 886 "research/learning/optimize.ml" 38 885 907
+)
+"research/learning/optimize.ml" 32 736 753 "research/learning/optimize.ml" 32 736 768
+type(
+  (bool -> string -> string) -> bool list -> string -> string
+)
+ident(
+  ext_ref List.fold_right
+)
+"research/learning/optimize.ml" 32 736 774 "research/learning/optimize.ml" 32 736 777
+type(
+  bool
+)
+ident(
+  def elm "research/learning/optimize.ml" 32 736 778 "research/learning/optimize.ml" 36 855 865
+)
+"research/learning/optimize.ml" 32 736 778 "research/learning/optimize.ml" 32 736 781
+type(
+  string
+)
+ident(
+  def acc "research/learning/optimize.ml" 33 785 788 "research/learning/optimize.ml" 36 855 865
+)
+"research/learning/optimize.ml" 33 785 792 "research/learning/optimize.ml" 33 785 793
+type(
+  string
+)
+ident(
+  def b "research/learning/optimize.ml" 36 855 858 "research/learning/optimize.ml" 36 855 865
+)
+"research/learning/optimize.ml" 33 785 803 "research/learning/optimize.ml" 33 785 806
+type(
+  bool
+)
+ident(
+  int_ref elm "research/learning/optimize.ml" 32 736 774 "research/learning/optimize.ml" 32 736 777
+)
+"research/learning/optimize.ml" 34 812 818 "research/learning/optimize.ml" 34 812 822
+type(
+  bool
+)
+"research/learning/optimize.ml" 34 812 826 "research/learning/optimize.ml" 34 812 830
+type(
+  string
+)
+"research/learning/optimize.ml" 35 831 837 "research/learning/optimize.ml" 35 831 842
+type(
+  bool
+)
+"research/learning/optimize.ml" 35 831 846 "research/learning/optimize.ml" 35 831 850
+type(
+  string
+)
+"research/learning/optimize.ml" 33 785 796 "research/learning/optimize.ml" 35 831 851
+type(
+  string
+)
+"research/learning/optimize.ml" 36 855 858 "research/learning/optimize.ml" 36 855 859
+type(
+  string
+)
+ident(
+  int_ref b "research/learning/optimize.ml" 33 785 792 "research/learning/optimize.ml" 33 785 793
+)
+"research/learning/optimize.ml" 36 855 860 "research/learning/optimize.ml" 36 855 861
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 36 855 862 "research/learning/optimize.ml" 36 855 865
+type(
+  string
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 32 736 778 "research/learning/optimize.ml" 32 736 781
+)
+"research/learning/optimize.ml" 36 855 858 "research/learning/optimize.ml" 36 855 865
+call(
+  tail
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 33 785 788 "research/learning/optimize.ml" 36 855 865
+type(
+  string
+)
+"research/learning/optimize.ml" 32 736 769 "research/learning/optimize.ml" 37 866 869
+type(
+  bool -> string -> string
+)
+"research/learning/optimize.ml" 37 866 870 "research/learning/optimize.ml" 37 866 878
+type(
+  bool list
+)
+ident(
+  int_ref fbvector "research/learning/optimize.ml" 31 719 724 "research/learning/optimize.ml" 31 719 732
+)
+"research/learning/optimize.ml" 37 866 879 "research/learning/optimize.ml" 37 866 881
+type(
+  string
+)
+"research/learning/optimize.ml" 32 736 753 "research/learning/optimize.ml" 37 866 881
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 38 885 886 "research/learning/optimize.ml" 38 885 897
+type(
+  string -> string
+)
+ident(
+  ext_ref String.trim
+)
+"research/learning/optimize.ml" 38 885 898 "research/learning/optimize.ml" 38 885 907
+type(
+  string
+)
+ident(
+  int_ref as_string "research/learning/optimize.ml" 32 736 741 "research/learning/optimize.ml" 32 736 750
+)
+"research/learning/optimize.ml" 38 885 886 "research/learning/optimize.ml" 38 885 907
+call(
+  tail
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 32 736 737 "research/learning/optimize.ml" 38 885 907
+type(
+  string
+)
+"research/learning/optimize.ml" 31 719 720 "research/learning/optimize.ml" 38 885 907
+type(
+  bool list -> string
+)
+type(
+  bool list -> string
+)
+"research/learning/optimize.ml" 40 909 913 "research/learning/optimize.ml" 40 909 938
+type(
+  ItvAnalysis.ItvPre.t ->
+  Global.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  def fill_deadcode_with_premem "research/learning/optimize.ml" 46 1128 1128 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 40 909 939 "research/learning/optimize.ml" 40 909 942
+type(
+  ItvAnalysis.ItvPre.t
+)
+ident(
+  def pre "research/learning/optimize.ml" 40 909 943 "research/learning/optimize.ml" 44 1070 1125
+)
+"research/learning/optimize.ml" 40 909 943 "research/learning/optimize.ml" 40 909 949
+type(
+  Global.t
+)
+ident(
+  def global "research/learning/optimize.ml" 40 909 950 "research/learning/optimize.ml" 44 1070 1125
+)
+"research/learning/optimize.ml" 40 909 950 "research/learning/optimize.ml" 40 909 957
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  def inputof "research/learning/optimize.ml" 41 960 962 "research/learning/optimize.ml" 44 1070 1125
+)
+"research/learning/optimize.ml" 41 960 962 "research/learning/optimize.ml" 41 960 971
+type(
+  (InterCfg.Node.t ->
+   (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t ->
+   (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t) ->
+  InterCfg.Node.t list ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  ext_ref Vocab.list_fold
+)
+"research/learning/optimize.ml" 41 960 977 "research/learning/optimize.ml" 41 960 978
+type(
+  InterCfg.Node.t
+)
+ident(
+  def n "research/learning/optimize.ml" 41 960 979 "research/learning/optimize.ml" 43 1059 1069
+)
+"research/learning/optimize.ml" 41 960 979 "research/learning/optimize.ml" 41 960 980
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  def t "research/learning/optimize.ml" 42 985 989 "research/learning/optimize.ml" 43 1059 1069
+)
+"research/learning/optimize.ml" 42 985 992 "research/learning/optimize.ml" 42 985 999
+type(
+  ItvDom.Mem.t
+)
+ident(
+  ext_ref ItvDom.Mem.bot
+)
+"research/learning/optimize.ml" 42 985 1000 "research/learning/optimize.ml" 42 985 1001
+type(
+  ItvDom.Mem.t -> ItvDom.Mem.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"research/learning/optimize.ml" 42 985 1003 "research/learning/optimize.ml" 42 985 1013
+type(
+  InterCfg.Node.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t -> ItvDom.Mem.t
+)
+ident(
+  ext_ref ItvDom.Table.find
+)
+"research/learning/optimize.ml" 42 985 1014 "research/learning/optimize.ml" 42 985 1015
+type(
+  InterCfg.Node.t
+)
+ident(
+  int_ref n "research/learning/optimize.ml" 41 960 977 "research/learning/optimize.ml" 41 960 978
+)
+"research/learning/optimize.ml" 42 985 1016 "research/learning/optimize.ml" 42 985 1017
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  int_ref t "research/learning/optimize.ml" 41 960 979 "research/learning/optimize.ml" 41 960 980
+)
+"research/learning/optimize.ml" 42 985 1002 "research/learning/optimize.ml" 42 985 1018
+call(
+  stack
+)
+type(
+  ItvDom.Mem.t
+)
+"research/learning/optimize.ml" 42 985 992 "research/learning/optimize.ml" 42 985 1018
+type(
+  bool
+)
+"research/learning/optimize.ml" 42 985 1024 "research/learning/optimize.ml" 42 985 1033
+type(
+  InterCfg.Node.t ->
+  ItvDom.Table.B.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  ext_ref ItvDom.Table.add
+)
+"research/learning/optimize.ml" 42 985 1034 "research/learning/optimize.ml" 42 985 1035
+type(
+  InterCfg.Node.t
+)
+ident(
+  int_ref n "research/learning/optimize.ml" 41 960 977 "research/learning/optimize.ml" 41 960 978
+)
+"research/learning/optimize.ml" 42 985 1037 "research/learning/optimize.ml" 42 985 1051
+type(
+  ItvAnalysis.ItvPre.t -> ItvDom.Mem.t
+)
+ident(
+  ext_ref ItvAnalysis.ItvPre.get_mem
+)
+"research/learning/optimize.ml" 42 985 1052 "research/learning/optimize.ml" 42 985 1055
+type(
+  ItvAnalysis.ItvPre.t
+)
+ident(
+  int_ref pre "research/learning/optimize.ml" 40 909 939 "research/learning/optimize.ml" 40 909 942
+)
+"research/learning/optimize.ml" 42 985 1036 "research/learning/optimize.ml" 42 985 1056
+call(
+  stack
+)
+type(
+  ItvDom.Mem.t
+)
+"research/learning/optimize.ml" 42 985 1057 "research/learning/optimize.ml" 42 985 1058
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  int_ref t "research/learning/optimize.ml" 41 960 979 "research/learning/optimize.ml" 41 960 980
+)
+"research/learning/optimize.ml" 42 985 1024 "research/learning/optimize.ml" 42 985 1058
+call(
+  tail
+)
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+"research/learning/optimize.ml" 43 1059 1068 "research/learning/optimize.ml" 43 1059 1069
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  int_ref t "research/learning/optimize.ml" 41 960 979 "research/learning/optimize.ml" 41 960 980
+)
+"research/learning/optimize.ml" 42 985 989 "research/learning/optimize.ml" 43 1059 1069
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+"research/learning/optimize.ml" 41 960 972 "research/learning/optimize.ml" 44 1070 1073
+type(
+  InterCfg.Node.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t ->
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+"research/learning/optimize.ml" 44 1070 1075 "research/learning/optimize.ml" 44 1070 1091
+type(
+  InterCfg.t -> InterCfg.Node.t list
+)
+ident(
+  ext_ref InterCfg.nodesof
+)
+"research/learning/optimize.ml" 44 1070 1093 "research/learning/optimize.ml" 44 1070 1108
+type(
+  Global.t -> InterCfg.t
+)
+ident(
+  ext_ref Global.get_icfg
+)
+"research/learning/optimize.ml" 44 1070 1109 "research/learning/optimize.ml" 44 1070 1115
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 40 909 943 "research/learning/optimize.ml" 40 909 949
+)
+"research/learning/optimize.ml" 44 1070 1092 "research/learning/optimize.ml" 44 1070 1116
+call(
+  stack
+)
+type(
+  InterCfg.t
+)
+"research/learning/optimize.ml" 44 1070 1074 "research/learning/optimize.ml" 44 1070 1117
+call(
+  stack
+)
+type(
+  InterCfg.Node.t list
+)
+"research/learning/optimize.ml" 44 1070 1118 "research/learning/optimize.ml" 44 1070 1125
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+ident(
+  int_ref inputof "research/learning/optimize.ml" 40 909 950 "research/learning/optimize.ml" 40 909 957
+)
+"research/learning/optimize.ml" 41 960 962 "research/learning/optimize.ml" 44 1070 1125
+call(
+  tail
+)
+type(
+  (InterCfg.Node.t, ItvDom.Table.B.t) BatMap.t
+)
+"research/learning/optimize.ml" 46 1128 1132 "research/learning/optimize.ml" 46 1128 1142
+type(
+  string * string -> AbsDom.Loc.t
+)
+ident(
+  def make_a_loc "research/learning/optimize.ml" 51 1265 1265 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 47 1172 1178 "research/learning/optimize.ml" 47 1172 1185
+type(
+  AbsDom.Proc.t
+)
+ident(
+  def funname "research/learning/optimize.ml" 48 1197 1198 "research/learning/optimize.ml" 49 1244 1263
+)
+"research/learning/optimize.ml" 47 1172 1187 "research/learning/optimize.ml" 47 1172 1192
+type(
+  DStr.t
+)
+ident(
+  def vname "research/learning/optimize.ml" 48 1197 1198 "research/learning/optimize.ml" 49 1244 1263
+)
+"research/learning/optimize.ml" 47 1172 1177 "research/learning/optimize.ml" 47 1172 1193
+type(
+  AbsDom.Proc.t * DStr.t
+)
+"research/learning/optimize.ml" 48 1197 1202 "research/learning/optimize.ml" 48 1197 1205
+type(
+  AbsDom.Var.t
+)
+ident(
+  def var "research/learning/optimize.ml" 49 1244 1245 "research/learning/optimize.ml" 49 1244 1263
+)
+"research/learning/optimize.ml" 48 1197 1208 "research/learning/optimize.ml" 48 1197 1223
+type(
+  AbsDom.LVar.t -> AbsDom.Var.t
+)
+ident(
+  ext_ref AbsDom.Var.var_of_lvar
+)
+"research/learning/optimize.ml" 48 1197 1225 "research/learning/optimize.ml" 48 1197 1232
+type(
+  AbsDom.Proc.t
+)
+ident(
+  int_ref funname "research/learning/optimize.ml" 47 1172 1178 "research/learning/optimize.ml" 47 1172 1185
+)
+"research/learning/optimize.ml" 48 1197 1234 "research/learning/optimize.ml" 48 1197 1239
+type(
+  DStr.t
+)
+ident(
+  int_ref vname "research/learning/optimize.ml" 47 1172 1187 "research/learning/optimize.ml" 47 1172 1192
+)
+"research/learning/optimize.ml" 48 1197 1224 "research/learning/optimize.ml" 48 1197 1240
+type(
+  AbsDom.LVar.t
+)
+"research/learning/optimize.ml" 48 1197 1208 "research/learning/optimize.ml" 48 1197 1240
+call(
+  stack
+)
+type(
+  AbsDom.Var.t
+)
+"research/learning/optimize.ml" 49 1244 1245 "research/learning/optimize.ml" 49 1244 1259
+type(
+  AbsDom.Var.t -> AbsDom.Loc.t
+)
+ident(
+  ext_ref AbsDom.Loc.loc_of_var
+)
+"research/learning/optimize.ml" 49 1244 1260 "research/learning/optimize.ml" 49 1244 1263
+type(
+  AbsDom.Var.t
+)
+ident(
+  int_ref var "research/learning/optimize.ml" 48 1197 1202 "research/learning/optimize.ml" 48 1197 1205
+)
+"research/learning/optimize.ml" 49 1244 1245 "research/learning/optimize.ml" 49 1244 1263
+call(
+  tail
+)
+type(
+  AbsDom.Loc.t
+)
+"research/learning/optimize.ml" 48 1197 1198 "research/learning/optimize.ml" 49 1244 1263
+type(
+  AbsDom.Loc.t
+)
+"research/learning/optimize.ml" 47 1172 1173 "research/learning/optimize.ml" 49 1244 1263
+type(
+  string * string -> AbsDom.Loc.t
+)
+type(
+  AbsDom.Proc.t * DStr.t -> AbsDom.Loc.t
+)
+"research/learning/optimize.ml" 51 1265 1269 "research/learning/optimize.ml" 51 1265 1288
+type(
+  Global.t -> Report.query list -> (Report.query, CF.t) BatMap.t * q2depnodes
+)
+ident(
+  def q2feat_from_newprog "research/learning/optimize.ml" 69 2064 2064 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 52 1353 1358 "research/learning/optimize.ml" 52 1353 1364
+type(
+  Global.t
+)
+ident(
+  def global "research/learning/optimize.ml" 52 1353 1365 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 52 1353 1365 "research/learning/optimize.ml" 52 1353 1367
+type(
+  Report.query list
+)
+ident(
+  def qs "research/learning/optimize.ml" 53 1371 1372 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 53 1371 1376 "research/learning/optimize.ml" 53 1371 1384
+type(
+  InterCfg.t
+)
+ident(
+  def icfg_org "research/learning/optimize.ml" 54 1402 1403 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 53 1371 1387 "research/learning/optimize.ml" 53 1371 1393
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 52 1353 1358 "research/learning/optimize.ml" 52 1353 1364
+)
+"research/learning/optimize.ml" 53 1371 1387 "research/learning/optimize.ml" 53 1371 1398
+type(
+  InterCfg.t
+)
+"research/learning/optimize.ml" 54 1402 1407 "research/learning/optimize.ml" 54 1402 1417
+type(
+  Global.t
+)
+ident(
+  def dep_global "research/learning/optimize.ml" 55 1476 1477 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 54 1402 1421 "research/learning/optimize.ml" 54 1402 1427
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 52 1353 1358 "research/learning/optimize.ml" 52 1353 1364
+)
+"research/learning/optimize.ml" 54 1402 1440 "research/learning/optimize.ml" 54 1402 1459
+type(
+  InterCfg.t -> InterCfg.t
+)
+ident(
+  ext_ref Depend.get_interdug
+)
+"research/learning/optimize.ml" 54 1402 1460 "research/learning/optimize.ml" 54 1402 1466
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 52 1353 1358 "research/learning/optimize.ml" 52 1353 1364
+)
+"research/learning/optimize.ml" 54 1402 1460 "research/learning/optimize.ml" 54 1402 1471
+type(
+  InterCfg.t
+)
+"research/learning/optimize.ml" 54 1402 1440 "research/learning/optimize.ml" 54 1402 1471
+call(
+  stack
+)
+type(
+  InterCfg.t
+)
+"research/learning/optimize.ml" 54 1402 1420 "research/learning/optimize.ml" 54 1402 1472
+type(
+  Global.t
+)
+"research/learning/optimize.ml" 55 1476 1481 "research/learning/optimize.ml" 55 1476 1486
+type(
+  (IntraCfg.t, Report.query list) BatMap.t
+)
+ident(
+  def cfg2q "research/learning/optimize.ml" 56 1528 1529 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 55 1476 1489 "research/learning/optimize.ml" 55 1476 1505
+type(
+  InterCfg.t -> Report.query list -> (IntraCfg.t, Report.query list) BatMap.t
+)
+ident(
+  ext_ref Feature.cfg_to_query_map
+)
+"research/learning/optimize.ml" 55 1476 1506 "research/learning/optimize.ml" 55 1476 1516
+type(
+  Global.t
+)
+ident(
+  int_ref dep_global "research/learning/optimize.ml" 54 1402 1407 "research/learning/optimize.ml" 54 1402 1417
+)
+"research/learning/optimize.ml" 55 1476 1506 "research/learning/optimize.ml" 55 1476 1521
+type(
+  InterCfg.t
+)
+"research/learning/optimize.ml" 55 1476 1522 "research/learning/optimize.ml" 55 1476 1524
+type(
+  Report.query list
+)
+ident(
+  int_ref qs "research/learning/optimize.ml" 52 1353 1365 "research/learning/optimize.ml" 52 1353 1367
+)
+"research/learning/optimize.ml" 55 1476 1489 "research/learning/optimize.ml" 55 1476 1524
+call(
+  stack
+)
+type(
+  (IntraCfg.t, Report.query list) BatMap.t
+)
+"research/learning/optimize.ml" 56 1528 1533 "research/learning/optimize.ml" 56 1528 1543
+type(
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+ident(
+  def q2depnodes "research/learning/optimize.ml" 57 1575 1576 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 56 1528 1546 "research/learning/optimize.ml" 56 1528 1565
+type(
+  (IntraCfg.t, Report.query list) BatMap.t ->
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+ident(
+  ext_ref Feature.query_to_depend_map
+)
+"research/learning/optimize.ml" 56 1528 1566 "research/learning/optimize.ml" 56 1528 1571
+type(
+  (IntraCfg.t, Report.query list) BatMap.t
+)
+ident(
+  int_ref cfg2q "research/learning/optimize.ml" 55 1476 1481 "research/learning/optimize.ml" 55 1476 1486
+)
+"research/learning/optimize.ml" 56 1528 1546 "research/learning/optimize.ml" 56 1528 1571
+call(
+  stack
+)
+type(
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+"research/learning/optimize.ml" 57 1575 1580 "research/learning/optimize.ml" 57 1575 1590
+type(
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+ident(
+  def q2depnodes "research/learning/optimize.ml" 60 1666 1667 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 57 1575 1593 "research/learning/optimize.ml" 57 1575 1606
+type(
+  (Report.query -> IntraCfg.node BatSet.t -> bool) ->
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t ->
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+ident(
+  ext_ref BatMap.filter
+)
+"research/learning/optimize.ml" 57 1575 1612 "research/learning/optimize.ml" 57 1575 1613
+type(
+  Report.query
+)
+ident(
+  def q "research/learning/optimize.ml" 57 1575 1614 "research/learning/optimize.ml" 58 1619 1648
+)
+"research/learning/optimize.ml" 57 1575 1614 "research/learning/optimize.ml" 57 1575 1615
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/optimize.ml" 58 1619 1622 "research/learning/optimize.ml" 58 1619 1636
+type(
+  Report.query -> string
+)
+ident(
+  ext_ref Report.get_pid
+)
+"research/learning/optimize.ml" 58 1619 1637 "research/learning/optimize.ml" 58 1619 1638
+type(
+  Report.query
+)
+ident(
+  int_ref q "research/learning/optimize.ml" 57 1575 1612 "research/learning/optimize.ml" 57 1575 1613
+)
+"research/learning/optimize.ml" 58 1619 1621 "research/learning/optimize.ml" 58 1619 1639
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 58 1619 1640 "research/learning/optimize.ml" 58 1619 1642
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"research/learning/optimize.ml" 58 1619 1643 "research/learning/optimize.ml" 58 1619 1648
+type(
+  string
+)
+"research/learning/optimize.ml" 58 1619 1621 "research/learning/optimize.ml" 58 1619 1648
+type(
+  bool
+)
+"research/learning/optimize.ml" 57 1575 1607 "research/learning/optimize.ml" 59 1649 1651
+type(
+  Report.query -> IntraCfg.node BatSet.t -> bool
+)
+"research/learning/optimize.ml" 59 1649 1652 "research/learning/optimize.ml" 59 1649 1662
+type(
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+ident(
+  int_ref q2depnodes "research/learning/optimize.ml" 56 1528 1533 "research/learning/optimize.ml" 56 1528 1543
+)
+"research/learning/optimize.ml" 57 1575 1593 "research/learning/optimize.ml" 59 1649 1662
+call(
+  stack
+)
+type(
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+"research/learning/optimize.ml" 60 1666 1671 "research/learning/optimize.ml" 60 1666 1677
+type(
+  (Report.query, CF.t) BatMap.t
+)
+ident(
+  def q2feat "research/learning/optimize.ml" 67 2041 2042 "research/learning/optimize.ml" 67 2041 2062
+)
+"research/learning/optimize.ml" 60 1666 1680 "research/learning/optimize.ml" 60 1666 1691
+type(
+  (Report.query -> IntraCfg.node BatSet.t -> CF.t) ->
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t ->
+  (Report.query, CF.t) BatMap.t
+)
+ident(
+  ext_ref BatMap.mapi
+)
+"research/learning/optimize.ml" 60 1666 1697 "research/learning/optimize.ml" 60 1666 1698
+type(
+  Report.query
+)
+ident(
+  def q "research/learning/optimize.ml" 60 1666 1699 "research/learning/optimize.ml" 65 1956 2023
+)
+"research/learning/optimize.ml" 60 1666 1699 "research/learning/optimize.ml" 60 1666 1704
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def nodes "research/learning/optimize.ml" 61 1708 1710 "research/learning/optimize.ml" 65 1956 2023
+)
+"research/learning/optimize.ml" 61 1708 1714 "research/learning/optimize.ml" 61 1708 1717
+type(
+  string
+)
+ident(
+  def pid "research/learning/optimize.ml" 62 1740 1742 "research/learning/optimize.ml" 65 1956 2023
+)
+"research/learning/optimize.ml" 61 1708 1720 "research/learning/optimize.ml" 61 1708 1734
+type(
+  Report.query -> string
+)
+ident(
+  ext_ref Report.get_pid
+)
+"research/learning/optimize.ml" 61 1708 1735 "research/learning/optimize.ml" 61 1708 1736
+type(
+  Report.query
+)
+ident(
+  int_ref q "research/learning/optimize.ml" 60 1666 1697 "research/learning/optimize.ml" 60 1666 1698
+)
+"research/learning/optimize.ml" 61 1708 1720 "research/learning/optimize.ml" 61 1708 1736
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 62 1740 1746 "research/learning/optimize.ml" 62 1740 1750
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def sccs "research/learning/optimize.ml" 63 1806 1808 "research/learning/optimize.ml" 65 1956 2023
+)
+"research/learning/optimize.ml" 62 1740 1753 "research/learning/optimize.ml" 62 1740 1767
+type(
+  InterCfg.t -> InterCfg.pid -> IntraCfg.t
+)
+ident(
+  ext_ref InterCfg.cfgof
+)
+"research/learning/optimize.ml" 62 1740 1768 "research/learning/optimize.ml" 62 1740 1776
+type(
+  InterCfg.t
+)
+ident(
+  int_ref icfg_org "research/learning/optimize.ml" 53 1371 1376 "research/learning/optimize.ml" 53 1371 1384
+)
+"research/learning/optimize.ml" 62 1740 1777 "research/learning/optimize.ml" 62 1740 1780
+type(
+  InterCfg.pid
+)
+ident(
+  int_ref pid "research/learning/optimize.ml" 61 1708 1714 "research/learning/optimize.ml" 61 1708 1717
+)
+"research/learning/optimize.ml" 62 1740 1753 "research/learning/optimize.ml" 62 1740 1780
+call(
+  stack
+)
+type(
+  IntraCfg.t
+)
+"research/learning/optimize.ml" 62 1740 1781 "research/learning/optimize.ml" 62 1740 1783
+type(
+  IntraCfg.t ->
+  (IntraCfg.t -> IntraCfg.node BatSet.t) -> IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref Pervasives.( |> )
+)
+"research/learning/optimize.ml" 62 1740 1784 "research/learning/optimize.ml" 62 1740 1802
+type(
+  IntraCfg.t -> IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref Loop.sccs_from_cfg
+)
+"research/learning/optimize.ml" 62 1740 1753 "research/learning/optimize.ml" 62 1740 1802
+call(
+  stack
+)
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/optimize.ml" 63 1806 1812 "research/learning/optimize.ml" 63 1806 1815
+type(
+  IntraCfg.t
+)
+ident(
+  def cfg "research/learning/optimize.ml" 64 1856 1858 "research/learning/optimize.ml" 65 1956 2023
+)
+"research/learning/optimize.ml" 63 1806 1818 "research/learning/optimize.ml" 63 1806 1832
+type(
+  InterCfg.t -> InterCfg.pid -> IntraCfg.t
+)
+ident(
+  ext_ref InterCfg.cfgof
+)
+"research/learning/optimize.ml" 63 1806 1833 "research/learning/optimize.ml" 63 1806 1843
+type(
+  Global.t
+)
+ident(
+  int_ref dep_global "research/learning/optimize.ml" 54 1402 1407 "research/learning/optimize.ml" 54 1402 1417
+)
+"research/learning/optimize.ml" 63 1806 1833 "research/learning/optimize.ml" 63 1806 1848
+type(
+  InterCfg.t
+)
+"research/learning/optimize.ml" 63 1806 1849 "research/learning/optimize.ml" 63 1806 1852
+type(
+  InterCfg.pid
+)
+ident(
+  int_ref pid "research/learning/optimize.ml" 61 1708 1714 "research/learning/optimize.ml" 61 1708 1717
+)
+"research/learning/optimize.ml" 63 1806 1818 "research/learning/optimize.ml" 63 1806 1852
+call(
+  stack
+)
+type(
+  IntraCfg.t
+)
+"research/learning/optimize.ml" 64 1856 1863 "research/learning/optimize.ml" 64 1856 1868
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def qnode "research/learning/optimize.ml" 65 1956 1958 "research/learning/optimize.ml" 65 1956 2023
+)
+"research/learning/optimize.ml" 64 1856 1870 "research/learning/optimize.ml" 64 1856 1880
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def rest_nodes "research/learning/optimize.ml" 65 1956 1958 "research/learning/optimize.ml" 65 1956 2023
+)
+"research/learning/optimize.ml" 64 1856 1862 "research/learning/optimize.ml" 64 1856 1881
+type(
+  IntraCfg.node BatSet.t * IntraCfg.node BatSet.t
+)
+"research/learning/optimize.ml" 64 1856 1884 "research/learning/optimize.ml" 64 1856 1900
+type(
+  (IntraCfg.node -> bool) ->
+  IntraCfg.node BatSet.t -> IntraCfg.node BatSet.t * IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref BatSet.partition
+)
+"research/learning/optimize.ml" 64 1856 1906 "research/learning/optimize.ml" 64 1856 1907
+type(
+  IntraCfg.node
+)
+ident(
+  def n "research/learning/optimize.ml" 64 1856 1911 "research/learning/optimize.ml" 64 1856 1945
+)
+"research/learning/optimize.ml" 64 1856 1911 "research/learning/optimize.ml" 64 1856 1930
+type(
+  IntraCfg.node -> IntraCfg.node -> bool
+)
+ident(
+  ext_ref IntraCfg.Node.equal
+)
+"research/learning/optimize.ml" 64 1856 1931 "research/learning/optimize.ml" 64 1856 1932
+type(
+  IntraCfg.node
+)
+ident(
+  int_ref n "research/learning/optimize.ml" 64 1856 1906 "research/learning/optimize.ml" 64 1856 1907
+)
+"research/learning/optimize.ml" 64 1856 1934 "research/learning/optimize.ml" 64 1856 1937
+type(
+  InterCfg.node -> IntraCfg.node
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"research/learning/optimize.ml" 64 1856 1938 "research/learning/optimize.ml" 64 1856 1939
+type(
+  Report.query
+)
+ident(
+  int_ref q "research/learning/optimize.ml" 60 1666 1697 "research/learning/optimize.ml" 60 1666 1698
+)
+"research/learning/optimize.ml" 64 1856 1938 "research/learning/optimize.ml" 64 1856 1944
+type(
+  InterCfg.node
+)
+"research/learning/optimize.ml" 64 1856 1933 "research/learning/optimize.ml" 64 1856 1945
+type(
+  IntraCfg.node
+)
+"research/learning/optimize.ml" 64 1856 1911 "research/learning/optimize.ml" 64 1856 1945
+call(
+  tail
+)
+type(
+  bool
+)
+"research/learning/optimize.ml" 64 1856 1901 "research/learning/optimize.ml" 64 1856 1946
+type(
+  IntraCfg.node -> bool
+)
+"research/learning/optimize.ml" 64 1856 1947 "research/learning/optimize.ml" 64 1856 1952
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref nodes "research/learning/optimize.ml" 60 1666 1699 "research/learning/optimize.ml" 60 1666 1704
+)
+"research/learning/optimize.ml" 64 1856 1884 "research/learning/optimize.ml" 64 1856 1952
+call(
+  stack
+)
+type(
+  IntraCfg.node BatSet.t * IntraCfg.node BatSet.t
+)
+"research/learning/optimize.ml" 65 1956 1958 "research/learning/optimize.ml" 65 1956 1965
+type(
+  Inspector.ftype ->
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t ->
+  Report.query -> IntraCfg.node -> IntraCfg.node BatSet.t -> CF.t
+)
+ident(
+  ext_ref CF.tgen
+)
+"research/learning/optimize.ml" 65 1956 1966 "research/learning/optimize.ml" 65 1956 1979
+type(
+  Inspector.ftype
+)
+"research/learning/optimize.ml" 65 1956 1980 "research/learning/optimize.ml" 65 1956 1983
+type(
+  IntraCfg.t
+)
+ident(
+  int_ref cfg "research/learning/optimize.ml" 63 1806 1812 "research/learning/optimize.ml" 63 1806 1815
+)
+"research/learning/optimize.ml" 65 1956 1984 "research/learning/optimize.ml" 65 1956 1988
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref sccs "research/learning/optimize.ml" 62 1740 1746 "research/learning/optimize.ml" 62 1740 1750
+)
+"research/learning/optimize.ml" 65 1956 1989 "research/learning/optimize.ml" 65 1956 1990
+type(
+  Report.query
+)
+ident(
+  int_ref q "research/learning/optimize.ml" 60 1666 1697 "research/learning/optimize.ml" 60 1666 1698
+)
+"research/learning/optimize.ml" 65 1956 1992 "research/learning/optimize.ml" 65 1956 2005
+type(
+  IntraCfg.node BatSet.t -> IntraCfg.node
+)
+ident(
+  ext_ref BatSet.choose
+)
+"research/learning/optimize.ml" 65 1956 2006 "research/learning/optimize.ml" 65 1956 2011
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref qnode "research/learning/optimize.ml" 64 1856 1863 "research/learning/optimize.ml" 64 1856 1868
+)
+"research/learning/optimize.ml" 65 1956 1991 "research/learning/optimize.ml" 65 1956 2012
+call(
+  stack
+)
+type(
+  IntraCfg.node
+)
+"research/learning/optimize.ml" 65 1956 2013 "research/learning/optimize.ml" 65 1956 2023
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref rest_nodes "research/learning/optimize.ml" 64 1856 1870 "research/learning/optimize.ml" 64 1856 1880
+)
+"research/learning/optimize.ml" 65 1956 1958 "research/learning/optimize.ml" 65 1956 2023
+call(
+  tail
+)
+type(
+  CF.t
+)
+"research/learning/optimize.ml" 64 1856 1858 "research/learning/optimize.ml" 65 1956 2023
+type(
+  CF.t
+)
+"research/learning/optimize.ml" 63 1806 1808 "research/learning/optimize.ml" 65 1956 2023
+type(
+  CF.t
+)
+"research/learning/optimize.ml" 62 1740 1742 "research/learning/optimize.ml" 65 1956 2023
+type(
+  CF.t
+)
+"research/learning/optimize.ml" 61 1708 1710 "research/learning/optimize.ml" 65 1956 2023
+type(
+  CF.t
+)
+"research/learning/optimize.ml" 60 1666 1692 "research/learning/optimize.ml" 66 2024 2026
+type(
+  Report.query -> IntraCfg.node BatSet.t -> CF.t
+)
+"research/learning/optimize.ml" 66 2024 2027 "research/learning/optimize.ml" 66 2024 2037
+type(
+  (Report.query, IntraCfg.node BatSet.t) BatMap.t
+)
+ident(
+  int_ref q2depnodes "research/learning/optimize.ml" 57 1575 1580 "research/learning/optimize.ml" 57 1575 1590
+)
+"research/learning/optimize.ml" 60 1666 1680 "research/learning/optimize.ml" 66 2024 2037
+call(
+  stack
+)
+type(
+  (Report.query, CF.t) BatMap.t
+)
+"research/learning/optimize.ml" 67 2041 2043 "research/learning/optimize.ml" 67 2041 2049
+type(
+  (Report.query, CF.t) BatMap.t
+)
+ident(
+  int_ref q2feat "research/learning/optimize.ml" 60 1666 1671 "research/learning/optimize.ml" 60 1666 1677
+)
+"research/learning/optimize.ml" 67 2041 2051 "research/learning/optimize.ml" 67 2041 2061
+type(
+  q2depnodes
+)
+ident(
+  int_ref q2depnodes "research/learning/optimize.ml" 57 1575 1580 "research/learning/optimize.ml" 57 1575 1590
+)
+"research/learning/optimize.ml" 67 2041 2042 "research/learning/optimize.ml" 67 2041 2062
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 60 1666 1667 "research/learning/optimize.ml" 67 2041 2062
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 57 1575 1576 "research/learning/optimize.ml" 67 2041 2062
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 56 1528 1529 "research/learning/optimize.ml" 67 2041 2062
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 55 1476 1477 "research/learning/optimize.ml" 67 2041 2062
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 54 1402 1403 "research/learning/optimize.ml" 67 2041 2062
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 53 1371 1372 "research/learning/optimize.ml" 67 2041 2062
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 52 1353 1354 "research/learning/optimize.ml" 67 2041 2062
+type(
+  Global.t -> Report.query list -> (Report.query, CF.t) BatMap.t * q2depnodes
+)
+type(
+  Global.t -> Report.query list -> (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 69 2064 2068 "research/learning/optimize.ml" 69 2064 2092
+type(
+  Report.query ->
+  CF.t -> InterCfg.t -> q2depnodes -> CF.ORD_SET.t -> candidate
+)
+ident(
+  def gen_candidate_from_query "research/learning/optimize.ml" 85 2832 2832 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 70 2173 2178 "research/learning/optimize.ml" 70 2173 2183
+type(
+  Report.query
+)
+ident(
+  def query "research/learning/optimize.ml" 70 2173 2184 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 70 2173 2184 "research/learning/optimize.ml" 70 2173 2193
+type(
+  CF.t
+)
+ident(
+  def q_feature "research/learning/optimize.ml" 70 2173 2194 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 70 2173 2194 "research/learning/optimize.ml" 70 2173 2198
+type(
+  InterCfg.t
+)
+ident(
+  def icfg "research/learning/optimize.ml" 70 2173 2199 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 70 2173 2199 "research/learning/optimize.ml" 70 2173 2208
+type(
+  q2depnodes
+)
+ident(
+  def q2depnode "research/learning/optimize.ml" 70 2173 2209 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 70 2173 2209 "research/learning/optimize.ml" 70 2173 2213
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def fset "research/learning/optimize.ml" 71 2217 2218 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 71 2217 2222 "research/learning/optimize.ml" 71 2217 2224
+type(
+  bool list
+)
+ident(
+  def fv "research/learning/optimize.ml" 74 2333 2334 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 71 2217 2227 "research/learning/optimize.ml" 71 2217 2242
+type(
+  (CF.ORD_SET.elt -> bool list -> bool list) ->
+  CF.ORD_SET.t -> bool list -> bool list
+)
+ident(
+  ext_ref CF.ORD_SET.fold
+)
+"research/learning/optimize.ml" 71 2217 2248 "research/learning/optimize.ml" 71 2217 2255
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  def feature "research/learning/optimize.ml" 71 2217 2256 "research/learning/optimize.ml" 73 2307 2320
+)
+"research/learning/optimize.ml" 71 2217 2256 "research/learning/optimize.ml" 71 2217 2259
+type(
+  bool list
+)
+ident(
+  def acc "research/learning/optimize.ml" 72 2263 2265 "research/learning/optimize.ml" 73 2307 2320
+)
+"research/learning/optimize.ml" 72 2263 2269 "research/learning/optimize.ml" 72 2263 2275
+type(
+  bool
+)
+ident(
+  def column "research/learning/optimize.ml" 73 2307 2309 "research/learning/optimize.ml" 73 2307 2320
+)
+"research/learning/optimize.ml" 72 2263 2278 "research/learning/optimize.ml" 72 2263 2285
+type(
+  CF.t -> CF.t -> bool
+)
+ident(
+  ext_ref CF.pred
+)
+"research/learning/optimize.ml" 72 2263 2286 "research/learning/optimize.ml" 72 2263 2293
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  int_ref feature "research/learning/optimize.ml" 71 2217 2248 "research/learning/optimize.ml" 71 2217 2255
+)
+"research/learning/optimize.ml" 72 2263 2294 "research/learning/optimize.ml" 72 2263 2303
+type(
+  CF.t
+)
+ident(
+  int_ref q_feature "research/learning/optimize.ml" 70 2173 2184 "research/learning/optimize.ml" 70 2173 2193
+)
+"research/learning/optimize.ml" 72 2263 2278 "research/learning/optimize.ml" 72 2263 2303
+call(
+  stack
+)
+type(
+  bool
+)
+"research/learning/optimize.ml" 73 2307 2309 "research/learning/optimize.ml" 73 2307 2315
+type(
+  bool
+)
+ident(
+  int_ref column "research/learning/optimize.ml" 72 2263 2269 "research/learning/optimize.ml" 72 2263 2275
+)
+"research/learning/optimize.ml" 73 2307 2317 "research/learning/optimize.ml" 73 2307 2320
+type(
+  bool list
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 71 2217 2256 "research/learning/optimize.ml" 71 2217 2259
+)
+"research/learning/optimize.ml" 73 2307 2309 "research/learning/optimize.ml" 73 2307 2320
+type(
+  bool list
+)
+"research/learning/optimize.ml" 72 2263 2265 "research/learning/optimize.ml" 73 2307 2320
+type(
+  bool list
+)
+"research/learning/optimize.ml" 71 2217 2243 "research/learning/optimize.ml" 73 2307 2321
+type(
+  CF.ORD_SET.elt -> bool list -> bool list
+)
+"research/learning/optimize.ml" 73 2307 2322 "research/learning/optimize.ml" 73 2307 2326
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref fset "research/learning/optimize.ml" 70 2173 2209 "research/learning/optimize.ml" 70 2173 2213
+)
+"research/learning/optimize.ml" 73 2307 2327 "research/learning/optimize.ml" 73 2307 2329
+type(
+  bool list
+)
+"research/learning/optimize.ml" 71 2217 2227 "research/learning/optimize.ml" 73 2307 2329
+call(
+  stack
+)
+type(
+  bool list
+)
+"research/learning/optimize.ml" 74 2333 2338 "research/learning/optimize.ml" 74 2333 2345
+type(
+  InterCfg.pid
+)
+ident(
+  def funname "research/learning/optimize.ml" 75 2366 2367 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 74 2333 2348 "research/learning/optimize.ml" 74 2333 2351
+type(
+  InterCfg.node -> InterCfg.pid
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"research/learning/optimize.ml" 74 2333 2352 "research/learning/optimize.ml" 74 2333 2357
+type(
+  Report.query
+)
+ident(
+  int_ref query "research/learning/optimize.ml" 70 2173 2178 "research/learning/optimize.ml" 70 2173 2183
+)
+"research/learning/optimize.ml" 74 2333 2352 "research/learning/optimize.ml" 74 2333 2362
+type(
+  InterCfg.node
+)
+"research/learning/optimize.ml" 74 2333 2348 "research/learning/optimize.ml" 74 2333 2362
+type(
+  InterCfg.pid
+)
+"research/learning/optimize.ml" 75 2366 2371 "research/learning/optimize.ml" 75 2366 2379
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def depnodes "research/learning/optimize.ml" 76 2413 2414 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 75 2366 2382 "research/learning/optimize.ml" 75 2366 2393
+type(
+  Report.query -> q2depnodes -> IntraCfg.node BatSet.t
+)
+ident(
+  ext_ref BatMap.find
+)
+"research/learning/optimize.ml" 75 2366 2394 "research/learning/optimize.ml" 75 2366 2399
+type(
+  Report.query
+)
+ident(
+  int_ref query "research/learning/optimize.ml" 70 2173 2178 "research/learning/optimize.ml" 70 2173 2183
+)
+"research/learning/optimize.ml" 75 2366 2400 "research/learning/optimize.ml" 75 2366 2409
+type(
+  q2depnodes
+)
+ident(
+  int_ref q2depnode "research/learning/optimize.ml" 70 2173 2199 "research/learning/optimize.ml" 70 2173 2208
+)
+"research/learning/optimize.ml" 75 2366 2382 "research/learning/optimize.ml" 75 2366 2409
+call(
+  stack
+)
+type(
+  IntraCfg.node BatSet.t
+)
+"research/learning/optimize.ml" 76 2413 2418 "research/learning/optimize.ml" 76 2413 2428
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  def all_vnames "research/learning/optimize.ml" 82 2735 2736 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 76 2413 2431 "research/learning/optimize.ml" 76 2413 2442
+type(
+  (IntraCfg.node -> IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t) ->
+  IntraCfg.node BatSet.t ->
+  IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t
+)
+ident(
+  ext_ref BatSet.fold
+)
+"research/learning/optimize.ml" 76 2413 2448 "research/learning/optimize.ml" 76 2413 2449
+type(
+  IntraCfg.node
+)
+ident(
+  def n "research/learning/optimize.ml" 76 2413 2450 "research/learning/optimize.ml" 80 2671 2706
+)
+"research/learning/optimize.ml" 76 2413 2450 "research/learning/optimize.ml" 76 2413 2453
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  def acc "research/learning/optimize.ml" 77 2457 2459 "research/learning/optimize.ml" 80 2671 2706
+)
+"research/learning/optimize.ml" 77 2457 2463 "research/learning/optimize.ml" 77 2457 2466
+type(
+  IntraCfg.t
+)
+ident(
+  def cfg "research/learning/optimize.ml" 78 2509 2511 "research/learning/optimize.ml" 80 2671 2706
+)
+"research/learning/optimize.ml" 77 2457 2469 "research/learning/optimize.ml" 77 2457 2483
+type(
+  InterCfg.t -> InterCfg.pid -> IntraCfg.t
+)
+ident(
+  ext_ref InterCfg.cfgof
+)
+"research/learning/optimize.ml" 77 2457 2484 "research/learning/optimize.ml" 77 2457 2488
+type(
+  InterCfg.t
+)
+ident(
+  int_ref icfg "research/learning/optimize.ml" 70 2173 2194 "research/learning/optimize.ml" 70 2173 2198
+)
+"research/learning/optimize.ml" 77 2457 2490 "research/learning/optimize.ml" 77 2457 2493
+type(
+  InterCfg.node -> InterCfg.pid
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"research/learning/optimize.ml" 77 2457 2494 "research/learning/optimize.ml" 77 2457 2499
+type(
+  Report.query
+)
+ident(
+  int_ref query "research/learning/optimize.ml" 70 2173 2178 "research/learning/optimize.ml" 70 2173 2183
+)
+"research/learning/optimize.ml" 77 2457 2494 "research/learning/optimize.ml" 77 2457 2504
+type(
+  InterCfg.node
+)
+"research/learning/optimize.ml" 77 2457 2489 "research/learning/optimize.ml" 77 2457 2505
+type(
+  InterCfg.pid
+)
+"research/learning/optimize.ml" 77 2457 2469 "research/learning/optimize.ml" 77 2457 2505
+call(
+  stack
+)
+type(
+  IntraCfg.t
+)
+"research/learning/optimize.ml" 78 2509 2515 "research/learning/optimize.ml" 78 2509 2531
+type(
+  IntraCfg.SS.t
+)
+ident(
+  def vnames_from_node "research/learning/optimize.ml" 79 2573 2575 "research/learning/optimize.ml" 80 2671 2706
+)
+"research/learning/optimize.ml" 78 2509 2534 "research/learning/optimize.ml" 78 2509 2563
+type(
+  IntraCfg.t -> IntraCfg.node -> IntraCfg.SS.t
+)
+ident(
+  ext_ref IntraCfg.all_vnames_from_node
+)
+"research/learning/optimize.ml" 78 2509 2564 "research/learning/optimize.ml" 78 2509 2567
+type(
+  IntraCfg.t
+)
+ident(
+  int_ref cfg "research/learning/optimize.ml" 77 2457 2463 "research/learning/optimize.ml" 77 2457 2466
+)
+"research/learning/optimize.ml" 78 2509 2568 "research/learning/optimize.ml" 78 2509 2569
+type(
+  IntraCfg.node
+)
+ident(
+  int_ref n "research/learning/optimize.ml" 76 2413 2448 "research/learning/optimize.ml" 76 2413 2449
+)
+"research/learning/optimize.ml" 78 2509 2534 "research/learning/optimize.ml" 78 2509 2569
+call(
+  stack
+)
+type(
+  IntraCfg.SS.t
+)
+"research/learning/optimize.ml" 79 2573 2579 "research/learning/optimize.ml" 79 2573 2595
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  def vnames_from_node "research/learning/optimize.ml" 80 2671 2673 "research/learning/optimize.ml" 80 2671 2706
+)
+"research/learning/optimize.ml" 79 2573 2598 "research/learning/optimize.ml" 79 2573 2605
+type(
+  (IntraCfg.SS.elt -> IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t) ->
+  IntraCfg.SS.t -> IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t
+)
+ident(
+  ext_ref IntraCfg.SS.fold
+)
+"research/learning/optimize.ml" 79 2573 2611 "research/learning/optimize.ml" 79 2573 2612
+type(
+  IntraCfg.SS.elt
+)
+ident(
+  def v "research/learning/optimize.ml" 79 2573 2613 "research/learning/optimize.ml" 79 2573 2636
+)
+"research/learning/optimize.ml" 79 2573 2613 "research/learning/optimize.ml" 79 2573 2616
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  def acc "research/learning/optimize.ml" 79 2573 2620 "research/learning/optimize.ml" 79 2573 2636
+)
+"research/learning/optimize.ml" 79 2573 2620 "research/learning/optimize.ml" 79 2573 2630
+type(
+  IntraCfg.SS.elt -> IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t
+)
+ident(
+  ext_ref BatSet.add
+)
+"research/learning/optimize.ml" 79 2573 2631 "research/learning/optimize.ml" 79 2573 2632
+type(
+  IntraCfg.SS.elt
+)
+ident(
+  int_ref v "research/learning/optimize.ml" 79 2573 2611 "research/learning/optimize.ml" 79 2573 2612
+)
+"research/learning/optimize.ml" 79 2573 2633 "research/learning/optimize.ml" 79 2573 2636
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 79 2573 2613 "research/learning/optimize.ml" 79 2573 2616
+)
+"research/learning/optimize.ml" 79 2573 2620 "research/learning/optimize.ml" 79 2573 2636
+call(
+  tail
+)
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 79 2573 2606 "research/learning/optimize.ml" 79 2573 2637
+type(
+  IntraCfg.SS.elt -> IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 79 2573 2638 "research/learning/optimize.ml" 79 2573 2654
+type(
+  IntraCfg.SS.t
+)
+ident(
+  int_ref vnames_from_node "research/learning/optimize.ml" 78 2509 2515 "research/learning/optimize.ml" 78 2509 2531
+)
+"research/learning/optimize.ml" 79 2573 2655 "research/learning/optimize.ml" 79 2573 2667
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  ext_ref BatSet.empty
+)
+"research/learning/optimize.ml" 79 2573 2598 "research/learning/optimize.ml" 79 2573 2667
+call(
+  stack
+)
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 80 2671 2673 "research/learning/optimize.ml" 80 2671 2685
+type(
+  IntraCfg.SS.elt BatSet.t ->
+  IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t
+)
+ident(
+  ext_ref BatSet.union
+)
+"research/learning/optimize.ml" 80 2671 2686 "research/learning/optimize.ml" 80 2671 2689
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 76 2413 2450 "research/learning/optimize.ml" 76 2413 2453
+)
+"research/learning/optimize.ml" 80 2671 2690 "research/learning/optimize.ml" 80 2671 2706
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  int_ref vnames_from_node "research/learning/optimize.ml" 79 2573 2579 "research/learning/optimize.ml" 79 2573 2595
+)
+"research/learning/optimize.ml" 80 2671 2673 "research/learning/optimize.ml" 80 2671 2706
+call(
+  tail
+)
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 79 2573 2575 "research/learning/optimize.ml" 80 2671 2706
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 78 2509 2511 "research/learning/optimize.ml" 80 2671 2706
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 77 2457 2459 "research/learning/optimize.ml" 80 2671 2706
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 76 2413 2443 "research/learning/optimize.ml" 81 2707 2709
+type(
+  IntraCfg.node -> IntraCfg.SS.elt BatSet.t -> IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 81 2707 2710 "research/learning/optimize.ml" 81 2707 2718
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref depnodes "research/learning/optimize.ml" 75 2366 2371 "research/learning/optimize.ml" 75 2366 2379
+)
+"research/learning/optimize.ml" 81 2707 2719 "research/learning/optimize.ml" 81 2707 2731
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  ext_ref BatSet.empty
+)
+"research/learning/optimize.ml" 76 2413 2431 "research/learning/optimize.ml" 81 2707 2731
+call(
+  stack
+)
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+"research/learning/optimize.ml" 82 2735 2740 "research/learning/optimize.ml" 82 2735 2746
+type(
+  AbsDom.Loc.t BatSet.t
+)
+ident(
+  def locset "research/learning/optimize.ml" 83 2817 2818 "research/learning/optimize.ml" 83 2817 2830
+)
+"research/learning/optimize.ml" 82 2735 2749 "research/learning/optimize.ml" 82 2735 2759
+type(
+  (IntraCfg.SS.elt -> AbsDom.Loc.t) ->
+  IntraCfg.SS.elt BatSet.t -> AbsDom.Loc.t BatSet.t
+)
+ident(
+  ext_ref BatSet.map
+)
+"research/learning/optimize.ml" 82 2735 2765 "research/learning/optimize.ml" 82 2735 2770
+type(
+  IntraCfg.SS.elt
+)
+ident(
+  def vname "research/learning/optimize.ml" 82 2735 2774 "research/learning/optimize.ml" 82 2735 2801
+)
+"research/learning/optimize.ml" 82 2735 2774 "research/learning/optimize.ml" 82 2735 2784
+type(
+  InterCfg.pid * IntraCfg.SS.elt -> AbsDom.Loc.t
+)
+ident(
+  int_ref make_a_loc "research/learning/optimize.ml" 46 1128 1132 "research/learning/optimize.ml" 46 1128 1142
+)
+"research/learning/optimize.ml" 82 2735 2786 "research/learning/optimize.ml" 82 2735 2793
+type(
+  InterCfg.pid
+)
+ident(
+  int_ref funname "research/learning/optimize.ml" 74 2333 2338 "research/learning/optimize.ml" 74 2333 2345
+)
+"research/learning/optimize.ml" 82 2735 2795 "research/learning/optimize.ml" 82 2735 2800
+type(
+  IntraCfg.SS.elt
+)
+ident(
+  int_ref vname "research/learning/optimize.ml" 82 2735 2765 "research/learning/optimize.ml" 82 2735 2770
+)
+"research/learning/optimize.ml" 82 2735 2785 "research/learning/optimize.ml" 82 2735 2801
+type(
+  InterCfg.pid * IntraCfg.SS.elt
+)
+"research/learning/optimize.ml" 82 2735 2774 "research/learning/optimize.ml" 82 2735 2801
+call(
+  tail
+)
+type(
+  AbsDom.Loc.t
+)
+"research/learning/optimize.ml" 82 2735 2760 "research/learning/optimize.ml" 82 2735 2802
+type(
+  IntraCfg.SS.elt -> AbsDom.Loc.t
+)
+"research/learning/optimize.ml" 82 2735 2803 "research/learning/optimize.ml" 82 2735 2813
+type(
+  IntraCfg.SS.elt BatSet.t
+)
+ident(
+  int_ref all_vnames "research/learning/optimize.ml" 76 2413 2418 "research/learning/optimize.ml" 76 2413 2428
+)
+"research/learning/optimize.ml" 82 2735 2749 "research/learning/optimize.ml" 82 2735 2813
+call(
+  stack
+)
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 83 2817 2819 "research/learning/optimize.ml" 83 2817 2821
+type(
+  bool list
+)
+ident(
+  int_ref fv "research/learning/optimize.ml" 71 2217 2222 "research/learning/optimize.ml" 71 2217 2224
+)
+"research/learning/optimize.ml" 83 2817 2823 "research/learning/optimize.ml" 83 2817 2829
+type(
+  AbsDom.Loc.t BatSet.t
+)
+ident(
+  int_ref locset "research/learning/optimize.ml" 82 2735 2740 "research/learning/optimize.ml" 82 2735 2746
+)
+"research/learning/optimize.ml" 83 2817 2818 "research/learning/optimize.ml" 83 2817 2830
+type(
+  bool list * AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 82 2735 2736 "research/learning/optimize.ml" 83 2817 2830
+type(
+  bool list * AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 76 2413 2414 "research/learning/optimize.ml" 83 2817 2830
+type(
+  bool list * AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 75 2366 2367 "research/learning/optimize.ml" 83 2817 2830
+type(
+  bool list * AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 74 2333 2334 "research/learning/optimize.ml" 83 2817 2830
+type(
+  bool list * AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 71 2217 2218 "research/learning/optimize.ml" 83 2817 2830
+type(
+  bool list * AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 70 2173 2174 "research/learning/optimize.ml" 83 2817 2830
+type(
+  Report.query ->
+  CF.t -> InterCfg.t -> q2depnodes -> CF.ORD_SET.t -> candidate
+)
+type(
+  Report.query ->
+  CF.t -> InterCfg.t -> q2depnodes -> CF.ORD_SET.t -> candidate
+)
+"research/learning/optimize.ml" 85 2832 2836 "research/learning/optimize.ml" 85 2832 2859
+type(
+  ItvAnalysis.ItvPre.t -> Global.t -> CF.ORD_SET.t -> candidate list
+)
+ident(
+  def gen_candidates_from_pgm "research/learning/optimize.ml" 103 3709 3709 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 86 2917 2922 "research/learning/optimize.ml" 86 2917 2925
+type(
+  ItvAnalysis.ItvPre.t
+)
+ident(
+  def pre "research/learning/optimize.ml" 86 2917 2926 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 86 2917 2926 "research/learning/optimize.ml" 86 2917 2932
+type(
+  Global.t
+)
+ident(
+  def global "research/learning/optimize.ml" 86 2917 2933 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 86 2917 2933 "research/learning/optimize.ml" 86 2917 2941
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def features "research/learning/optimize.ml" 87 2945 2946 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 87 2945 2950 "research/learning/optimize.ml" 87 2945 2957
+type(
+  string
+)
+ident(
+  def tstdata "research/learning/optimize.ml" 88 3003 3004 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 87 2945 2960 "research/learning/optimize.ml" 87 2945 2978
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"research/learning/optimize.ml" 87 2945 2979 "research/learning/optimize.ml" 87 2945 2992
+type(
+  string
+)
+"research/learning/optimize.ml" 87 2945 2993 "research/learning/optimize.ml" 87 2945 2999
+type(
+  string
+)
+"research/learning/optimize.ml" 87 2945 2960 "research/learning/optimize.ml" 87 2945 2999
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 88 3003 3008 "research/learning/optimize.ml" 88 3003 3009
+type(
+  unit
+)
+"research/learning/optimize.ml" 88 3003 3012 "research/learning/optimize.ml" 88 3003 3019
+type(
+  string ref
+)
+ident(
+  int_ref tmp_tst "research/learning/optimize.ml" 14 235 239 "research/learning/optimize.ml" 14 235 246
+)
+"research/learning/optimize.ml" 88 3003 3020 "research/learning/optimize.ml" 88 3003 3022
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/learning/optimize.ml" 88 3003 3023 "research/learning/optimize.ml" 88 3003 3030
+type(
+  string
+)
+ident(
+  int_ref tstdata "research/learning/optimize.ml" 87 2945 2950 "research/learning/optimize.ml" 87 2945 2957
+)
+"research/learning/optimize.ml" 88 3003 3012 "research/learning/optimize.ml" 88 3003 3030
+type(
+  unit
+)
+"research/learning/optimize.ml" 89 3034 3039 "research/learning/optimize.ml" 89 3034 3042
+type(
+  out_channel
+)
+ident(
+  def out "research/learning/optimize.ml" 90 3065 3066 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 89 3034 3045 "research/learning/optimize.ml" 89 3034 3053
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"research/learning/optimize.ml" 89 3034 3054 "research/learning/optimize.ml" 89 3034 3061
+type(
+  string
+)
+ident(
+  int_ref tstdata "research/learning/optimize.ml" 87 2945 2950 "research/learning/optimize.ml" 87 2945 2957
+)
+"research/learning/optimize.ml" 89 3034 3045 "research/learning/optimize.ml" 89 3034 3061
+call(
+  stack
+)
+type(
+  out_channel
+)
+"research/learning/optimize.ml" 90 3065 3070 "research/learning/optimize.ml" 90 3065 3074
+type(
+  InterCfg.t
+)
+ident(
+  def icfg "research/learning/optimize.ml" 91 3092 3093 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 90 3065 3077 "research/learning/optimize.ml" 90 3065 3083
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 86 2917 2926 "research/learning/optimize.ml" 86 2917 2932
+)
+"research/learning/optimize.ml" 90 3065 3077 "research/learning/optimize.ml" 90 3065 3088
+type(
+  InterCfg.t
+)
+"research/learning/optimize.ml" 91 3092 3097 "research/learning/optimize.ml" 91 3092 3107
+type(
+  ItvDom.Table.t
+)
+ident(
+  def inputof_FI "research/learning/optimize.ml" 92 3162 3163 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 91 3092 3110 "research/learning/optimize.ml" 91 3092 3135
+type(
+  ItvAnalysis.ItvPre.t -> Global.t -> ItvDom.Table.t -> ItvDom.Table.t
+)
+ident(
+  int_ref fill_deadcode_with_premem "research/learning/optimize.ml" 40 909 913 "research/learning/optimize.ml" 40 909 938
+)
+"research/learning/optimize.ml" 91 3092 3136 "research/learning/optimize.ml" 91 3092 3139
+type(
+  ItvAnalysis.ItvPre.t
+)
+ident(
+  int_ref pre "research/learning/optimize.ml" 86 2917 2922 "research/learning/optimize.ml" 86 2917 2925
+)
+"research/learning/optimize.ml" 91 3092 3140 "research/learning/optimize.ml" 91 3092 3146
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 86 2917 2926 "research/learning/optimize.ml" 86 2917 2932
+)
+"research/learning/optimize.ml" 91 3092 3147 "research/learning/optimize.ml" 91 3092 3158
+type(
+  ItvDom.Table.t
+)
+ident(
+  ext_ref ItvDom.Table.empty
+)
+"research/learning/optimize.ml" 91 3092 3110 "research/learning/optimize.ml" 91 3092 3158
+call(
+  stack
+)
+type(
+  ItvDom.Table.t
+)
+"research/learning/optimize.ml" 92 3162 3167 "research/learning/optimize.ml" 92 3162 3177
+type(
+  Report.query list
+)
+ident(
+  def queries_FI "research/learning/optimize.ml" 93 3231 3232 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 92 3162 3180 "research/learning/optimize.ml" 92 3162 3195
+type(
+  ?silent:bool ->
+  Global.t * ItvDom.Table.t * Report.alarm_type -> Report.query list
+)
+ident(
+  ext_ref Report.generate
+)
+"research/learning/optimize.ml" 92 3162 3197 "research/learning/optimize.ml" 92 3162 3203
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 86 2917 2926 "research/learning/optimize.ml" 86 2917 2932
+)
+"research/learning/optimize.ml" 92 3162 3205 "research/learning/optimize.ml" 92 3162 3215
+type(
+  ItvDom.Table.t
+)
+ident(
+  int_ref inputof_FI "research/learning/optimize.ml" 91 3092 3097 "research/learning/optimize.ml" 91 3092 3107
+)
+"research/learning/optimize.ml" 92 3162 3217 "research/learning/optimize.ml" 92 3162 3226
+type(
+  Report.alarm_type
+)
+"research/learning/optimize.ml" 92 3162 3196 "research/learning/optimize.ml" 92 3162 3227
+type(
+  Global.t * ItvDom.Table.t * Report.alarm_type
+)
+"research/learning/optimize.ml" 92 3162 3180 "research/learning/optimize.ml" 92 3162 3227
+call(
+  stack
+)
+type(
+  Report.query list
+)
+"research/learning/optimize.ml" 93 3231 3236 "research/learning/optimize.ml" 93 3231 3244
+type(
+  (Report.part_unit, Report.query list) BatMap.t
+)
+ident(
+  def loc2fiqs "research/learning/optimize.ml" 94 3282 3283 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 93 3231 3247 "research/learning/optimize.ml" 93 3231 3267
+type(
+  Report.query list -> (Report.part_unit, Report.query list) BatMap.t
+)
+ident(
+  ext_ref Report.get_alarms_fi
+)
+"research/learning/optimize.ml" 93 3231 3268 "research/learning/optimize.ml" 93 3231 3278
+type(
+  Report.query list
+)
+ident(
+  int_ref queries_FI "research/learning/optimize.ml" 92 3162 3167 "research/learning/optimize.ml" 92 3162 3177
+)
+"research/learning/optimize.ml" 93 3231 3247 "research/learning/optimize.ml" 93 3231 3278
+call(
+  stack
+)
+type(
+  (Report.part_unit, Report.query list) BatMap.t
+)
+"research/learning/optimize.ml" 94 3282 3287 "research/learning/optimize.ml" 94 3282 3297
+type(
+  Report.query list
+)
+ident(
+  def queries_FI "research/learning/optimize.ml" 95 3354 3355 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 94 3282 3300 "research/learning/optimize.ml" 94 3282 3311
+type(
+  (Report.query list -> Report.query list -> Report.query list) ->
+  (Report.part_unit, Report.query list) BatMap.t ->
+  Report.query list -> Report.query list
+)
+ident(
+  ext_ref BatMap.fold
+)
+"research/learning/optimize.ml" 94 3282 3318 "research/learning/optimize.ml" 94 3282 3319
+type(
+  Report.query
+)
+ident(
+  def q "research/learning/optimize.ml" 94 3282 3324 "research/learning/optimize.ml" 94 3282 3337
+)
+"research/learning/optimize.ml" 94 3282 3321 "research/learning/optimize.ml" 94 3282 3322
+type(
+  Report.query list
+)
+"research/learning/optimize.ml" 94 3282 3317 "research/learning/optimize.ml" 94 3282 3323
+type(
+  Report.query list
+)
+"research/learning/optimize.ml" 94 3282 3324 "research/learning/optimize.ml" 94 3282 3327
+type(
+  Report.query list
+)
+ident(
+  def acc "research/learning/optimize.ml" 94 3282 3331 "research/learning/optimize.ml" 94 3282 3337
+)
+"research/learning/optimize.ml" 94 3282 3331 "research/learning/optimize.ml" 94 3282 3332
+type(
+  Report.query
+)
+ident(
+  int_ref q "research/learning/optimize.ml" 94 3282 3318 "research/learning/optimize.ml" 94 3282 3319
+)
+"research/learning/optimize.ml" 94 3282 3334 "research/learning/optimize.ml" 94 3282 3337
+type(
+  Report.query list
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 94 3282 3324 "research/learning/optimize.ml" 94 3282 3327
+)
+"research/learning/optimize.ml" 94 3282 3331 "research/learning/optimize.ml" 94 3282 3337
+type(
+  Report.query list
+)
+"research/learning/optimize.ml" 94 3282 3312 "research/learning/optimize.ml" 94 3282 3338
+type(
+  Report.query list -> Report.query list -> Report.query list
+)
+"research/learning/optimize.ml" 94 3282 3339 "research/learning/optimize.ml" 94 3282 3347
+type(
+  (Report.part_unit, Report.query list) BatMap.t
+)
+ident(
+  int_ref loc2fiqs "research/learning/optimize.ml" 93 3231 3236 "research/learning/optimize.ml" 93 3231 3244
+)
+"research/learning/optimize.ml" 94 3282 3348 "research/learning/optimize.ml" 94 3282 3350
+type(
+  Report.query list
+)
+"research/learning/optimize.ml" 94 3282 3300 "research/learning/optimize.ml" 94 3282 3350
+call(
+  stack
+)
+type(
+  Report.query list
+)
+"research/learning/optimize.ml" 95 3354 3360 "research/learning/optimize.ml" 95 3354 3366
+type(
+  (Report.query, CF.t) BatMap.t
+)
+ident(
+  def q2fmap "research/learning/optimize.ml" 96 3423 3424 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 95 3354 3368 "research/learning/optimize.ml" 95 3354 3378
+type(
+  q2depnodes
+)
+ident(
+  def q2depnodes "research/learning/optimize.ml" 96 3423 3424 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 95 3354 3359 "research/learning/optimize.ml" 95 3354 3379
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 95 3354 3382 "research/learning/optimize.ml" 95 3354 3401
+type(
+  Global.t -> Report.query list -> (Report.query, CF.t) BatMap.t * q2depnodes
+)
+ident(
+  int_ref q2feat_from_newprog "research/learning/optimize.ml" 51 1265 1269 "research/learning/optimize.ml" 51 1265 1288
+)
+"research/learning/optimize.ml" 95 3354 3402 "research/learning/optimize.ml" 95 3354 3408
+type(
+  Global.t
+)
+ident(
+  int_ref global "research/learning/optimize.ml" 86 2917 2926 "research/learning/optimize.ml" 86 2917 2932
+)
+"research/learning/optimize.ml" 95 3354 3409 "research/learning/optimize.ml" 95 3354 3419
+type(
+  Report.query list
+)
+ident(
+  int_ref queries_FI "research/learning/optimize.ml" 94 3282 3287 "research/learning/optimize.ml" 94 3282 3297
+)
+"research/learning/optimize.ml" 95 3354 3382 "research/learning/optimize.ml" 95 3354 3419
+call(
+  stack
+)
+type(
+  (Report.query, CF.t) BatMap.t * q2depnodes
+)
+"research/learning/optimize.ml" 96 3423 3428 "research/learning/optimize.ml" 96 3423 3442
+type(
+  candidate list
+)
+ident(
+  def candidate_list "research/learning/optimize.ml" 100 3665 3666 "research/learning/optimize.ml" 101 3691 3706
+)
+"research/learning/optimize.ml" 96 3423 3445 "research/learning/optimize.ml" 96 3423 3457
+type(
+  (Report.query -> CF.t -> candidate list -> candidate list) ->
+  (Report.query, CF.t) BatMap.t -> candidate list -> candidate list
+)
+ident(
+  ext_ref BatMap.foldi
+)
+"research/learning/optimize.ml" 96 3423 3463 "research/learning/optimize.ml" 96 3423 3468
+type(
+  Report.query
+)
+ident(
+  def query "research/learning/optimize.ml" 96 3423 3469 "research/learning/optimize.ml" 99 3631 3650
+)
+"research/learning/optimize.ml" 96 3423 3469 "research/learning/optimize.ml" 96 3423 3470
+type(
+  CF.t
+)
+ident(
+  def f "research/learning/optimize.ml" 96 3423 3471 "research/learning/optimize.ml" 99 3631 3650
+)
+"research/learning/optimize.ml" 96 3423 3471 "research/learning/optimize.ml" 96 3423 3474
+type(
+  candidate list
+)
+ident(
+  def acc "research/learning/optimize.ml" 97 3478 3480 "research/learning/optimize.ml" 99 3631 3650
+)
+"research/learning/optimize.ml" 97 3478 3484 "research/learning/optimize.ml" 97 3478 3493
+type(
+  candidate
+)
+ident(
+  def candidate "research/learning/optimize.ml" 98 3557 3559 "research/learning/optimize.ml" 99 3631 3650
+)
+"research/learning/optimize.ml" 97 3478 3496 "research/learning/optimize.ml" 97 3478 3520
+type(
+  Report.query ->
+  CF.t -> InterCfg.t -> q2depnodes -> CF.ORD_SET.t -> candidate
+)
+ident(
+  int_ref gen_candidate_from_query "research/learning/optimize.ml" 69 2064 2068 "research/learning/optimize.ml" 69 2064 2092
+)
+"research/learning/optimize.ml" 97 3478 3521 "research/learning/optimize.ml" 97 3478 3526
+type(
+  Report.query
+)
+ident(
+  int_ref query "research/learning/optimize.ml" 96 3423 3463 "research/learning/optimize.ml" 96 3423 3468
+)
+"research/learning/optimize.ml" 97 3478 3527 "research/learning/optimize.ml" 97 3478 3528
+type(
+  CF.t
+)
+ident(
+  int_ref f "research/learning/optimize.ml" 96 3423 3469 "research/learning/optimize.ml" 96 3423 3470
+)
+"research/learning/optimize.ml" 97 3478 3529 "research/learning/optimize.ml" 97 3478 3533
+type(
+  InterCfg.t
+)
+ident(
+  int_ref icfg "research/learning/optimize.ml" 90 3065 3070 "research/learning/optimize.ml" 90 3065 3074
+)
+"research/learning/optimize.ml" 97 3478 3534 "research/learning/optimize.ml" 97 3478 3544
+type(
+  q2depnodes
+)
+ident(
+  int_ref q2depnodes "research/learning/optimize.ml" 95 3354 3368 "research/learning/optimize.ml" 95 3354 3378
+)
+"research/learning/optimize.ml" 97 3478 3545 "research/learning/optimize.ml" 97 3478 3553
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref features "research/learning/optimize.ml" 86 2917 2933 "research/learning/optimize.ml" 86 2917 2941
+)
+"research/learning/optimize.ml" 97 3478 3496 "research/learning/optimize.ml" 97 3478 3553
+call(
+  stack
+)
+type(
+  candidate
+)
+"research/learning/optimize.ml" 98 3557 3563 "research/learning/optimize.ml" 98 3557 3564
+type(
+  unit
+)
+"research/learning/optimize.ml" 98 3557 3567 "research/learning/optimize.ml" 98 3557 3580
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"research/learning/optimize.ml" 98 3557 3581 "research/learning/optimize.ml" 98 3557 3584
+type(
+  out_channel
+)
+ident(
+  int_ref out "research/learning/optimize.ml" 89 3034 3039 "research/learning/optimize.ml" 89 3034 3042
+)
+"research/learning/optimize.ml" 98 3557 3587 "research/learning/optimize.ml" 98 3557 3602
+type(
+  bool list -> string
+)
+ident(
+  int_ref fbvector_to_str "research/learning/optimize.ml" 30 677 681 "research/learning/optimize.ml" 30 677 696
+)
+"research/learning/optimize.ml" 98 3557 3604 "research/learning/optimize.ml" 98 3557 3607
+type(
+  candidate -> bool list
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"research/learning/optimize.ml" 98 3557 3608 "research/learning/optimize.ml" 98 3557 3617
+type(
+  candidate
+)
+ident(
+  int_ref candidate "research/learning/optimize.ml" 97 3478 3484 "research/learning/optimize.ml" 97 3478 3493
+)
+"research/learning/optimize.ml" 98 3557 3603 "research/learning/optimize.ml" 98 3557 3618
+type(
+  bool list
+)
+"research/learning/optimize.ml" 98 3557 3586 "research/learning/optimize.ml" 98 3557 3619
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 98 3557 3620 "research/learning/optimize.ml" 98 3557 3621
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 98 3557 3622 "research/learning/optimize.ml" 98 3557 3626
+type(
+  string
+)
+"research/learning/optimize.ml" 98 3557 3585 "research/learning/optimize.ml" 98 3557 3627
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 98 3557 3567 "research/learning/optimize.ml" 98 3557 3627
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/optimize.ml" 99 3631 3633 "research/learning/optimize.ml" 99 3631 3636
+type(
+  candidate list
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 96 3423 3471 "research/learning/optimize.ml" 96 3423 3474
+)
+"research/learning/optimize.ml" 99 3631 3637 "research/learning/optimize.ml" 99 3631 3638
+type(
+  candidate list -> candidate list -> candidate list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"research/learning/optimize.ml" 99 3631 3640 "research/learning/optimize.ml" 99 3631 3649
+type(
+  candidate
+)
+ident(
+  int_ref candidate "research/learning/optimize.ml" 97 3478 3484 "research/learning/optimize.ml" 97 3478 3493
+)
+"research/learning/optimize.ml" 99 3631 3639 "research/learning/optimize.ml" 99 3631 3650
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 99 3631 3633 "research/learning/optimize.ml" 99 3631 3650
+call(
+  tail
+)
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 98 3557 3559 "research/learning/optimize.ml" 99 3631 3650
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 97 3478 3480 "research/learning/optimize.ml" 99 3631 3650
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 96 3423 3458 "research/learning/optimize.ml" 99 3631 3651
+type(
+  Report.query -> CF.t -> candidate list -> candidate list
+)
+"research/learning/optimize.ml" 99 3631 3652 "research/learning/optimize.ml" 99 3631 3658
+type(
+  (Report.query, CF.t) BatMap.t
+)
+ident(
+  int_ref q2fmap "research/learning/optimize.ml" 95 3354 3360 "research/learning/optimize.ml" 95 3354 3366
+)
+"research/learning/optimize.ml" 99 3631 3659 "research/learning/optimize.ml" 99 3631 3661
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 96 3423 3445 "research/learning/optimize.ml" 99 3631 3661
+call(
+  stack
+)
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 100 3665 3670 "research/learning/optimize.ml" 100 3665 3671
+type(
+  unit
+)
+"research/learning/optimize.ml" 100 3665 3674 "research/learning/optimize.ml" 100 3665 3683
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"research/learning/optimize.ml" 100 3665 3684 "research/learning/optimize.ml" 100 3665 3687
+type(
+  out_channel
+)
+ident(
+  int_ref out "research/learning/optimize.ml" 89 3034 3039 "research/learning/optimize.ml" 89 3034 3042
+)
+"research/learning/optimize.ml" 100 3665 3674 "research/learning/optimize.ml" 100 3665 3687
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/optimize.ml" 101 3691 3692 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+ident(
+  int_ref candidate_list "research/learning/optimize.ml" 96 3423 3428 "research/learning/optimize.ml" 96 3423 3442
+)
+"research/learning/optimize.ml" 100 3665 3666 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 96 3423 3424 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 95 3354 3355 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 94 3282 3283 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 93 3231 3232 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 92 3162 3163 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 91 3092 3093 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 90 3065 3066 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 89 3034 3035 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 88 3003 3004 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 87 2945 2946 "research/learning/optimize.ml" 101 3691 3706
+type(
+  candidate list
+)
+"research/learning/optimize.ml" 86 2917 2918 "research/learning/optimize.ml" 101 3691 3706
+type(
+  ItvAnalysis.ItvPre.t -> Global.t -> CF.ORD_SET.t -> candidate list
+)
+type(
+  ItvAnalysis.ItvPre.t -> Global.t -> CF.ORD_SET.t -> candidate list
+)
+"research/learning/optimize.ml" 103 3709 3713 "research/learning/optimize.ml" 103 3709 3731
+type(
+  candidate list -> AbsDom.Loc.t BatSet.t
+)
+ident(
+  def get_promising_locs "research/learning/optimize.ml" 114 4294 4294 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 104 3767 3772 "research/learning/optimize.ml" 104 3767 3782
+type(
+  candidate list
+)
+ident(
+  def candidates "research/learning/optimize.ml" 105 3786 3787 "research/learning/optimize.ml" 112 4234 4290
+)
+"research/learning/optimize.ml" 105 3786 3791 "research/learning/optimize.ml" 105 3786 3803
+type(
+  string
+)
+ident(
+  def answer_sheet "research/learning/optimize.ml" 106 3849 3850 "research/learning/optimize.ml" 112 4234 4290
+)
+"research/learning/optimize.ml" 105 3786 3806 "research/learning/optimize.ml" 105 3786 3824
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"research/learning/optimize.ml" 105 3786 3825 "research/learning/optimize.ml" 105 3786 3838
+type(
+  string
+)
+"research/learning/optimize.ml" 105 3786 3839 "research/learning/optimize.ml" 105 3786 3845
+type(
+  string
+)
+"research/learning/optimize.ml" 105 3786 3806 "research/learning/optimize.ml" 105 3786 3845
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3854 "research/learning/optimize.ml" 106 3849 3855
+type(
+  int
+)
+"research/learning/optimize.ml" 106 3849 3858 "research/learning/optimize.ml" 106 3849 3869
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"research/learning/optimize.ml" 106 3849 3871 "research/learning/optimize.ml" 106 3849 3880
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3881 "research/learning/optimize.ml" 106 3849 3882
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3883 "research/learning/optimize.ml" 106 3849 3898
+type(
+  string
+)
+ident(
+  int_ref classifier_path "research/learning/optimize.ml" 15 256 260 "research/learning/optimize.ml" 15 256 275
+)
+"research/learning/optimize.ml" 106 3849 3899 "research/learning/optimize.ml" 106 3849 3900
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3901 "research/learning/optimize.ml" 106 3849 3904
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3905 "research/learning/optimize.ml" 106 3849 3906
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3907 "research/learning/optimize.ml" 106 3849 3922
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3923 "research/learning/optimize.ml" 106 3849 3924
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3925 "research/learning/optimize.ml" 106 3849 3926
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/learning/optimize.ml" 106 3849 3926 "research/learning/optimize.ml" 106 3849 3945
+type(
+  string ref
+)
+ident(
+  ext_ref Options.opt_clfdata
+)
+"research/learning/optimize.ml" 106 3849 3925 "research/learning/optimize.ml" 106 3849 3945
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3946 "research/learning/optimize.ml" 106 3849 3947
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3948 "research/learning/optimize.ml" 106 3849 3951
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3952 "research/learning/optimize.ml" 106 3849 3953
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3954 "research/learning/optimize.ml" 106 3849 3955
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/learning/optimize.ml" 106 3849 3955 "research/learning/optimize.ml" 106 3849 3962
+type(
+  string ref
+)
+ident(
+  int_ref tmp_tst "research/learning/optimize.ml" 14 235 239 "research/learning/optimize.ml" 14 235 246
+)
+"research/learning/optimize.ml" 106 3849 3954 "research/learning/optimize.ml" 106 3849 3962
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3963 "research/learning/optimize.ml" 106 3849 3964
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3965 "research/learning/optimize.ml" 106 3849 3968
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3969 "research/learning/optimize.ml" 106 3849 3970
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/learning/optimize.ml" 106 3849 3971 "research/learning/optimize.ml" 106 3849 3983
+type(
+  string
+)
+ident(
+  int_ref answer_sheet "research/learning/optimize.ml" 105 3786 3791 "research/learning/optimize.ml" 105 3786 3803
+)
+"research/learning/optimize.ml" 106 3849 3965 "research/learning/optimize.ml" 106 3849 3983
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3954 "research/learning/optimize.ml" 106 3849 3983
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3948 "research/learning/optimize.ml" 106 3849 3983
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3925 "research/learning/optimize.ml" 106 3849 3983
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3907 "research/learning/optimize.ml" 106 3849 3983
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3901 "research/learning/optimize.ml" 106 3849 3983
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3883 "research/learning/optimize.ml" 106 3849 3983
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3870 "research/learning/optimize.ml" 106 3849 3984
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 106 3849 3858 "research/learning/optimize.ml" 106 3849 3984
+type(
+  int
+)
+"research/learning/optimize.ml" 107 3988 3993 "research/learning/optimize.ml" 107 3988 3998
+type(
+  in_channel
+)
+ident(
+  def input "research/learning/optimize.ml" 108 4025 4026 "research/learning/optimize.ml" 112 4234 4290
+)
+"research/learning/optimize.ml" 107 3988 4001 "research/learning/optimize.ml" 107 3988 4008
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"research/learning/optimize.ml" 107 3988 4009 "research/learning/optimize.ml" 107 3988 4021
+type(
+  string
+)
+ident(
+  int_ref answer_sheet "research/learning/optimize.ml" 105 3786 3791 "research/learning/optimize.ml" 105 3786 3803
+)
+"research/learning/optimize.ml" 107 3988 4001 "research/learning/optimize.ml" 107 3988 4021
+call(
+  stack
+)
+type(
+  in_channel
+)
+"research/learning/optimize.ml" 108 4025 4030 "research/learning/optimize.ml" 108 4025 4037
+type(
+  char list
+)
+ident(
+  def answers "research/learning/optimize.ml" 109 4081 4082 "research/learning/optimize.ml" 112 4234 4290
+)
+"research/learning/optimize.ml" 108 4025 4040 "research/learning/optimize.ml" 108 4025 4050
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"research/learning/optimize.ml" 108 4025 4051 "research/learning/optimize.ml" 108 4025 4056
+type(
+  in_channel
+)
+ident(
+  int_ref input "research/learning/optimize.ml" 107 3988 3993 "research/learning/optimize.ml" 107 3988 3998
+)
+"research/learning/optimize.ml" 108 4025 4040 "research/learning/optimize.ml" 108 4025 4056
+call(
+  stack
+)
+type(
+  string
+)
+"research/learning/optimize.ml" 108 4025 4057 "research/learning/optimize.ml" 108 4025 4059
+type(
+  string -> (string -> char list) -> char list
+)
+ident(
+  ext_ref Pervasives.( |> )
+)
+"research/learning/optimize.ml" 108 4025 4060 "research/learning/optimize.ml" 108 4025 4077
+type(
+  string -> char list
+)
+ident(
+  ext_ref BatString.to_list
+)
+"research/learning/optimize.ml" 108 4025 4040 "research/learning/optimize.ml" 108 4025 4077
+call(
+  stack
+)
+type(
+  char list
+)
+"research/learning/optimize.ml" 110 4086 4088 "research/learning/optimize.ml" 110 4086 4103
+type(
+  (AbsDom.Loc.t BatSet.t -> char -> candidate -> AbsDom.Loc.t BatSet.t) ->
+  AbsDom.Loc.t BatSet.t ->
+  char list -> candidate list -> AbsDom.Loc.t BatSet.t
+)
+ident(
+  ext_ref List.fold_left2
+)
+"research/learning/optimize.ml" 110 4086 4109 "research/learning/optimize.ml" 110 4086 4112
+type(
+  AbsDom.Loc.t BatSet.t
+)
+ident(
+  def acc "research/learning/optimize.ml" 110 4086 4113 "research/learning/optimize.ml" 111 4133 4199
+)
+"research/learning/optimize.ml" 110 4086 4113 "research/learning/optimize.ml" 110 4086 4119
+type(
+  char
+)
+ident(
+  def answer "research/learning/optimize.ml" 110 4086 4120 "research/learning/optimize.ml" 111 4133 4199
+)
+"research/learning/optimize.ml" 110 4086 4120 "research/learning/optimize.ml" 110 4086 4129
+type(
+  candidate
+)
+ident(
+  def candidate "research/learning/optimize.ml" 111 4133 4136 "research/learning/optimize.ml" 111 4133 4199
+)
+"research/learning/optimize.ml" 111 4133 4139 "research/learning/optimize.ml" 111 4133 4145
+type(
+  char
+)
+ident(
+  int_ref answer "research/learning/optimize.ml" 110 4086 4113 "research/learning/optimize.ml" 110 4086 4119
+)
+"research/learning/optimize.ml" 111 4133 4146 "research/learning/optimize.ml" 111 4133 4148
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"research/learning/optimize.ml" 111 4133 4149 "research/learning/optimize.ml" 111 4133 4152
+type(
+  char
+)
+"research/learning/optimize.ml" 111 4133 4139 "research/learning/optimize.ml" 111 4133 4152
+type(
+  bool
+)
+"research/learning/optimize.ml" 111 4133 4158 "research/learning/optimize.ml" 111 4133 4170
+type(
+  AbsDom.Loc.t BatSet.t -> AbsDom.Loc.t BatSet.t -> AbsDom.Loc.t BatSet.t
+)
+ident(
+  ext_ref BatSet.union
+)
+"research/learning/optimize.ml" 111 4133 4171 "research/learning/optimize.ml" 111 4133 4174
+type(
+  AbsDom.Loc.t BatSet.t
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 110 4086 4109 "research/learning/optimize.ml" 110 4086 4112
+)
+"research/learning/optimize.ml" 111 4133 4176 "research/learning/optimize.ml" 111 4133 4179
+type(
+  candidate -> AbsDom.Loc.t BatSet.t
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"research/learning/optimize.ml" 111 4133 4180 "research/learning/optimize.ml" 111 4133 4189
+type(
+  candidate
+)
+ident(
+  int_ref candidate "research/learning/optimize.ml" 110 4086 4120 "research/learning/optimize.ml" 110 4086 4129
+)
+"research/learning/optimize.ml" 111 4133 4175 "research/learning/optimize.ml" 111 4133 4190
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 111 4133 4158 "research/learning/optimize.ml" 111 4133 4190
+call(
+  tail
+)
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 111 4133 4196 "research/learning/optimize.ml" 111 4133 4199
+type(
+  AbsDom.Loc.t BatSet.t
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 110 4086 4109 "research/learning/optimize.ml" 110 4086 4112
+)
+"research/learning/optimize.ml" 111 4133 4136 "research/learning/optimize.ml" 111 4133 4199
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 110 4086 4104 "research/learning/optimize.ml" 111 4133 4200
+type(
+  AbsDom.Loc.t BatSet.t -> char -> candidate -> AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 111 4133 4201 "research/learning/optimize.ml" 111 4133 4213
+type(
+  AbsDom.Loc.t BatSet.t
+)
+ident(
+  ext_ref BatSet.empty
+)
+"research/learning/optimize.ml" 111 4133 4214 "research/learning/optimize.ml" 111 4133 4221
+type(
+  char list
+)
+ident(
+  int_ref answers "research/learning/optimize.ml" 108 4025 4030 "research/learning/optimize.ml" 108 4025 4037
+)
+"research/learning/optimize.ml" 111 4133 4222 "research/learning/optimize.ml" 111 4133 4232
+type(
+  candidate list
+)
+ident(
+  int_ref candidates "research/learning/optimize.ml" 104 3767 3772 "research/learning/optimize.ml" 104 3767 3782
+)
+"research/learning/optimize.ml" 110 4086 4088 "research/learning/optimize.ml" 111 4133 4232
+call(
+  stack
+)
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 112 4234 4240 "research/learning/optimize.ml" 112 4234 4241
+type(
+  exn
+)
+"research/learning/optimize.ml" 112 4234 4245 "research/learning/optimize.ml" 112 4234 4250
+type(
+  exn -> AbsDom.Loc.t BatSet.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"research/learning/optimize.ml" 112 4234 4260 "research/learning/optimize.ml" 112 4234 4289
+type(
+  string
+)
+"research/learning/optimize.ml" 112 4234 4251 "research/learning/optimize.ml" 112 4234 4290
+type(
+  exn
+)
+"research/learning/optimize.ml" 112 4234 4245 "research/learning/optimize.ml" 112 4234 4290
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 109 4081 4082 "research/learning/optimize.ml" 112 4234 4290
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 108 4025 4026 "research/learning/optimize.ml" 112 4234 4290
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 107 3988 3989 "research/learning/optimize.ml" 112 4234 4290
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 106 3849 3850 "research/learning/optimize.ml" 112 4234 4290
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 105 3786 3787 "research/learning/optimize.ml" 112 4234 4290
+type(
+  AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 104 3767 3768 "research/learning/optimize.ml" 112 4234 4290
+type(
+  candidate list -> AbsDom.Loc.t BatSet.t
+)
+type(
+  candidate list -> AbsDom.Loc.t BatSet.t
+)
+"research/learning/optimize.ml" 114 4294 4298 "research/learning/optimize.ml" 114 4294 4320
+type(
+  CF.ORD_SET.t -> CF.ORD_SET.t
+)
+ident(
+  def filter_unique_features "research/learning/optimize.ml" 121 4649 4699 "research/learning/optimize.ml" 1 0 -1
+)
+"research/learning/optimize.ml" 115 4352 4357 "research/learning/optimize.ml" 115 4352 4365
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def features "research/learning/optimize.ml" 116 4369 4370 "research/learning/optimize.ml" 121 4649 4699
+)
+"research/learning/optimize.ml" 116 4369 4370 "research/learning/optimize.ml" 116 4369 4385
+type(
+  (CF.ORD_SET.elt -> CF.ORD_SET.t -> CF.ORD_SET.t) ->
+  CF.ORD_SET.t -> CF.ORD_SET.t -> CF.ORD_SET.t
+)
+ident(
+  ext_ref CF.ORD_SET.fold
+)
+"research/learning/optimize.ml" 116 4369 4391 "research/learning/optimize.ml" 116 4369 4398
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  def feature "research/learning/optimize.ml" 116 4369 4399 "research/learning/optimize.ml" 121 4649 4680
+)
+"research/learning/optimize.ml" 116 4369 4399 "research/learning/optimize.ml" 116 4369 4402
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def acc "research/learning/optimize.ml" 117 4406 4408 "research/learning/optimize.ml" 121 4649 4680
+)
+"research/learning/optimize.ml" 117 4406 4412 "research/learning/optimize.ml" 117 4406 4416
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def rest "research/learning/optimize.ml" 118 4452 4454 "research/learning/optimize.ml" 121 4649 4680
+)
+"research/learning/optimize.ml" 117 4406 4419 "research/learning/optimize.ml" 117 4406 4436
+type(
+  CF.ORD_SET.elt -> CF.ORD_SET.t -> CF.ORD_SET.t
+)
+ident(
+  ext_ref CF.ORD_SET.remove
+)
+"research/learning/optimize.ml" 117 4406 4437 "research/learning/optimize.ml" 117 4406 4444
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  int_ref feature "research/learning/optimize.ml" 116 4369 4391 "research/learning/optimize.ml" 116 4369 4398
+)
+"research/learning/optimize.ml" 117 4406 4445 "research/learning/optimize.ml" 117 4406 4448
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 116 4369 4399 "research/learning/optimize.ml" 116 4369 4402
+)
+"research/learning/optimize.ml" 117 4406 4419 "research/learning/optimize.ml" 117 4406 4448
+call(
+  stack
+)
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 118 4452 4458 "research/learning/optimize.ml" 118 4452 4466
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def included "research/learning/optimize.ml" 119 4524 4526 "research/learning/optimize.ml" 121 4649 4680
+)
+"research/learning/optimize.ml" 118 4452 4469 "research/learning/optimize.ml" 118 4452 4486
+type(
+  (CF.ORD_SET.elt -> bool) -> CF.ORD_SET.t -> CF.ORD_SET.t
+)
+ident(
+  ext_ref CF.ORD_SET.filter
+)
+"research/learning/optimize.ml" 118 4452 4492 "research/learning/optimize.ml" 118 4452 4493
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  def f "research/learning/optimize.ml" 118 4452 4497 "research/learning/optimize.ml" 118 4452 4514
+)
+"research/learning/optimize.ml" 118 4452 4497 "research/learning/optimize.ml" 118 4452 4504
+type(
+  CF.t -> CF.t -> bool
+)
+ident(
+  ext_ref CF.pred
+)
+"research/learning/optimize.ml" 118 4452 4505 "research/learning/optimize.ml" 118 4452 4512
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  int_ref feature "research/learning/optimize.ml" 116 4369 4391 "research/learning/optimize.ml" 116 4369 4398
+)
+"research/learning/optimize.ml" 118 4452 4513 "research/learning/optimize.ml" 118 4452 4514
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  int_ref f "research/learning/optimize.ml" 118 4452 4492 "research/learning/optimize.ml" 118 4452 4493
+)
+"research/learning/optimize.ml" 118 4452 4497 "research/learning/optimize.ml" 118 4452 4514
+call(
+  tail
+)
+type(
+  bool
+)
+"research/learning/optimize.ml" 118 4452 4487 "research/learning/optimize.ml" 118 4452 4515
+type(
+  CF.ORD_SET.elt -> bool
+)
+"research/learning/optimize.ml" 118 4452 4516 "research/learning/optimize.ml" 118 4452 4520
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref rest "research/learning/optimize.ml" 117 4406 4412 "research/learning/optimize.ml" 117 4406 4416
+)
+"research/learning/optimize.ml" 118 4452 4469 "research/learning/optimize.ml" 118 4452 4520
+call(
+  stack
+)
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 119 4524 4530 "research/learning/optimize.ml" 119 4524 4539
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def including "research/learning/optimize.ml" 120 4597 4599 "research/learning/optimize.ml" 121 4649 4680
+)
+"research/learning/optimize.ml" 119 4524 4542 "research/learning/optimize.ml" 119 4524 4559
+type(
+  (CF.ORD_SET.elt -> bool) -> CF.ORD_SET.t -> CF.ORD_SET.t
+)
+ident(
+  ext_ref CF.ORD_SET.filter
+)
+"research/learning/optimize.ml" 119 4524 4565 "research/learning/optimize.ml" 119 4524 4566
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  def f "research/learning/optimize.ml" 119 4524 4570 "research/learning/optimize.ml" 119 4524 4587
+)
+"research/learning/optimize.ml" 119 4524 4570 "research/learning/optimize.ml" 119 4524 4577
+type(
+  CF.t -> CF.t -> bool
+)
+ident(
+  ext_ref CF.pred
+)
+"research/learning/optimize.ml" 119 4524 4578 "research/learning/optimize.ml" 119 4524 4579
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  int_ref f "research/learning/optimize.ml" 119 4524 4565 "research/learning/optimize.ml" 119 4524 4566
+)
+"research/learning/optimize.ml" 119 4524 4580 "research/learning/optimize.ml" 119 4524 4587
+type(
+  CF.ORD_SET.elt
+)
+ident(
+  int_ref feature "research/learning/optimize.ml" 116 4369 4391 "research/learning/optimize.ml" 116 4369 4398
+)
+"research/learning/optimize.ml" 119 4524 4570 "research/learning/optimize.ml" 119 4524 4587
+call(
+  tail
+)
+type(
+  bool
+)
+"research/learning/optimize.ml" 119 4524 4560 "research/learning/optimize.ml" 119 4524 4588
+type(
+  CF.ORD_SET.elt -> bool
+)
+"research/learning/optimize.ml" 119 4524 4589 "research/learning/optimize.ml" 119 4524 4593
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref rest "research/learning/optimize.ml" 117 4406 4412 "research/learning/optimize.ml" 117 4406 4416
+)
+"research/learning/optimize.ml" 119 4524 4542 "research/learning/optimize.ml" 119 4524 4593
+call(
+  stack
+)
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 120 4597 4603 "research/learning/optimize.ml" 120 4597 4608
+type(
+  CF.ORD_SET.t
+)
+ident(
+  def equal "research/learning/optimize.ml" 121 4649 4651 "research/learning/optimize.ml" 121 4649 4680
+)
+"research/learning/optimize.ml" 120 4597 4610 "research/learning/optimize.ml" 120 4597 4626
+type(
+  CF.ORD_SET.t -> CF.ORD_SET.t -> CF.ORD_SET.t
+)
+ident(
+  ext_ref CF.ORD_SET.inter
+)
+"research/learning/optimize.ml" 120 4597 4627 "research/learning/optimize.ml" 120 4597 4635
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref included "research/learning/optimize.ml" 118 4452 4458 "research/learning/optimize.ml" 118 4452 4466
+)
+"research/learning/optimize.ml" 120 4597 4636 "research/learning/optimize.ml" 120 4597 4645
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref including "research/learning/optimize.ml" 119 4524 4530 "research/learning/optimize.ml" 119 4524 4539
+)
+"research/learning/optimize.ml" 120 4597 4610 "research/learning/optimize.ml" 120 4597 4645
+call(
+  stack
+)
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 121 4649 4651 "research/learning/optimize.ml" 121 4649 4666
+type(
+  CF.ORD_SET.t -> CF.ORD_SET.t -> CF.ORD_SET.t
+)
+ident(
+  ext_ref CF.ORD_SET.diff
+)
+"research/learning/optimize.ml" 121 4649 4667 "research/learning/optimize.ml" 121 4649 4670
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref acc "research/learning/optimize.ml" 116 4369 4399 "research/learning/optimize.ml" 116 4369 4402
+)
+"research/learning/optimize.ml" 121 4649 4671 "research/learning/optimize.ml" 121 4649 4680
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref including "research/learning/optimize.ml" 119 4524 4530 "research/learning/optimize.ml" 119 4524 4539
+)
+"research/learning/optimize.ml" 121 4649 4651 "research/learning/optimize.ml" 121 4649 4680
+call(
+  tail
+)
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 120 4597 4599 "research/learning/optimize.ml" 121 4649 4680
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 119 4524 4526 "research/learning/optimize.ml" 121 4649 4680
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 118 4452 4454 "research/learning/optimize.ml" 121 4649 4680
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 117 4406 4408 "research/learning/optimize.ml" 121 4649 4680
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 116 4369 4386 "research/learning/optimize.ml" 121 4649 4681
+type(
+  CF.ORD_SET.elt -> CF.ORD_SET.t -> CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 121 4649 4682 "research/learning/optimize.ml" 121 4649 4690
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref features "research/learning/optimize.ml" 115 4352 4357 "research/learning/optimize.ml" 115 4352 4365
+)
+"research/learning/optimize.ml" 121 4649 4691 "research/learning/optimize.ml" 121 4649 4699
+type(
+  CF.ORD_SET.t
+)
+ident(
+  int_ref features "research/learning/optimize.ml" 115 4352 4357 "research/learning/optimize.ml" 115 4352 4365
+)
+"research/learning/optimize.ml" 116 4369 4370 "research/learning/optimize.ml" 121 4649 4699
+call(
+  tail
+)
+type(
+  CF.ORD_SET.t
+)
+"research/learning/optimize.ml" 115 4352 4353 "research/learning/optimize.ml" 121 4649 4699
+type(
+  CF.ORD_SET.t -> CF.ORD_SET.t
+)
+type(
+  CF.ORD_SET.t -> CF.ORD_SET.t
+)

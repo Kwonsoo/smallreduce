@@ -1,0 +1,434 @@
+digraph stl_fill_holes {
+{
+node [shape=box]
+ENTRY [label="ENTRY: skip" ]
+EXIT [label="EXIT: skip" ]
+1621 [label="1621: skip" ]
+1624 [label="1624: skip" ]
+1629 [label="1629: skip" ]
+1632 [label="1632: skip" ]
+1634 [label="1634: skip" ]
+1650 [label="1650: skip" ]
+1653 [label="1653: skip" ]
+1658 [label="1658: skip" ]
+1661 [label="1661: skip" ]
+1663 [label="1663: skip" ]
+1666 [label="1666: skip" ]
+1672 [label="1672: skip" ]
+1675 [label="1675: skip" ]
+1676 [label="1676: skip" ]
+1679 [label="1679: skip" ]
+1683 [label="1683: skip" ]
+1690 [label="1690: skip" ]
+1693 [label="1693: skip" ]
+1703 [label="1703: skip" ]
+1706 [label="1706: skip" ]
+1713 [label="1713: skip" ]
+1720 [label="1720: skip" ]
+1721 [label="1721: return" ]
+2849 [label="2849: alloc(__cil_tmp18,[12*3])" ]
+2850 [label="2850: set(facet.vertex,(stl_vertex *)__cil_tmp18)" ]
+2851 [label="2851: alloc(__cil_tmp19,[12*3])" ]
+2852 [label="2852: set(new_facet.vertex,(stl_vertex *)__cil_tmp19)" ]
+2853 [label="2853: alloc(__cil_tmp20,[4*3])" ]
+2854 [label="2854: set(neighbors_initial,(int *)__cil_tmp20)" ]
+2855 [label="2855: alloc(__cil_tmp21,[4*6])" ]
+2856 [label="2856: set(edge.key,(unsigned int *)__cil_tmp21)" ]
+2857 [label="2857: assume(!(!(i<*stl.stats.number_of_facets)))" ]
+2858 [label="2858: assume(!(i<*stl.stats.number_of_facets))" ]
+2859 [label="2859: assume(!(!(j<3)))" ]
+2860 [label="2860: assume(!(j<3))" ]
+2861 [label="2861: assume(!(*(*stl.neighbors_start+i).neighbor[j]!=-1))" ]
+2862 [label="2862: assume(*(*stl.neighbors_start+i).neighbor[j]!=-1)" ]
+2863 [label="2863: assume(!(!(i<*stl.stats.number_of_facets)))" ]
+2864 [label="2864: assume(!(i<*stl.stats.number_of_facets))" ]
+2865 [label="2865: assume(!(!(j<3)))" ]
+2866 [label="2866: assume(!(j<3))" ]
+2867 [label="2867: assume(!(*(*stl.neighbors_start+i).neighbor[j]!=-1))" ]
+2868 [label="2868: assume(*(*stl.neighbors_start+i).neighbor[j]!=-1)" ]
+2869 [label="2869: assume(!(neighbors_initial[(j+2)%3]==-1))" ]
+2870 [label="2870: assume(neighbors_initial[(j+2)%3]==-1)" ]
+2871 [label="2871: assume(!(vnot>2))" ]
+2872 [label="2872: assume(vnot>2)" ]
+2873 [label="2873: assume(!(direction==0))" ]
+2874 [label="2874: assume(direction==0)" ]
+2875 [label="2875: assume(!(direction==0))" ]
+2876 [label="2876: assume(direction==0)" ]
+2877 [label="2877: assume(!(next_facet==-1))" ]
+2878 [label="2878: assume(next_facet==-1)" ]
+2879 [label="2879: assume(!(!(k<3)))" ]
+2880 [label="2880: assume(!(k<3))" ]
+2881 [label="2881: assume(!(facet_num==first_facet))" ]
+2882 [label="2882: assume(facet_num==first_facet)" ]
+2883 [label="2883: call(@stl_initialize_facet_check_nearby(stl))" style=filled color=grey]
+2884 [label="2884: set(i,0)" ]
+2885 [label="2885: set(facet,*(*stl.facet_start+i))" ]
+2886 [label="2886: set(j,0)" ]
+2887 [label="2887: set(edge.facet_number,i)" ]
+2888 [label="2888: set(edge.which_edge,j)" ]
+2889 [label="2889: call(@stl_load_edge_exact(stl, &edge, &facet.vertex[j], &facet.vertex[(j+1)%3]))" style=filled color=grey]
+2890 [label="2890: call(@insert_hash_edge(stl, edge, &@stl_match_neighbors_exact))" style=filled color=grey]
+2891 [label="2891: set(j,j+1)" ]
+2892 [label="2892: set(i,i+1)" ]
+2893 [label="2893: set(i,0)" ]
+2894 [label="2894: set(facet,*(*stl.facet_start+i))" ]
+2895 [label="2895: set(neighbors_initial[0],*(*stl.neighbors_start+i).neighbor[0])" ]
+2896 [label="2896: set(neighbors_initial[1],*(*stl.neighbors_start+i).neighbor[1])" ]
+2897 [label="2897: set(neighbors_initial[2],*(*stl.neighbors_start+i).neighbor[2])" ]
+2898 [label="2898: set(first_facet,i)" ]
+2899 [label="2899: set(j,0)" ]
+2900 [label="2900: set(new_facet.vertex[0],facet.vertex[j])" ]
+2901 [label="2901: set(new_facet.vertex[1],facet.vertex[(j+1)%3])" ]
+2902 [label="2902: set(direction,1)" ]
+2903 [label="2903: set(direction,0)" ]
+2904 [label="2904: set(facet_num,i)" ]
+2905 [label="2905: set(vnot,(j+2)%3)" ]
+2906 [label="2906: set(pivot_vertex,(vnot+2)%3)" ]
+2907 [label="2907: set(next_edge,pivot_vertex)" ]
+2908 [label="2908: set(direction,1)" ]
+2909 [label="2909: set(pivot_vertex,(vnot+1)%3)" ]
+2910 [label="2910: set(next_edge,vnot%3)" ]
+2911 [label="2911: set(direction,0)" ]
+2912 [label="2912: set(pivot_vertex,(vnot+1)%3)" ]
+2913 [label="2913: set(next_edge,vnot)" ]
+2914 [label="2914: set(pivot_vertex,(vnot+2)%3)" ]
+2915 [label="2915: set(next_edge,pivot_vertex)" ]
+2916 [label="2916: set(next_facet,*(*stl.neighbors_start+facet_num).neighbor[next_edge])" ]
+2917 [label="2917: set(new_facet.vertex[2],*(*stl.facet_start+facet_num).vertex[vnot%3])" ]
+2918 [label="2918: call(@stl_add_facet(stl, &new_facet))" style=filled color=grey]
+2919 [label="2919: set(k,0)" ]
+2920 [label="2920: set(edge.facet_number,*stl.stats.number_of_facets-1)" ]
+2921 [label="2921: set(edge.which_edge,k)" ]
+2922 [label="2922: call(@stl_load_edge_exact(stl, &edge, &new_facet.vertex[k], &new_facet.vertex[(k+1)%3]))" style=filled color=grey]
+2923 [label="2923: call(@insert_hash_edge(stl, edge, &@stl_match_neighbors_exact))" style=filled color=grey]
+2924 [label="2924: set(k,k+1)" ]
+2925 [label="2925: set(vnot,(int )*(*stl.neighbors_start+facet_num).which_vertex_not[next_edge])" ]
+2926 [label="2926: set(facet_num,next_facet)" ]
+2928 [label="2928: call(@exit(1))" style=filled color=grey]
+2929 [label="2929: set(j,j+1)" ]
+2930 [label="2930: set(i,i+1)" ]
+2931 [label="2931: call(@printf((char const   */* __restrict  */)__cil_tmp22))" style=filled color=grey]
+2933 [label="2933: salloc(__cil_tmp22, \"Back to the first facet filling holes: probably a mobius part.\nTry using a smaller tolerance or don't do a nearby check\n\")" ]
+2934 [label="2934: skip" ]
+2935 [label="2935: skip" ]
+2936 [label="2936: skip" ]
+2937 [label="2937: skip" ]
+2938 [label="2938: skip" ]
+2939 [label="2939: skip" ]
+2940 [label="2940: skip" ]
+2941 [label="2941: skip" ]
+}
+ENTRY -> ENTRY
+ENTRY -> EXIT
+ENTRY -> 1621
+ENTRY -> 1624
+ENTRY -> 1629
+ENTRY -> 1632
+ENTRY -> 1634
+ENTRY -> 1650
+ENTRY -> 1653
+ENTRY -> 1658
+ENTRY -> 1661
+ENTRY -> 1663
+ENTRY -> 1666
+ENTRY -> 1672
+ENTRY -> 1675
+ENTRY -> 1676
+ENTRY -> 1679
+ENTRY -> 1683
+ENTRY -> 1690
+ENTRY -> 1693
+ENTRY -> 1703
+ENTRY -> 1706
+ENTRY -> 1713
+ENTRY -> 1720
+ENTRY -> 1721
+ENTRY -> 2849
+ENTRY -> 2851
+ENTRY -> 2852
+ENTRY -> 2853
+ENTRY -> 2854
+ENTRY -> 2855
+ENTRY -> 2856
+ENTRY -> 2857
+ENTRY -> 2858
+ENTRY -> 2859
+ENTRY -> 2860
+ENTRY -> 2861
+ENTRY -> 2862
+ENTRY -> 2863
+ENTRY -> 2864
+ENTRY -> 2865
+ENTRY -> 2866
+ENTRY -> 2867
+ENTRY -> 2868
+ENTRY -> 2869
+ENTRY -> 2870
+ENTRY -> 2871
+ENTRY -> 2872
+ENTRY -> 2873
+ENTRY -> 2874
+ENTRY -> 2875
+ENTRY -> 2876
+ENTRY -> 2877
+ENTRY -> 2878
+ENTRY -> 2879
+ENTRY -> 2880
+ENTRY -> 2881
+ENTRY -> 2882
+ENTRY -> 2883
+ENTRY -> 2884
+ENTRY -> 2885
+ENTRY -> 2886
+ENTRY -> 2887
+ENTRY -> 2888
+ENTRY -> 2889
+ENTRY -> 2890
+ENTRY -> 2891
+ENTRY -> 2892
+ENTRY -> 2893
+ENTRY -> 2894
+ENTRY -> 2895
+ENTRY -> 2896
+ENTRY -> 2897
+ENTRY -> 2898
+ENTRY -> 2899
+ENTRY -> 2900
+ENTRY -> 2901
+ENTRY -> 2902
+ENTRY -> 2903
+ENTRY -> 2904
+ENTRY -> 2905
+ENTRY -> 2906
+ENTRY -> 2907
+ENTRY -> 2908
+ENTRY -> 2909
+ENTRY -> 2910
+ENTRY -> 2911
+ENTRY -> 2912
+ENTRY -> 2913
+ENTRY -> 2914
+ENTRY -> 2915
+ENTRY -> 2916
+ENTRY -> 2917
+ENTRY -> 2918
+ENTRY -> 2919
+ENTRY -> 2920
+ENTRY -> 2921
+ENTRY -> 2922
+ENTRY -> 2923
+ENTRY -> 2924
+ENTRY -> 2925
+ENTRY -> 2926
+ENTRY -> 2928
+ENTRY -> 2929
+ENTRY -> 2930
+ENTRY -> 2931
+ENTRY -> 2933
+ENTRY -> 2934
+ENTRY -> 2935
+ENTRY -> 2936
+ENTRY -> 2937
+ENTRY -> 2938
+ENTRY -> 2939
+ENTRY -> 2940
+ENTRY -> 2941
+EXIT -> EXIT
+1621 -> EXIT
+1624 -> EXIT
+1629 -> EXIT
+1632 -> EXIT
+1634 -> EXIT
+1650 -> EXIT
+1653 -> EXIT
+1658 -> EXIT
+1661 -> EXIT
+1663 -> EXIT
+1666 -> EXIT
+1672 -> EXIT
+1675 -> EXIT
+1676 -> EXIT
+1679 -> EXIT
+1683 -> EXIT
+1690 -> EXIT
+1693 -> EXIT
+1703 -> EXIT
+1706 -> EXIT
+1713 -> EXIT
+1720 -> EXIT
+1721 -> EXIT
+2849 -> 2850
+2850 -> EXIT
+2851 -> 2852
+2852 -> EXIT
+2853 -> 2854
+2854 -> 2895
+2855 -> 2856
+2856 -> EXIT
+2857 -> 2861
+2857 -> 2862
+2857 -> 2885
+2857 -> 2892
+2858 -> EXIT
+2859 -> 2888
+2859 -> 2891
+2860 -> EXIT
+2861 -> 2861
+2861 -> 2862
+2861 -> 2887
+2861 -> 2889
+2861 -> 2890
+2861 -> 2892
+2862 -> 2861
+2862 -> 2862
+2862 -> 2892
+2863 -> 2867
+2863 -> 2868
+2863 -> 2894
+2863 -> 2895
+2863 -> 2896
+2863 -> 2897
+2863 -> 2898
+2863 -> 2930
+2864 -> EXIT
+2865 -> 2905
+2865 -> 2929
+2866 -> EXIT
+2867 -> 2867
+2867 -> 2868
+2867 -> 2904
+2867 -> 2916
+2867 -> 2917
+2867 -> 2918
+2867 -> 2920
+2867 -> 2922
+2867 -> 2923
+2867 -> 2925
+2867 -> 2930
+2868 -> 2867
+2868 -> 2868
+2868 -> 2930
+2869 -> 2869
+2869 -> 2870
+2869 -> 2895
+2870 -> 2869
+2870 -> 2870
+2870 -> 2895
+2871 -> 2912
+2871 -> 2913
+2871 -> 2914
+2872 -> 2906
+2872 -> 2909
+2872 -> 2910
+2873 -> EXIT
+2874 -> EXIT
+2875 -> 2873
+2875 -> 2874
+2875 -> 2875
+2875 -> 2876
+2876 -> 2873
+2876 -> 2874
+2876 -> 2875
+2876 -> 2876
+2877 -> 2926
+2878 -> EXIT
+2879 -> 2921
+2879 -> 2924
+2880 -> EXIT
+2881 -> 2916
+2881 -> 2917
+2881 -> 2925
+2882 -> EXIT
+2883 -> EXIT
+2884 -> 2857
+2884 -> 2858
+2885 -> 2889
+2886 -> 2859
+2886 -> 2860
+2887 -> EXIT
+2888 -> 2889
+2888 -> 2890
+2889 -> EXIT
+2890 -> EXIT
+2891 -> 2859
+2891 -> 2860
+2892 -> 2857
+2892 -> 2858
+2893 -> 2863
+2893 -> 2864
+2894 -> 2900
+2894 -> 2901
+2895 -> 2896
+2896 -> 2897
+2897 -> 2869
+2897 -> 2870
+2897 -> 2895
+2898 -> 2881
+2898 -> 2882
+2899 -> 2865
+2899 -> 2866
+2900 -> EXIT
+2901 -> EXIT
+2902 -> 2873
+2902 -> 2874
+2902 -> 2875
+2902 -> 2876
+2903 -> 2873
+2903 -> 2874
+2903 -> 2875
+2903 -> 2876
+2904 -> 2916
+2904 -> 2917
+2904 -> 2925
+2905 -> 2871
+2905 -> 2872
+2906 -> 2907
+2907 -> EXIT
+2908 -> 2873
+2908 -> 2874
+2908 -> 2875
+2908 -> 2876
+2909 -> EXIT
+2910 -> EXIT
+2911 -> 2873
+2911 -> 2874
+2911 -> 2875
+2911 -> 2876
+2912 -> EXIT
+2913 -> EXIT
+2914 -> 2915
+2915 -> EXIT
+2916 -> 2877
+2916 -> 2878
+2917 -> 2918
+2917 -> 2922
+2918 -> EXIT
+2919 -> 2879
+2919 -> 2880
+2920 -> EXIT
+2921 -> 2922
+2921 -> 2923
+2922 -> EXIT
+2923 -> EXIT
+2924 -> 2879
+2924 -> 2880
+2925 -> 2871
+2925 -> 2872
+2926 -> 2881
+2926 -> 2882
+2928 -> EXIT
+2929 -> 2865
+2929 -> 2866
+2930 -> 2863
+2930 -> 2864
+2931 -> EXIT
+2933 -> 2931
+2934 -> EXIT
+2935 -> EXIT
+2936 -> EXIT
+2937 -> EXIT
+2938 -> EXIT
+2939 -> EXIT
+2940 -> EXIT
+2941 -> EXIT
+}

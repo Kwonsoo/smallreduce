@@ -1,0 +1,1002 @@
+"research/learning/inspector.ml" 30 620 626 "research/learning/inspector.ml" 30 620 633
+type(
+  t -> t -> int
+)
+ident(
+  def compare "research/learning/inspector.ml" 36 796 825 "research/learning/inspector.ml" 37 826 830
+)
+"research/learning/inspector.ml" 31 650 657 "research/learning/inspector.ml" 31 650 659
+type(
+  t
+)
+ident(
+  def f1 "research/learning/inspector.ml" 31 650 660 "research/learning/inspector.ml" 36 796 825
+)
+"research/learning/inspector.ml" 31 650 660 "research/learning/inspector.ml" 31 650 662
+type(
+  t
+)
+ident(
+  def f2 "research/learning/inspector.ml" 32 666 669 "research/learning/inspector.ml" 36 796 825
+)
+"research/learning/inspector.ml" 32 666 675 "research/learning/inspector.ml" 32 666 677
+type(
+  t
+)
+ident(
+  int_ref f1 "research/learning/inspector.ml" 31 650 657 "research/learning/inspector.ml" 31 650 659
+)
+"research/learning/inspector.ml" 32 666 679 "research/learning/inspector.ml" 32 666 681
+type(
+  t
+)
+ident(
+  int_ref f2 "research/learning/inspector.ml" 31 650 660 "research/learning/inspector.ml" 31 650 662
+)
+"research/learning/inspector.ml" 32 666 675 "research/learning/inspector.ml" 32 666 681
+type(
+  t * t
+)
+"research/learning/inspector.ml" 33 687 693 "research/learning/inspector.ml" 33 687 696
+type(
+  ftype
+)
+"research/learning/inspector.ml" 33 687 698 "research/learning/inspector.ml" 33 687 700
+type(
+  CF.t
+)
+ident(
+  def f1 "research/learning/inspector.ml" 34 713 742 "research/learning/inspector.ml" 34 713 766
+)
+"research/learning/inspector.ml" 33 687 692 "research/learning/inspector.ml" 33 687 701
+type(
+  t
+)
+"research/learning/inspector.ml" 33 687 704 "research/learning/inspector.ml" 33 687 707
+type(
+  ftype
+)
+"research/learning/inspector.ml" 33 687 709 "research/learning/inspector.ml" 33 687 711
+type(
+  CF.t
+)
+ident(
+  def f2 "research/learning/inspector.ml" 34 713 742 "research/learning/inspector.ml" 34 713 766
+)
+"research/learning/inspector.ml" 33 687 703 "research/learning/inspector.ml" 33 687 712
+type(
+  t
+)
+"research/learning/inspector.ml" 33 687 692 "research/learning/inspector.ml" 33 687 712
+type(
+  t * t
+)
+"research/learning/inspector.ml" 34 713 719 "research/learning/inspector.ml" 34 713 722
+type(
+  ftype
+)
+"research/learning/inspector.ml" 34 713 724 "research/learning/inspector.ml" 34 713 726
+type(
+  CF.t
+)
+ident(
+  def f1 "research/learning/inspector.ml" 34 713 742 "research/learning/inspector.ml" 34 713 766
+)
+"research/learning/inspector.ml" 34 713 718 "research/learning/inspector.ml" 34 713 727
+type(
+  t
+)
+"research/learning/inspector.ml" 34 713 730 "research/learning/inspector.ml" 34 713 733
+type(
+  ftype
+)
+"research/learning/inspector.ml" 34 713 735 "research/learning/inspector.ml" 34 713 737
+type(
+  CF.t
+)
+ident(
+  def f2 "research/learning/inspector.ml" 34 713 742 "research/learning/inspector.ml" 34 713 766
+)
+"research/learning/inspector.ml" 34 713 729 "research/learning/inspector.ml" 34 713 738
+type(
+  t
+)
+"research/learning/inspector.ml" 34 713 718 "research/learning/inspector.ml" 34 713 738
+type(
+  t * t
+)
+"research/learning/inspector.ml" 33 687 692 "research/learning/inspector.ml" 34 713 738
+type(
+  t * t
+)
+"research/learning/inspector.ml" 34 713 742 "research/learning/inspector.ml" 34 713 760
+type(
+  CF.t -> CF.t -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"research/learning/inspector.ml" 34 713 761 "research/learning/inspector.ml" 34 713 763
+type(
+  CF.t
+)
+ident(
+  int_ref f1 "research/learning/inspector.ml" 33 687 698 "research/learning/inspector.ml" 33 687 700
+)
+"research/learning/inspector.ml" 34 713 764 "research/learning/inspector.ml" 34 713 766
+type(
+  CF.t
+)
+ident(
+  int_ref f2 "research/learning/inspector.ml" 33 687 709 "research/learning/inspector.ml" 33 687 711
+)
+"research/learning/inspector.ml" 34 713 742 "research/learning/inspector.ml" 34 713 766
+type(
+  int
+)
+"research/learning/inspector.ml" 35 767 773 "research/learning/inspector.ml" 35 767 776
+type(
+  ftype
+)
+"research/learning/inspector.ml" 35 767 778 "research/learning/inspector.ml" 35 767 779
+type(
+  CF.t
+)
+"research/learning/inspector.ml" 35 767 772 "research/learning/inspector.ml" 35 767 780
+type(
+  t
+)
+"research/learning/inspector.ml" 35 767 783 "research/learning/inspector.ml" 35 767 786
+type(
+  ftype
+)
+"research/learning/inspector.ml" 35 767 788 "research/learning/inspector.ml" 35 767 789
+type(
+  CF.t
+)
+"research/learning/inspector.ml" 35 767 782 "research/learning/inspector.ml" 35 767 790
+type(
+  t
+)
+"research/learning/inspector.ml" 35 767 772 "research/learning/inspector.ml" 35 767 790
+type(
+  t * t
+)
+"research/learning/inspector.ml" 35 767 794 "research/learning/inspector.ml" 35 767 795
+type(
+  int
+)
+"research/learning/inspector.ml" 36 796 802 "research/learning/inspector.ml" 36 796 805
+type(
+  ftype
+)
+"research/learning/inspector.ml" 36 796 807 "research/learning/inspector.ml" 36 796 808
+type(
+  CF.t
+)
+"research/learning/inspector.ml" 36 796 801 "research/learning/inspector.ml" 36 796 809
+type(
+  t
+)
+"research/learning/inspector.ml" 36 796 812 "research/learning/inspector.ml" 36 796 815
+type(
+  ftype
+)
+"research/learning/inspector.ml" 36 796 817 "research/learning/inspector.ml" 36 796 818
+type(
+  CF.t
+)
+"research/learning/inspector.ml" 36 796 811 "research/learning/inspector.ml" 36 796 819
+type(
+  t
+)
+"research/learning/inspector.ml" 36 796 801 "research/learning/inspector.ml" 36 796 819
+type(
+  t * t
+)
+"research/learning/inspector.ml" 36 796 823 "research/learning/inspector.ml" 36 796 825
+type(
+  int
+)
+"research/learning/inspector.ml" 32 666 669 "research/learning/inspector.ml" 36 796 825
+type(
+  int
+)
+"research/learning/inspector.ml" 31 650 653 "research/learning/inspector.ml" 36 796 825
+type(
+  t -> t -> int
+)
+type(
+  t -> t -> int
+)
+"research/learning/inspector.ml" 39 832 850 "research/learning/inspector.ml" 39 832 870
+call(
+  stack
+)
+"research/learning/inspector.ml" 41 872 877 "research/learning/inspector.ml" 41 872 882
+type(
+  ftype * CF.t
+)
+ident(
+  def empty "research/learning/inspector.ml" 43 902 903 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 41 872 886 "research/learning/inspector.ml" 41 872 889
+type(
+  ftype
+)
+"research/learning/inspector.ml" 41 872 891 "research/learning/inspector.ml" 41 872 899
+type(
+  CF.t
+)
+ident(
+  ext_ref CF.empty
+)
+"research/learning/inspector.ml" 41 872 885 "research/learning/inspector.ml" 41 872 900
+type(
+  ftype * CF.t
+)
+"research/learning/inspector.ml" 43 902 907 "research/learning/inspector.ml" 43 902 913
+type(
+  ORD_SET.t -> CF.t BatSet.t
+)
+ident(
+  def detach "research/learning/inspector.ml" 48 1070 1071 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 44 943 949 "research/learning/inspector.ml" 44 943 955
+type(
+  ORD_SET.t
+)
+ident(
+  def ordset "research/learning/inspector.ml" 45 959 961 "research/learning/inspector.ml" 46 996 1068
+)
+"research/learning/inspector.ml" 45 959 961 "research/learning/inspector.ml" 45 959 973
+type(
+  (ORD_SET.elt -> CF.t BatSet.t -> CF.t BatSet.t) ->
+  ORD_SET.t -> CF.t BatSet.t -> CF.t BatSet.t
+)
+ident(
+  ext_ref ORD_SET.fold
+)
+"research/learning/inspector.ml" 45 959 979 "research/learning/inspector.ml" 45 959 984
+type(
+  ORD_SET.elt
+)
+ident(
+  def orded "research/learning/inspector.ml" 45 959 985 "research/learning/inspector.ml" 46 996 1047
+)
+"research/learning/inspector.ml" 45 959 985 "research/learning/inspector.ml" 45 959 992
+type(
+  CF.t BatSet.t
+)
+ident(
+  def featset "research/learning/inspector.ml" 46 996 999 "research/learning/inspector.ml" 46 996 1047
+)
+"research/learning/inspector.ml" 46 996 1004 "research/learning/inspector.ml" 46 996 1005
+type(
+  ftype
+)
+"research/learning/inspector.ml" 46 996 1007 "research/learning/inspector.ml" 46 996 1011
+type(
+  CF.t
+)
+ident(
+  def feat "research/learning/inspector.ml" 46 996 1024 "research/learning/inspector.ml" 46 996 1047
+)
+"research/learning/inspector.ml" 46 996 1003 "research/learning/inspector.ml" 46 996 1012
+type(
+  ORD_SET.elt
+)
+"research/learning/inspector.ml" 46 996 1015 "research/learning/inspector.ml" 46 996 1020
+type(
+  ORD_SET.elt
+)
+ident(
+  int_ref orded "research/learning/inspector.ml" 45 959 979 "research/learning/inspector.ml" 45 959 984
+)
+"research/learning/inspector.ml" 46 996 1024 "research/learning/inspector.ml" 46 996 1034
+type(
+  CF.t -> CF.t BatSet.t -> CF.t BatSet.t
+)
+ident(
+  ext_ref BatSet.add
+)
+"research/learning/inspector.ml" 46 996 1035 "research/learning/inspector.ml" 46 996 1039
+type(
+  CF.t
+)
+ident(
+  int_ref feat "research/learning/inspector.ml" 46 996 1007 "research/learning/inspector.ml" 46 996 1011
+)
+"research/learning/inspector.ml" 46 996 1040 "research/learning/inspector.ml" 46 996 1047
+type(
+  CF.t BatSet.t
+)
+ident(
+  int_ref featset "research/learning/inspector.ml" 45 959 985 "research/learning/inspector.ml" 45 959 992
+)
+"research/learning/inspector.ml" 46 996 1024 "research/learning/inspector.ml" 46 996 1047
+call(
+  tail
+)
+type(
+  CF.t BatSet.t
+)
+"research/learning/inspector.ml" 46 996 999 "research/learning/inspector.ml" 46 996 1047
+type(
+  CF.t BatSet.t
+)
+"research/learning/inspector.ml" 45 959 974 "research/learning/inspector.ml" 46 996 1048
+type(
+  ORD_SET.elt -> CF.t BatSet.t -> CF.t BatSet.t
+)
+"research/learning/inspector.ml" 46 996 1049 "research/learning/inspector.ml" 46 996 1055
+type(
+  ORD_SET.t
+)
+ident(
+  int_ref ordset "research/learning/inspector.ml" 44 943 949 "research/learning/inspector.ml" 44 943 955
+)
+"research/learning/inspector.ml" 46 996 1056 "research/learning/inspector.ml" 46 996 1068
+type(
+  CF.t BatSet.t
+)
+ident(
+  ext_ref BatSet.empty
+)
+"research/learning/inspector.ml" 45 959 961 "research/learning/inspector.ml" 46 996 1068
+call(
+  tail
+)
+type(
+  CF.t BatSet.t
+)
+"research/learning/inspector.ml" 44 943 945 "research/learning/inspector.ml" 46 996 1068
+type(
+  ORD_SET.t -> CF.t BatSet.t
+)
+type(
+  ORD_SET.t -> CF.t BatSet.t
+)
+"research/learning/inspector.ml" 48 1070 1075 "research/learning/inspector.ml" 48 1070 1079
+type(
+  t -> t -> bool
+)
+ident(
+  def pred "research/learning/inspector.ml" 51 1149 1150 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 49 1097 1104 "research/learning/inspector.ml" 49 1097 1105
+type(
+  ftype
+)
+"research/learning/inspector.ml" 49 1097 1107 "research/learning/inspector.ml" 49 1097 1112
+type(
+  CF.t
+)
+ident(
+  def feat1 "research/learning/inspector.ml" 49 1097 1114 "research/learning/inspector.ml" 49 1097 1147
+)
+"research/learning/inspector.ml" 49 1097 1103 "research/learning/inspector.ml" 49 1097 1113
+type(
+  t
+)
+"research/learning/inspector.ml" 49 1097 1115 "research/learning/inspector.ml" 49 1097 1116
+type(
+  ftype
+)
+"research/learning/inspector.ml" 49 1097 1118 "research/learning/inspector.ml" 49 1097 1123
+type(
+  CF.t
+)
+ident(
+  def feat2 "research/learning/inspector.ml" 49 1097 1128 "research/learning/inspector.ml" 49 1097 1147
+)
+"research/learning/inspector.ml" 49 1097 1114 "research/learning/inspector.ml" 49 1097 1124
+type(
+  t
+)
+"research/learning/inspector.ml" 49 1097 1128 "research/learning/inspector.ml" 49 1097 1135
+type(
+  CF.t -> CF.t -> bool
+)
+ident(
+  ext_ref CF.pred
+)
+"research/learning/inspector.ml" 49 1097 1136 "research/learning/inspector.ml" 49 1097 1141
+type(
+  CF.t
+)
+ident(
+  int_ref feat1 "research/learning/inspector.ml" 49 1097 1107 "research/learning/inspector.ml" 49 1097 1112
+)
+"research/learning/inspector.ml" 49 1097 1142 "research/learning/inspector.ml" 49 1097 1147
+type(
+  CF.t
+)
+ident(
+  int_ref feat2 "research/learning/inspector.ml" 49 1097 1118 "research/learning/inspector.ml" 49 1097 1123
+)
+"research/learning/inspector.ml" 49 1097 1128 "research/learning/inspector.ml" 49 1097 1147
+call(
+  tail
+)
+type(
+  bool
+)
+"research/learning/inspector.ml" 49 1097 1099 "research/learning/inspector.ml" 49 1097 1147
+type(
+  t -> t -> bool
+)
+type(
+  t -> t -> bool
+)
+"research/learning/inspector.ml" 51 1149 1154 "research/learning/inspector.ml" 51 1149 1158
+type(
+  ftype ->
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t -> IntraCfg.node -> IntraCfg.node BatSet.t -> t
+)
+ident(
+  def fgen "research/learning/inspector.ml" 55 1315 1316 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 52 1228 1234 "research/learning/inspector.ml" 52 1228 1239
+type(
+  ftype
+)
+ident(
+  def ftype "research/learning/inspector.ml" 52 1228 1240 "research/learning/inspector.ml" 53 1269 1313
+)
+"research/learning/inspector.ml" 52 1228 1240 "research/learning/inspector.ml" 52 1228 1243
+type(
+  IntraCfg.t
+)
+ident(
+  def cfg "research/learning/inspector.ml" 52 1228 1244 "research/learning/inspector.ml" 53 1269 1313
+)
+"research/learning/inspector.ml" 52 1228 1244 "research/learning/inspector.ml" 52 1228 1248
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def sccs "research/learning/inspector.ml" 52 1228 1249 "research/learning/inspector.ml" 53 1269 1313
+)
+"research/learning/inspector.ml" 52 1228 1249 "research/learning/inspector.ml" 52 1228 1254
+type(
+  IntraCfg.node
+)
+ident(
+  def qnode "research/learning/inspector.ml" 52 1228 1255 "research/learning/inspector.ml" 53 1269 1313
+)
+"research/learning/inspector.ml" 52 1228 1255 "research/learning/inspector.ml" 52 1228 1265
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def rest_nodes "research/learning/inspector.ml" 53 1269 1271 "research/learning/inspector.ml" 53 1269 1313
+)
+"research/learning/inspector.ml" 53 1269 1272 "research/learning/inspector.ml" 53 1269 1277
+type(
+  ftype
+)
+ident(
+  int_ref ftype "research/learning/inspector.ml" 52 1228 1234 "research/learning/inspector.ml" 52 1228 1239
+)
+"research/learning/inspector.ml" 53 1269 1279 "research/learning/inspector.ml" 53 1269 1286
+type(
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t -> IntraCfg.node -> IntraCfg.node BatSet.t -> CF.t
+)
+ident(
+  ext_ref CF.fgen
+)
+"research/learning/inspector.ml" 53 1269 1287 "research/learning/inspector.ml" 53 1269 1290
+type(
+  IntraCfg.t
+)
+ident(
+  int_ref cfg "research/learning/inspector.ml" 52 1228 1240 "research/learning/inspector.ml" 52 1228 1243
+)
+"research/learning/inspector.ml" 53 1269 1291 "research/learning/inspector.ml" 53 1269 1295
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref sccs "research/learning/inspector.ml" 52 1228 1244 "research/learning/inspector.ml" 52 1228 1248
+)
+"research/learning/inspector.ml" 53 1269 1296 "research/learning/inspector.ml" 53 1269 1301
+type(
+  IntraCfg.node
+)
+ident(
+  int_ref qnode "research/learning/inspector.ml" 52 1228 1249 "research/learning/inspector.ml" 52 1228 1254
+)
+"research/learning/inspector.ml" 53 1269 1302 "research/learning/inspector.ml" 53 1269 1312
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref rest_nodes "research/learning/inspector.ml" 52 1228 1255 "research/learning/inspector.ml" 52 1228 1265
+)
+"research/learning/inspector.ml" 53 1269 1279 "research/learning/inspector.ml" 53 1269 1312
+call(
+  stack
+)
+type(
+  CF.t
+)
+"research/learning/inspector.ml" 53 1269 1271 "research/learning/inspector.ml" 53 1269 1313
+type(
+  ftype * CF.t
+)
+"research/learning/inspector.ml" 52 1228 1230 "research/learning/inspector.ml" 53 1269 1313
+type(
+  ftype ->
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t -> IntraCfg.node -> IntraCfg.node BatSet.t -> t
+)
+type(
+  ftype ->
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t -> IntraCfg.node -> IntraCfg.node BatSet.t -> t
+)
+"research/learning/inspector.ml" 55 1315 1320 "research/learning/inspector.ml" 55 1315 1324
+type(
+  ftype ->
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t ->
+  Report.query -> IntraCfg.node -> IntraCfg.node BatSet.t -> t
+)
+ident(
+  def tgen "research/learning/inspector.ml" 59 1501 1502 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 56 1410 1416 "research/learning/inspector.ml" 56 1410 1421
+type(
+  ftype
+)
+ident(
+  def ftype "research/learning/inspector.ml" 56 1410 1422 "research/learning/inspector.ml" 57 1453 1499
+)
+"research/learning/inspector.ml" 56 1410 1422 "research/learning/inspector.ml" 56 1410 1425
+type(
+  IntraCfg.t
+)
+ident(
+  def cfg "research/learning/inspector.ml" 56 1410 1426 "research/learning/inspector.ml" 57 1453 1499
+)
+"research/learning/inspector.ml" 56 1410 1426 "research/learning/inspector.ml" 56 1410 1430
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def sccs "research/learning/inspector.ml" 56 1410 1431 "research/learning/inspector.ml" 57 1453 1499
+)
+"research/learning/inspector.ml" 56 1410 1431 "research/learning/inspector.ml" 56 1410 1432
+type(
+  Report.query
+)
+ident(
+  def q "research/learning/inspector.ml" 56 1410 1433 "research/learning/inspector.ml" 57 1453 1499
+)
+"research/learning/inspector.ml" 56 1410 1433 "research/learning/inspector.ml" 56 1410 1438
+type(
+  IntraCfg.node
+)
+ident(
+  def qnode "research/learning/inspector.ml" 56 1410 1439 "research/learning/inspector.ml" 57 1453 1499
+)
+"research/learning/inspector.ml" 56 1410 1439 "research/learning/inspector.ml" 56 1410 1449
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  def rest_nodes "research/learning/inspector.ml" 57 1453 1455 "research/learning/inspector.ml" 57 1453 1499
+)
+"research/learning/inspector.ml" 57 1453 1456 "research/learning/inspector.ml" 57 1453 1461
+type(
+  ftype
+)
+ident(
+  int_ref ftype "research/learning/inspector.ml" 56 1410 1416 "research/learning/inspector.ml" 56 1410 1421
+)
+"research/learning/inspector.ml" 57 1453 1463 "research/learning/inspector.ml" 57 1453 1470
+type(
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t ->
+  Report.query -> IntraCfg.node -> IntraCfg.node BatSet.t -> CF.t
+)
+ident(
+  ext_ref CF.tgen
+)
+"research/learning/inspector.ml" 57 1453 1471 "research/learning/inspector.ml" 57 1453 1474
+type(
+  IntraCfg.t
+)
+ident(
+  int_ref cfg "research/learning/inspector.ml" 56 1410 1422 "research/learning/inspector.ml" 56 1410 1425
+)
+"research/learning/inspector.ml" 57 1453 1475 "research/learning/inspector.ml" 57 1453 1479
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref sccs "research/learning/inspector.ml" 56 1410 1426 "research/learning/inspector.ml" 56 1410 1430
+)
+"research/learning/inspector.ml" 57 1453 1480 "research/learning/inspector.ml" 57 1453 1481
+type(
+  Report.query
+)
+ident(
+  int_ref q "research/learning/inspector.ml" 56 1410 1431 "research/learning/inspector.ml" 56 1410 1432
+)
+"research/learning/inspector.ml" 57 1453 1482 "research/learning/inspector.ml" 57 1453 1487
+type(
+  IntraCfg.node
+)
+ident(
+  int_ref qnode "research/learning/inspector.ml" 56 1410 1433 "research/learning/inspector.ml" 56 1410 1438
+)
+"research/learning/inspector.ml" 57 1453 1488 "research/learning/inspector.ml" 57 1453 1498
+type(
+  IntraCfg.node BatSet.t
+)
+ident(
+  int_ref rest_nodes "research/learning/inspector.ml" 56 1410 1439 "research/learning/inspector.ml" 56 1410 1449
+)
+"research/learning/inspector.ml" 57 1453 1463 "research/learning/inspector.ml" 57 1453 1498
+call(
+  stack
+)
+type(
+  CF.t
+)
+"research/learning/inspector.ml" 57 1453 1455 "research/learning/inspector.ml" 57 1453 1499
+type(
+  ftype * CF.t
+)
+"research/learning/inspector.ml" 56 1410 1412 "research/learning/inspector.ml" 57 1453 1499
+type(
+  ftype ->
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t ->
+  Report.query -> IntraCfg.node -> IntraCfg.node BatSet.t -> t
+)
+type(
+  ftype ->
+  IntraCfg.t ->
+  IntraCfg.node BatSet.t ->
+  Report.query -> IntraCfg.node -> IntraCfg.node BatSet.t -> t
+)
+"research/learning/inspector.ml" 59 1501 1506 "research/learning/inspector.ml" 59 1501 1514
+type(
+  t -> string
+)
+ident(
+  def tostring "research/learning/inspector.ml" 63 1572 1573 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 60 1529 1536 "research/learning/inspector.ml" 60 1529 1541
+type(
+  ftype
+)
+ident(
+  def ftype "research/learning/inspector.ml" 61 1552 1554 "research/learning/inspector.ml" 61 1552 1570
+)
+"research/learning/inspector.ml" 60 1529 1543 "research/learning/inspector.ml" 60 1529 1547
+type(
+  CF.t
+)
+ident(
+  def feat "research/learning/inspector.ml" 61 1552 1554 "research/learning/inspector.ml" 61 1552 1570
+)
+"research/learning/inspector.ml" 60 1529 1535 "research/learning/inspector.ml" 60 1529 1548
+type(
+  t
+)
+"research/learning/inspector.ml" 61 1552 1554 "research/learning/inspector.ml" 61 1552 1565
+type(
+  CF.t -> string
+)
+ident(
+  ext_ref CF.tostring
+)
+"research/learning/inspector.ml" 61 1552 1566 "research/learning/inspector.ml" 61 1552 1570
+type(
+  CF.t
+)
+ident(
+  int_ref feat "research/learning/inspector.ml" 60 1529 1543 "research/learning/inspector.ml" 60 1529 1547
+)
+"research/learning/inspector.ml" 61 1552 1554 "research/learning/inspector.ml" 61 1552 1570
+call(
+  tail
+)
+type(
+  string
+)
+"research/learning/inspector.ml" 60 1529 1531 "research/learning/inspector.ml" 61 1552 1570
+type(
+  t -> string
+)
+type(
+  t -> string
+)
+"research/learning/inspector.ml" 63 1572 1577 "research/learning/inspector.ml" 63 1572 1582
+type(
+  t -> unit
+)
+ident(
+  def print "research/learning/inspector.ml" 71 1775 1776 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 64 1595 1602 "research/learning/inspector.ml" 64 1595 1607
+type(
+  ftype
+)
+ident(
+  def ftype "research/learning/inspector.ml" 65 1618 1620 "research/learning/inspector.ml" 69 1757 1772
+)
+"research/learning/inspector.ml" 64 1595 1609 "research/learning/inspector.ml" 64 1595 1613
+type(
+  CF.t
+)
+ident(
+  def feat "research/learning/inspector.ml" 65 1618 1620 "research/learning/inspector.ml" 69 1757 1772
+)
+"research/learning/inspector.ml" 64 1595 1601 "research/learning/inspector.ml" 64 1595 1614
+type(
+  t
+)
+"research/learning/inspector.ml" 65 1618 1624 "research/learning/inspector.ml" 65 1618 1625
+type(
+  unit
+)
+"research/learning/inspector.ml" 66 1628 1637 "research/learning/inspector.ml" 66 1628 1642
+type(
+  ftype
+)
+ident(
+  int_ref ftype "research/learning/inspector.ml" 64 1595 1602 "research/learning/inspector.ml" 64 1595 1607
+)
+"research/learning/inspector.ml" 67 1648 1653 "research/learning/inspector.ml" 67 1648 1656
+type(
+  ftype
+)
+"research/learning/inspector.ml" 67 1648 1660 "research/learning/inspector.ml" 67 1648 1673
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"research/learning/inspector.ml" 67 1648 1674 "research/learning/inspector.ml" 67 1648 1700
+type(
+  string
+)
+"research/learning/inspector.ml" 67 1648 1660 "research/learning/inspector.ml" 67 1648 1700
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/inspector.ml" 68 1701 1706 "research/learning/inspector.ml" 68 1701 1709
+type(
+  ftype
+)
+"research/learning/inspector.ml" 68 1701 1713 "research/learning/inspector.ml" 68 1701 1726
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"research/learning/inspector.ml" 68 1701 1727 "research/learning/inspector.ml" 68 1701 1753
+type(
+  string
+)
+"research/learning/inspector.ml" 68 1701 1713 "research/learning/inspector.ml" 68 1701 1753
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/inspector.ml" 66 1628 1631 "research/learning/inspector.ml" 68 1701 1753
+type(
+  unit
+)
+"research/learning/inspector.ml" 69 1757 1759 "research/learning/inspector.ml" 69 1757 1767
+type(
+  CF.t -> unit
+)
+ident(
+  ext_ref CF.print
+)
+"research/learning/inspector.ml" 69 1757 1768 "research/learning/inspector.ml" 69 1757 1772
+type(
+  CF.t
+)
+ident(
+  int_ref feat "research/learning/inspector.ml" 64 1595 1609 "research/learning/inspector.ml" 64 1595 1613
+)
+"research/learning/inspector.ml" 69 1757 1759 "research/learning/inspector.ml" 69 1757 1772
+call(
+  tail
+)
+type(
+  unit
+)
+"research/learning/inspector.ml" 65 1618 1620 "research/learning/inspector.ml" 69 1757 1772
+type(
+  unit
+)
+"research/learning/inspector.ml" 64 1595 1597 "research/learning/inspector.ml" 69 1757 1772
+type(
+  t -> unit
+)
+type(
+  t -> unit
+)
+"research/learning/inspector.ml" 71 1775 1780 "research/learning/inspector.ml" 71 1775 1793
+type(
+  t -> out_channel -> unit
+)
+ident(
+  def print_to_file "research/learning/inspector.ml" 79 2016 2017 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 72 1821 1828 "research/learning/inspector.ml" 72 1821 1833
+type(
+  ftype
+)
+ident(
+  def ftype "research/learning/inspector.ml" 72 1821 1841 "research/learning/inspector.ml" 77 1987 2014
+)
+"research/learning/inspector.ml" 72 1821 1835 "research/learning/inspector.ml" 72 1821 1839
+type(
+  CF.t
+)
+ident(
+  def feat "research/learning/inspector.ml" 72 1821 1841 "research/learning/inspector.ml" 77 1987 2014
+)
+"research/learning/inspector.ml" 72 1821 1827 "research/learning/inspector.ml" 72 1821 1840
+type(
+  t
+)
+"research/learning/inspector.ml" 72 1821 1841 "research/learning/inspector.ml" 72 1821 1844
+type(
+  out_channel
+)
+ident(
+  def out "research/learning/inspector.ml" 73 1848 1850 "research/learning/inspector.ml" 77 1987 2014
+)
+"research/learning/inspector.ml" 73 1848 1854 "research/learning/inspector.ml" 73 1848 1855
+type(
+  unit
+)
+"research/learning/inspector.ml" 74 1858 1867 "research/learning/inspector.ml" 74 1858 1872
+type(
+  ftype
+)
+ident(
+  int_ref ftype "research/learning/inspector.ml" 72 1821 1828 "research/learning/inspector.ml" 72 1821 1833
+)
+"research/learning/inspector.ml" 75 1878 1883 "research/learning/inspector.ml" 75 1878 1886
+type(
+  ftype
+)
+"research/learning/inspector.ml" 75 1878 1890 "research/learning/inspector.ml" 75 1878 1903
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"research/learning/inspector.ml" 75 1878 1904 "research/learning/inspector.ml" 75 1878 1930
+type(
+  string
+)
+"research/learning/inspector.ml" 75 1878 1890 "research/learning/inspector.ml" 75 1878 1930
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/inspector.ml" 76 1931 1936 "research/learning/inspector.ml" 76 1931 1939
+type(
+  ftype
+)
+"research/learning/inspector.ml" 76 1931 1943 "research/learning/inspector.ml" 76 1931 1956
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"research/learning/inspector.ml" 76 1931 1957 "research/learning/inspector.ml" 76 1931 1983
+type(
+  string
+)
+"research/learning/inspector.ml" 76 1931 1943 "research/learning/inspector.ml" 76 1931 1983
+call(
+  stack
+)
+type(
+  unit
+)
+"research/learning/inspector.ml" 74 1858 1861 "research/learning/inspector.ml" 76 1931 1983
+type(
+  unit
+)
+"research/learning/inspector.ml" 77 1987 1989 "research/learning/inspector.ml" 77 1987 2005
+type(
+  CF.t -> out_channel -> unit
+)
+ident(
+  ext_ref CF.print_to_file
+)
+"research/learning/inspector.ml" 77 1987 2006 "research/learning/inspector.ml" 77 1987 2010
+type(
+  CF.t
+)
+ident(
+  int_ref feat "research/learning/inspector.ml" 72 1821 1835 "research/learning/inspector.ml" 72 1821 1839
+)
+"research/learning/inspector.ml" 77 1987 2011 "research/learning/inspector.ml" 77 1987 2014
+type(
+  out_channel
+)
+ident(
+  int_ref out "research/learning/inspector.ml" 72 1821 1841 "research/learning/inspector.ml" 72 1821 1844
+)
+"research/learning/inspector.ml" 77 1987 1989 "research/learning/inspector.ml" 77 1987 2014
+call(
+  tail
+)
+type(
+  unit
+)
+"research/learning/inspector.ml" 73 1848 1850 "research/learning/inspector.ml" 77 1987 2014
+type(
+  unit
+)
+"research/learning/inspector.ml" 72 1821 1823 "research/learning/inspector.ml" 77 1987 2014
+type(
+  t -> out_channel -> unit
+)
+type(
+  t -> out_channel -> unit
+)
+"research/learning/inspector.ml" 79 2016 2021 "research/learning/inspector.ml" 79 2016 2030
+type(
+  t -> ftype
+)
+ident(
+  def get_ftype "research/learning/inspector.ml" 80 2044 2069 "research/learning/inspector.ml" 81 2070 2073
+)
+"research/learning/inspector.ml" 80 2044 2051 "research/learning/inspector.ml" 80 2044 2056
+type(
+  ftype
+)
+ident(
+  def ftype "research/learning/inspector.ml" 80 2044 2064 "research/learning/inspector.ml" 80 2044 2069
+)
+"research/learning/inspector.ml" 80 2044 2058 "research/learning/inspector.ml" 80 2044 2059
+type(
+  CF.t
+)
+"research/learning/inspector.ml" 80 2044 2050 "research/learning/inspector.ml" 80 2044 2060
+type(
+  t
+)
+"research/learning/inspector.ml" 80 2044 2064 "research/learning/inspector.ml" 80 2044 2069
+type(
+  ftype
+)
+ident(
+  int_ref ftype "research/learning/inspector.ml" 80 2044 2051 "research/learning/inspector.ml" 80 2044 2056
+)
+"research/learning/inspector.ml" 80 2044 2046 "research/learning/inspector.ml" 80 2044 2069
+type(
+  t -> ftype
+)
+type(
+  t -> ftype
+)

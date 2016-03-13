@@ -1,0 +1,5119 @@
+"research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  def found "research/reduce/visitors.ml" 11 181 181 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 9 87 98 "research/reduce/visitors.ml" 9 87 101
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 9 87 119 "research/reduce/visitors.ml" 9 87 179
+)
+"research/reduce/visitors.ml" 9 87 102 "research/reduce/visitors.ml" 9 87 105
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 9 87 119 "research/reduce/visitors.ml" 9 87 179
+)
+"research/reduce/visitors.ml" 9 87 106 "research/reduce/visitors.ml" 9 87 115
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  def alarm_exp "research/reduce/visitors.ml" 9 87 119 "research/reduce/visitors.ml" 9 87 179
+)
+"research/reduce/visitors.ml" 9 87 97 "research/reduce/visitors.ml" 9 87 116
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 9 87 119 "research/reduce/visitors.ml" 9 87 130
+type(
+  (AlarmExp.t -> bool) -> AlarmExp.t list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"research/reduce/visitors.ml" 9 87 132 "research/reduce/visitors.ml" 9 87 143
+type(
+  IntraCfg.Cmd.alarm_exp -> AlarmExp.t -> bool
+)
+ident(
+  ext_ref AlarmExp.eq
+)
+"research/reduce/visitors.ml" 9 87 144 "research/reduce/visitors.ml" 9 87 153
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 9 87 106 "research/reduce/visitors.ml" 9 87 115
+)
+"research/reduce/visitors.ml" 9 87 131 "research/reduce/visitors.ml" 9 87 154
+call(
+  stack
+)
+type(
+  AlarmExp.t -> bool
+)
+"research/reduce/visitors.ml" 9 87 156 "research/reduce/visitors.ml" 9 87 170
+type(
+  Cil.exp -> Cil.location -> AlarmExp.t list
+)
+ident(
+  ext_ref AlarmExp.c_exp
+)
+"research/reduce/visitors.ml" 9 87 171 "research/reduce/visitors.ml" 9 87 174
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 9 87 98 "research/reduce/visitors.ml" 9 87 101
+)
+"research/reduce/visitors.ml" 9 87 175 "research/reduce/visitors.ml" 9 87 178
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 9 87 102 "research/reduce/visitors.ml" 9 87 105
+)
+"research/reduce/visitors.ml" 9 87 155 "research/reduce/visitors.ml" 9 87 179
+call(
+  stack
+)
+type(
+  AlarmExp.t list
+)
+"research/reduce/visitors.ml" 9 87 119 "research/reduce/visitors.ml" 9 87 179
+call(
+  tail
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 11 181 185 "research/reduce/visitors.ml" 11 181 192
+type(
+  Cil.exp list * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  def found_s "research/reduce/visitors.ml" 14 298 298 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 11 181 194 "research/reduce/visitors.ml" 11 181 198
+type(
+  Cil.exp list
+)
+ident(
+  def exps "research/reduce/visitors.ml" 11 181 216 "research/reduce/visitors.ml" 11 181 269
+)
+"research/reduce/visitors.ml" 11 181 199 "research/reduce/visitors.ml" 11 181 202
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 11 181 216 "research/reduce/visitors.ml" 11 181 269
+)
+"research/reduce/visitors.ml" 11 181 203 "research/reduce/visitors.ml" 11 181 212
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  def alarm_exp "research/reduce/visitors.ml" 11 181 216 "research/reduce/visitors.ml" 11 181 269
+)
+"research/reduce/visitors.ml" 11 181 193 "research/reduce/visitors.ml" 11 181 213
+type(
+  Cil.exp list * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 11 181 216 "research/reduce/visitors.ml" 11 181 227
+type(
+  (Cil.exp -> bool) -> Cil.exp list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"research/reduce/visitors.ml" 11 181 233 "research/reduce/visitors.ml" 11 181 234
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 11 181 238 "research/reduce/visitors.ml" 11 181 263
+)
+"research/reduce/visitors.ml" 11 181 238 "research/reduce/visitors.ml" 11 181 243
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found "research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+)
+"research/reduce/visitors.ml" 11 181 245 "research/reduce/visitors.ml" 11 181 246
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 11 181 233 "research/reduce/visitors.ml" 11 181 234
+)
+"research/reduce/visitors.ml" 11 181 248 "research/reduce/visitors.ml" 11 181 251
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 11 181 199 "research/reduce/visitors.ml" 11 181 202
+)
+"research/reduce/visitors.ml" 11 181 253 "research/reduce/visitors.ml" 11 181 262
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 11 181 203 "research/reduce/visitors.ml" 11 181 212
+)
+"research/reduce/visitors.ml" 11 181 244 "research/reduce/visitors.ml" 11 181 263
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 11 181 238 "research/reduce/visitors.ml" 11 181 263
+call(
+  tail
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 11 181 228 "research/reduce/visitors.ml" 11 181 264
+type(
+  Cil.exp -> bool
+)
+"research/reduce/visitors.ml" 11 181 265 "research/reduce/visitors.ml" 11 181 269
+type(
+  Cil.exp list
+)
+ident(
+  int_ref exps "research/reduce/visitors.ml" 11 181 194 "research/reduce/visitors.ml" 11 181 198
+)
+"research/reduce/visitors.ml" 11 181 216 "research/reduce/visitors.ml" 11 181 269
+call(
+  tail
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  def found_ptsto "research/reduce/visitors.ml" 19 480 480 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 14 298 315 "research/reduce/visitors.ml" 14 298 318
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 15 330 332 "research/reduce/visitors.ml" 17 444 478
+)
+"research/reduce/visitors.ml" 14 298 319 "research/reduce/visitors.ml" 14 298 322
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 15 330 332 "research/reduce/visitors.ml" 17 444 478
+)
+"research/reduce/visitors.ml" 14 298 323 "research/reduce/visitors.ml" 14 298 326
+type(
+  string
+)
+ident(
+  def str "research/reduce/visitors.ml" 15 330 332 "research/reduce/visitors.ml" 17 444 478
+)
+"research/reduce/visitors.ml" 14 298 314 "research/reduce/visitors.ml" 14 298 327
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 15 330 332 "research/reduce/visitors.ml" 15 330 342
+type(
+  string -> string BatSet.t -> bool
+)
+ident(
+  ext_ref BatSet.mem
+)
+"research/reduce/visitors.ml" 15 330 343 "research/reduce/visitors.ml" 15 330 346
+type(
+  string
+)
+ident(
+  int_ref str "research/reduce/visitors.ml" 14 298 323 "research/reduce/visitors.ml" 14 298 326
+)
+"research/reduce/visitors.ml" 15 330 348 "research/reduce/visitors.ml" 15 330 356
+type(
+  string list -> string BatSet.t
+)
+ident(
+  ext_ref Vocab.list2set
+)
+"research/reduce/visitors.ml" 15 330 358 "research/reduce/visitors.ml" 15 330 366
+type(
+  (AlarmExp.t -> string) -> AlarmExp.t list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"research/reduce/visitors.ml" 15 330 372 "research/reduce/visitors.ml" 15 330 377
+type(
+  AlarmExp.t
+)
+ident(
+  def alexp "research/reduce/visitors.ml" 16 382 388 "research/reduce/visitors.ml" 16 382 443
+)
+"research/reduce/visitors.ml" 16 382 388 "research/reduce/visitors.ml" 16 382 406
+type(
+  Cil.location -> string
+)
+ident(
+  ext_ref Cil2str.s_location
+)
+"research/reduce/visitors.ml" 16 382 407 "research/reduce/visitors.ml" 16 382 410
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 14 298 319 "research/reduce/visitors.ml" 14 298 322
+)
+"research/reduce/visitors.ml" 16 382 388 "research/reduce/visitors.ml" 16 382 410
+call(
+  stack
+)
+type(
+  string
+)
+"research/reduce/visitors.ml" 16 382 411 "research/reduce/visitors.ml" 16 382 412
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/reduce/visitors.ml" 16 382 413 "research/reduce/visitors.ml" 16 382 416
+type(
+  string
+)
+"research/reduce/visitors.ml" 16 382 417 "research/reduce/visitors.ml" 16 382 418
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"research/reduce/visitors.ml" 16 382 419 "research/reduce/visitors.ml" 16 382 437
+type(
+  AlarmExp.t -> string
+)
+ident(
+  ext_ref AlarmExp.to_string
+)
+"research/reduce/visitors.ml" 16 382 438 "research/reduce/visitors.ml" 16 382 443
+type(
+  AlarmExp.t
+)
+ident(
+  int_ref alexp "research/reduce/visitors.ml" 15 330 372 "research/reduce/visitors.ml" 15 330 377
+)
+"research/reduce/visitors.ml" 16 382 419 "research/reduce/visitors.ml" 16 382 443
+call(
+  stack
+)
+type(
+  string
+)
+"research/reduce/visitors.ml" 16 382 413 "research/reduce/visitors.ml" 16 382 443
+call(
+  stack
+)
+type(
+  string
+)
+"research/reduce/visitors.ml" 16 382 388 "research/reduce/visitors.ml" 16 382 443
+call(
+  tail
+)
+type(
+  string
+)
+"research/reduce/visitors.ml" 15 330 367 "research/reduce/visitors.ml" 17 444 451
+type(
+  AlarmExp.t -> string
+)
+"research/reduce/visitors.ml" 17 444 453 "research/reduce/visitors.ml" 17 444 467
+type(
+  Cil.exp -> Cil.location -> AlarmExp.t list
+)
+ident(
+  ext_ref AlarmExp.c_exp
+)
+"research/reduce/visitors.ml" 17 444 468 "research/reduce/visitors.ml" 17 444 471
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 14 298 315 "research/reduce/visitors.ml" 14 298 318
+)
+"research/reduce/visitors.ml" 17 444 472 "research/reduce/visitors.ml" 17 444 475
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 14 298 319 "research/reduce/visitors.ml" 14 298 322
+)
+"research/reduce/visitors.ml" 17 444 452 "research/reduce/visitors.ml" 17 444 476
+call(
+  stack
+)
+type(
+  AlarmExp.t list
+)
+"research/reduce/visitors.ml" 15 330 357 "research/reduce/visitors.ml" 17 444 477
+call(
+  stack
+)
+type(
+  string list
+)
+"research/reduce/visitors.ml" 15 330 347 "research/reduce/visitors.ml" 17 444 478
+call(
+  stack
+)
+type(
+  string BatSet.t
+)
+"research/reduce/visitors.ml" 15 330 332 "research/reduce/visitors.ml" 17 444 478
+call(
+  tail
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 19 480 484 "research/reduce/visitors.ml" 19 480 497
+type(
+  Cil.exp list * Cil.location * string -> bool
+)
+ident(
+  def found_s_ptsto "research/reduce/visitors.ml" 21 568 568 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 19 480 499 "research/reduce/visitors.ml" 19 480 503
+type(
+  Cil.exp list
+)
+ident(
+  def exps "research/reduce/visitors.ml" 19 480 515 "research/reduce/visitors.ml" 19 480 566
+)
+"research/reduce/visitors.ml" 19 480 504 "research/reduce/visitors.ml" 19 480 507
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 19 480 515 "research/reduce/visitors.ml" 19 480 566
+)
+"research/reduce/visitors.ml" 19 480 508 "research/reduce/visitors.ml" 19 480 511
+type(
+  string
+)
+ident(
+  def str "research/reduce/visitors.ml" 19 480 515 "research/reduce/visitors.ml" 19 480 566
+)
+"research/reduce/visitors.ml" 19 480 498 "research/reduce/visitors.ml" 19 480 512
+type(
+  Cil.exp list * Cil.location * string
+)
+"research/reduce/visitors.ml" 19 480 515 "research/reduce/visitors.ml" 19 480 526
+type(
+  (Cil.exp -> bool) -> Cil.exp list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"research/reduce/visitors.ml" 19 480 532 "research/reduce/visitors.ml" 19 480 533
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 19 480 537 "research/reduce/visitors.ml" 19 480 560
+)
+"research/reduce/visitors.ml" 19 480 537 "research/reduce/visitors.ml" 19 480 548
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  int_ref found_ptsto "research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+)
+"research/reduce/visitors.ml" 19 480 550 "research/reduce/visitors.ml" 19 480 551
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 19 480 532 "research/reduce/visitors.ml" 19 480 533
+)
+"research/reduce/visitors.ml" 19 480 552 "research/reduce/visitors.ml" 19 480 555
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 19 480 504 "research/reduce/visitors.ml" 19 480 507
+)
+"research/reduce/visitors.ml" 19 480 556 "research/reduce/visitors.ml" 19 480 559
+type(
+  string
+)
+ident(
+  int_ref str "research/reduce/visitors.ml" 19 480 508 "research/reduce/visitors.ml" 19 480 511
+)
+"research/reduce/visitors.ml" 19 480 549 "research/reduce/visitors.ml" 19 480 560
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 19 480 537 "research/reduce/visitors.ml" 19 480 560
+call(
+  tail
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 19 480 527 "research/reduce/visitors.ml" 19 480 561
+type(
+  Cil.exp -> bool
+)
+"research/reduce/visitors.ml" 19 480 562 "research/reduce/visitors.ml" 19 480 566
+type(
+  Cil.exp list
+)
+ident(
+  int_ref exps "research/reduce/visitors.ml" 19 480 499 "research/reduce/visitors.ml" 19 480 503
+)
+"research/reduce/visitors.ml" 19 480 515 "research/reduce/visitors.ml" 19 480 566
+call(
+  tail
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 21 568 576 "research/reduce/visitors.ml" 21 568 599
+type(
+  Cil.exp -> Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+ident(
+  def organize_mem_binop_part "research/reduce/visitors.ml" 21 568 568 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 22 665 670 "research/reduce/visitors.ml" 22 665 672
+type(
+  Cil.exp
+)
+ident(
+  def e1 "research/reduce/visitors.ml" 22 665 673 "research/reduce/visitors.ml" 38 1057 1115
+)
+"research/reduce/visitors.ml" 22 665 673 "research/reduce/visitors.ml" 22 665 675
+type(
+  Cil.exp
+)
+ident(
+  def e2 "research/reduce/visitors.ml" 22 665 676 "research/reduce/visitors.ml" 38 1057 1115
+)
+"research/reduce/visitors.ml" 22 665 676 "research/reduce/visitors.ml" 22 665 695
+type(
+  Cil.exp list
+)
+ident(
+  def idx_list_collecting "research/reduce/visitors.ml" 23 699 700 "research/reduce/visitors.ml" 38 1057 1115
+)
+"research/reduce/visitors.ml" 23 699 706 "research/reduce/visitors.ml" 23 699 708
+type(
+  Cil.exp
+)
+ident(
+  int_ref e1 "research/reduce/visitors.ml" 22 665 670 "research/reduce/visitors.ml" 22 665 672
+)
+"research/reduce/visitors.ml" 24 714 722 "research/reduce/visitors.ml" 24 714 724
+type(
+  Cil.lval
+)
+ident(
+  def lv "research/reduce/visitors.ml" 25 729 732 "research/reduce/visitors.ml" 28 824 888
+)
+"research/reduce/visitors.ml" 24 714 717 "research/reduce/visitors.ml" 24 714 724
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 25 729 737 "research/reduce/visitors.ml" 25 729 742
+type(
+  Cil.lhost
+)
+ident(
+  def lhost "research/reduce/visitors.ml" 26 755 758 "research/reduce/visitors.ml" 28 824 888
+)
+"research/reduce/visitors.ml" 25 729 744 "research/reduce/visitors.ml" 25 729 745
+type(
+  Cil.offset
+)
+"research/reduce/visitors.ml" 25 729 736 "research/reduce/visitors.ml" 25 729 746
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 25 729 749 "research/reduce/visitors.ml" 25 729 751
+type(
+  Cil.lval
+)
+ident(
+  int_ref lv "research/reduce/visitors.ml" 24 714 722 "research/reduce/visitors.ml" 24 714 724
+)
+"research/reduce/visitors.ml" 26 755 765 "research/reduce/visitors.ml" 26 755 770
+type(
+  Cil.lhost
+)
+ident(
+  int_ref lhost "research/reduce/visitors.ml" 25 729 737 "research/reduce/visitors.ml" 25 729 742
+)
+"research/reduce/visitors.ml" 27 776 786 "research/reduce/visitors.ml" 27 776 787
+type(
+  Cil.varinfo
+)
+"research/reduce/visitors.ml" 27 776 782 "research/reduce/visitors.ml" 27 776 787
+type(
+  Cil.lhost
+)
+"research/reduce/visitors.ml" 27 776 792 "research/reduce/visitors.ml" 27 776 794
+type(
+  Cil.exp
+)
+ident(
+  int_ref e1 "research/reduce/visitors.ml" 22 665 670 "research/reduce/visitors.ml" 22 665 672
+)
+"research/reduce/visitors.ml" 27 776 797 "research/reduce/visitors.ml" 27 776 799
+type(
+  Cil.exp
+)
+ident(
+  int_ref e2 "research/reduce/visitors.ml" 22 665 673 "research/reduce/visitors.ml" 22 665 675
+)
+"research/reduce/visitors.ml" 27 776 796 "research/reduce/visitors.ml" 27 776 800
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 27 776 801 "research/reduce/visitors.ml" 27 776 802
+type(
+  Cil.exp list -> Cil.exp list -> Cil.exp list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"research/reduce/visitors.ml" 27 776 803 "research/reduce/visitors.ml" 27 776 822
+type(
+  Cil.exp list
+)
+ident(
+  int_ref idx_list_collecting "research/reduce/visitors.ml" 22 665 676 "research/reduce/visitors.ml" 22 665 695
+)
+"research/reduce/visitors.ml" 27 776 796 "research/reduce/visitors.ml" 27 776 822
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 27 776 791 "research/reduce/visitors.ml" 27 776 823
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 28 824 834 "research/reduce/visitors.ml" 28 824 835
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 28 824 839 "research/reduce/visitors.ml" 28 824 887
+)
+"research/reduce/visitors.ml" 28 824 830 "research/reduce/visitors.ml" 28 824 835
+type(
+  Cil.lhost
+)
+"research/reduce/visitors.ml" 28 824 839 "research/reduce/visitors.ml" 28 824 856
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+ident(
+  int_ref organize_mem_part "research/reduce/visitors.ml" 42 1212 1216 "research/reduce/visitors.ml" 42 1212 1233
+)
+"research/reduce/visitors.ml" 28 824 857 "research/reduce/visitors.ml" 28 824 858
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 28 824 834 "research/reduce/visitors.ml" 28 824 835
+)
+"research/reduce/visitors.ml" 28 824 861 "research/reduce/visitors.ml" 28 824 863
+type(
+  Cil.exp
+)
+ident(
+  int_ref e2 "research/reduce/visitors.ml" 22 665 673 "research/reduce/visitors.ml" 22 665 675
+)
+"research/reduce/visitors.ml" 28 824 860 "research/reduce/visitors.ml" 28 824 864
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 28 824 865 "research/reduce/visitors.ml" 28 824 866
+type(
+  Cil.exp list -> Cil.exp list -> Cil.exp list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"research/reduce/visitors.ml" 28 824 867 "research/reduce/visitors.ml" 28 824 886
+type(
+  Cil.exp list
+)
+ident(
+  int_ref idx_list_collecting "research/reduce/visitors.ml" 22 665 676 "research/reduce/visitors.ml" 22 665 695
+)
+"research/reduce/visitors.ml" 28 824 859 "research/reduce/visitors.ml" 28 824 887
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 28 824 839 "research/reduce/visitors.ml" 28 824 887
+call(
+  tail
+)
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 26 755 758 "research/reduce/visitors.ml" 28 824 888
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 25 729 732 "research/reduce/visitors.ml" 28 824 888
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 29 889 899 "research/reduce/visitors.ml" 29 889 900
+type(
+  Cil.binop
+)
+"research/reduce/visitors.ml" 29 889 902 "research/reduce/visitors.ml" 29 889 903
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 905 "research/reduce/visitors.ml" 29 889 906
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 908 "research/reduce/visitors.ml" 29 889 909
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 29 889 910
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 30 911 921 "research/reduce/visitors.ml" 30 911 922
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 30 911 914 "research/reduce/visitors.ml" 30 911 922
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 30 911 922
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 31 923 932 "research/reduce/visitors.ml" 31 923 933
+type(
+  Cil.constant
+)
+"research/reduce/visitors.ml" 31 923 926 "research/reduce/visitors.ml" 31 923 933
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 31 923 933
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 32 934 943 "research/reduce/visitors.ml" 32 934 944
+type(
+  Cil.unop
+)
+"research/reduce/visitors.ml" 32 934 946 "research/reduce/visitors.ml" 32 934 947
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 32 934 949 "research/reduce/visitors.ml" 32 934 950
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 32 934 937 "research/reduce/visitors.ml" 32 934 951
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 32 934 951
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 33 952 962 "research/reduce/visitors.ml" 33 952 963
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 33 952 965 "research/reduce/visitors.ml" 33 952 966
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 33 952 955 "research/reduce/visitors.ml" 33 952 967
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 33 952 967
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 34 968 979 "research/reduce/visitors.ml" 34 968 980
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 34 968 971 "research/reduce/visitors.ml" 34 968 980
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 34 968 980
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 35 981 991 "research/reduce/visitors.ml" 35 981 992
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 35 981 984 "research/reduce/visitors.ml" 35 981 992
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 35 981 992
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 36 993 1004 "research/reduce/visitors.ml" 36 993 1005
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 36 993 996 "research/reduce/visitors.ml" 36 993 1005
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 36 993 1005
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 37 1006 1019 "research/reduce/visitors.ml" 37 1006 1020
+type(
+  string
+)
+"research/reduce/visitors.ml" 37 1006 1009 "research/reduce/visitors.ml" 37 1006 1020
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 29 889 892 "research/reduce/visitors.ml" 37 1006 1020
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 37 1006 1025 "research/reduce/visitors.ml" 37 1006 1027
+type(
+  Cil.exp
+)
+ident(
+  int_ref e1 "research/reduce/visitors.ml" 22 665 670 "research/reduce/visitors.ml" 22 665 672
+)
+"research/reduce/visitors.ml" 37 1006 1030 "research/reduce/visitors.ml" 37 1006 1032
+type(
+  Cil.exp
+)
+ident(
+  int_ref e2 "research/reduce/visitors.ml" 22 665 673 "research/reduce/visitors.ml" 22 665 675
+)
+"research/reduce/visitors.ml" 37 1006 1029 "research/reduce/visitors.ml" 37 1006 1033
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 37 1006 1034 "research/reduce/visitors.ml" 37 1006 1035
+type(
+  Cil.exp list -> Cil.exp list -> Cil.exp list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"research/reduce/visitors.ml" 37 1006 1036 "research/reduce/visitors.ml" 37 1006 1055
+type(
+  Cil.exp list
+)
+ident(
+  int_ref idx_list_collecting "research/reduce/visitors.ml" 22 665 676 "research/reduce/visitors.ml" 22 665 695
+)
+"research/reduce/visitors.ml" 37 1006 1029 "research/reduce/visitors.ml" 37 1006 1055
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 37 1006 1024 "research/reduce/visitors.ml" 37 1006 1056
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 38 1057 1060 "research/reduce/visitors.ml" 38 1057 1061
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 38 1057 1065 "research/reduce/visitors.ml" 38 1057 1070
+type(
+  exn -> Cil.exp * Cil.exp list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"research/reduce/visitors.ml" 38 1057 1080 "research/reduce/visitors.ml" 38 1057 1114
+type(
+  string
+)
+"research/reduce/visitors.ml" 38 1057 1071 "research/reduce/visitors.ml" 38 1057 1115
+type(
+  exn
+)
+"research/reduce/visitors.ml" 38 1057 1065 "research/reduce/visitors.ml" 38 1057 1115
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 23 699 700 "research/reduce/visitors.ml" 38 1057 1115
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 22 665 666 "research/reduce/visitors.ml" 38 1057 1115
+type(
+  Cil.exp -> Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+type(
+  Cil.exp -> Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 42 1212 1216 "research/reduce/visitors.ml" 42 1212 1233
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+ident(
+  def organize_mem_part "research/reduce/visitors.ml" 21 568 568 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 43 1288 1293 "research/reduce/visitors.ml" 43 1288 1296
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 43 1288 1297 "research/reduce/visitors.ml" 48 1452 1504
+)
+"research/reduce/visitors.ml" 43 1288 1297 "research/reduce/visitors.ml" 43 1288 1316
+type(
+  Cil.exp list
+)
+ident(
+  def idx_list_collecting "research/reduce/visitors.ml" 44 1320 1321 "research/reduce/visitors.ml" 48 1452 1504
+)
+"research/reduce/visitors.ml" 44 1320 1327 "research/reduce/visitors.ml" 44 1320 1330
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 43 1288 1293 "research/reduce/visitors.ml" 43 1288 1296
+)
+"research/reduce/visitors.ml" 45 1336 1344 "research/reduce/visitors.ml" 45 1336 1345
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 45 1336 1339 "research/reduce/visitors.ml" 45 1336 1345
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 46 1346 1356 "research/reduce/visitors.ml" 46 1346 1357
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 46 1346 1359 "research/reduce/visitors.ml" 46 1346 1360
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 46 1346 1349 "research/reduce/visitors.ml" 46 1346 1361
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 45 1336 1339 "research/reduce/visitors.ml" 46 1346 1361
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 46 1346 1366 "research/reduce/visitors.ml" 46 1346 1369
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 43 1288 1293 "research/reduce/visitors.ml" 43 1288 1296
+)
+"research/reduce/visitors.ml" 46 1346 1371 "research/reduce/visitors.ml" 46 1346 1373
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 46 1346 1365 "research/reduce/visitors.ml" 46 1346 1374
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 47 1375 1385 "research/reduce/visitors.ml" 47 1375 1386
+type(
+  Cil.binop
+)
+"research/reduce/visitors.ml" 47 1375 1388 "research/reduce/visitors.ml" 47 1375 1390
+type(
+  Cil.exp
+)
+ident(
+  def e1 "research/reduce/visitors.ml" 47 1375 1402 "research/reduce/visitors.ml" 47 1375 1451
+)
+"research/reduce/visitors.ml" 47 1375 1392 "research/reduce/visitors.ml" 47 1375 1394
+type(
+  Cil.exp
+)
+ident(
+  def e2 "research/reduce/visitors.ml" 47 1375 1402 "research/reduce/visitors.ml" 47 1375 1451
+)
+"research/reduce/visitors.ml" 47 1375 1396 "research/reduce/visitors.ml" 47 1375 1397
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 47 1375 1378 "research/reduce/visitors.ml" 47 1375 1398
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 47 1375 1402 "research/reduce/visitors.ml" 47 1375 1425
+type(
+  Cil.exp -> Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+ident(
+  int_ref organize_mem_binop_part "research/reduce/visitors.ml" 21 568 576 "research/reduce/visitors.ml" 21 568 599
+)
+"research/reduce/visitors.ml" 47 1375 1426 "research/reduce/visitors.ml" 47 1375 1428
+type(
+  Cil.exp
+)
+ident(
+  int_ref e1 "research/reduce/visitors.ml" 47 1375 1388 "research/reduce/visitors.ml" 47 1375 1390
+)
+"research/reduce/visitors.ml" 47 1375 1429 "research/reduce/visitors.ml" 47 1375 1431
+type(
+  Cil.exp
+)
+ident(
+  int_ref e2 "research/reduce/visitors.ml" 47 1375 1392 "research/reduce/visitors.ml" 47 1375 1394
+)
+"research/reduce/visitors.ml" 47 1375 1432 "research/reduce/visitors.ml" 47 1375 1451
+type(
+  Cil.exp list
+)
+ident(
+  int_ref idx_list_collecting "research/reduce/visitors.ml" 43 1288 1297 "research/reduce/visitors.ml" 43 1288 1316
+)
+"research/reduce/visitors.ml" 47 1375 1402 "research/reduce/visitors.ml" 47 1375 1451
+call(
+  tail
+)
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 48 1452 1455 "research/reduce/visitors.ml" 48 1452 1456
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 48 1452 1460 "research/reduce/visitors.ml" 48 1452 1465
+type(
+  exn -> Cil.exp * Cil.exp list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"research/reduce/visitors.ml" 48 1452 1475 "research/reduce/visitors.ml" 48 1452 1503
+type(
+  string
+)
+"research/reduce/visitors.ml" 48 1452 1466 "research/reduce/visitors.ml" 48 1452 1504
+type(
+  exn
+)
+"research/reduce/visitors.ml" 48 1452 1460 "research/reduce/visitors.ml" 48 1452 1504
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 44 1320 1321 "research/reduce/visitors.ml" 48 1452 1504
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 43 1288 1289 "research/reduce/visitors.ml" 48 1452 1504
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 50 1506 1514 "research/reduce/visitors.ml" 50 1506 1524
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp
+)
+ident(
+  def build_qbuf "research/reduce/visitors.ml" 50 1506 1506 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 51 1562 1567 "research/reduce/visitors.ml" 51 1562 1568
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 51 1562 1569 "research/reduce/visitors.ml" 57 1849 1859
+)
+"research/reduce/visitors.ml" 51 1562 1569 "research/reduce/visitors.ml" 51 1562 1579
+type(
+  Cil.exp list
+)
+ident(
+  def e_list_rev "research/reduce/visitors.ml" 52 1583 1584 "research/reduce/visitors.ml" 57 1849 1859
+)
+"research/reduce/visitors.ml" 52 1583 1590 "research/reduce/visitors.ml" 52 1583 1600
+type(
+  Cil.exp list
+)
+ident(
+  int_ref e_list_rev "research/reduce/visitors.ml" 51 1562 1569 "research/reduce/visitors.ml" 51 1562 1579
+)
+"research/reduce/visitors.ml" 53 1606 1609 "research/reduce/visitors.ml" 53 1606 1611
+type(
+  Cil.exp
+)
+ident(
+  def hd "research/reduce/visitors.ml" 54 1622 1625 "research/reduce/visitors.ml" 56 1741 1848
+)
+"research/reduce/visitors.ml" 53 1606 1613 "research/reduce/visitors.ml" 53 1606 1617
+type(
+  Cil.exp list
+)
+ident(
+  def rest "research/reduce/visitors.ml" 54 1622 1625 "research/reduce/visitors.ml" 56 1741 1848
+)
+"research/reduce/visitors.ml" 53 1606 1609 "research/reduce/visitors.ml" 53 1606 1617
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 54 1622 1628 "research/reduce/visitors.ml" 54 1622 1639
+type(
+  Cil.exp list -> int
+)
+ident(
+  ext_ref List.length
+)
+"research/reduce/visitors.ml" 54 1622 1640 "research/reduce/visitors.ml" 54 1622 1644
+type(
+  Cil.exp list
+)
+ident(
+  int_ref rest "research/reduce/visitors.ml" 53 1606 1613 "research/reduce/visitors.ml" 53 1606 1617
+)
+"research/reduce/visitors.ml" 54 1622 1628 "research/reduce/visitors.ml" 54 1622 1644
+call(
+  stack
+)
+type(
+  int
+)
+"research/reduce/visitors.ml" 54 1622 1645 "research/reduce/visitors.ml" 54 1622 1646
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"research/reduce/visitors.ml" 54 1622 1647 "research/reduce/visitors.ml" 54 1622 1648
+type(
+  int
+)
+"research/reduce/visitors.ml" 54 1622 1628 "research/reduce/visitors.ml" 54 1622 1648
+type(
+  bool
+)
+"research/reduce/visitors.ml" 55 1649 1667 "research/reduce/visitors.ml" 55 1649 1676
+type(
+  addr:Cil.exp -> off:Cil.offset -> Cil.lval
+)
+ident(
+  ext_ref Cil.mkMem
+)
+"research/reduce/visitors.ml" 55 1649 1689 "research/reduce/visitors.ml" 55 1649 1699
+type(
+  Cil.binop
+)
+"research/reduce/visitors.ml" 55 1649 1701 "research/reduce/visitors.ml" 55 1649 1702
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 51 1562 1567 "research/reduce/visitors.ml" 51 1562 1568
+)
+"research/reduce/visitors.ml" 55 1649 1704 "research/reduce/visitors.ml" 55 1649 1706
+type(
+  Cil.exp
+)
+ident(
+  int_ref hd "research/reduce/visitors.ml" 53 1606 1609 "research/reduce/visitors.ml" 53 1606 1611
+)
+"research/reduce/visitors.ml" 55 1649 1708 "research/reduce/visitors.ml" 55 1649 1722
+type(
+  Cil.typ
+)
+ident(
+  ext_ref Cil.intPtrType
+)
+"research/reduce/visitors.ml" 55 1649 1677 "research/reduce/visitors.ml" 55 1649 1724
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 55 1649 1725 "research/reduce/visitors.ml" 55 1649 1739
+type(
+  Cil.offset
+)
+"research/reduce/visitors.ml" 55 1649 1666 "research/reduce/visitors.ml" 55 1649 1740
+call(
+  stack
+)
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 55 1649 1657 "research/reduce/visitors.ml" 55 1649 1740
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 56 1741 1759 "research/reduce/visitors.ml" 56 1741 1768
+type(
+  addr:Cil.exp -> off:Cil.offset -> Cil.lval
+)
+ident(
+  ext_ref Cil.mkMem
+)
+"research/reduce/visitors.ml" 56 1741 1781 "research/reduce/visitors.ml" 56 1741 1791
+type(
+  Cil.binop
+)
+"research/reduce/visitors.ml" 56 1741 1793 "research/reduce/visitors.ml" 56 1741 1803
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp
+)
+ident(
+  int_ref build_qbuf "research/reduce/visitors.ml" 50 1506 1514 "research/reduce/visitors.ml" 50 1506 1524
+)
+"research/reduce/visitors.ml" 56 1741 1804 "research/reduce/visitors.ml" 56 1741 1805
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 51 1562 1567 "research/reduce/visitors.ml" 51 1562 1568
+)
+"research/reduce/visitors.ml" 56 1741 1806 "research/reduce/visitors.ml" 56 1741 1810
+type(
+  Cil.exp list
+)
+ident(
+  int_ref rest "research/reduce/visitors.ml" 53 1606 1613 "research/reduce/visitors.ml" 53 1606 1617
+)
+"research/reduce/visitors.ml" 56 1741 1793 "research/reduce/visitors.ml" 56 1741 1810
+call(
+  stack
+)
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 56 1741 1812 "research/reduce/visitors.ml" 56 1741 1814
+type(
+  Cil.exp
+)
+ident(
+  int_ref hd "research/reduce/visitors.ml" 53 1606 1609 "research/reduce/visitors.ml" 53 1606 1611
+)
+"research/reduce/visitors.ml" 56 1741 1816 "research/reduce/visitors.ml" 56 1741 1830
+type(
+  Cil.typ
+)
+ident(
+  ext_ref Cil.intPtrType
+)
+"research/reduce/visitors.ml" 56 1741 1769 "research/reduce/visitors.ml" 56 1741 1832
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 56 1741 1833 "research/reduce/visitors.ml" 56 1741 1847
+type(
+  Cil.offset
+)
+"research/reduce/visitors.ml" 56 1741 1758 "research/reduce/visitors.ml" 56 1741 1848
+call(
+  stack
+)
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 56 1741 1749 "research/reduce/visitors.ml" 56 1741 1848
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 54 1622 1625 "research/reduce/visitors.ml" 56 1741 1848
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 57 1849 1852 "research/reduce/visitors.ml" 57 1849 1854
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 57 1849 1858 "research/reduce/visitors.ml" 57 1849 1859
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 51 1562 1567 "research/reduce/visitors.ml" 51 1562 1568
+)
+"research/reduce/visitors.ml" 52 1583 1584 "research/reduce/visitors.ml" 57 1849 1859
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 51 1562 1563 "research/reduce/visitors.ml" 57 1849 1859
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp
+)
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp
+)
+"research/reduce/visitors.ml" 59 1861 1865 "research/reduce/visitors.ml" 59 1861 1894
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp
+)
+ident(
+  def build_qbuf_qidx_from_derefexp "research/reduce/visitors.ml" 73 2365 2365 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 60 1944 1949 "research/reduce/visitors.ml" 60 1944 1950
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 60 1944 1951 "research/reduce/visitors.ml" 71 2361 2363
+)
+"research/reduce/visitors.ml" 60 1944 1951 "research/reduce/visitors.ml" 60 1944 1957
+type(
+  Cil.exp list
+)
+ident(
+  def e_list "research/reduce/visitors.ml" 61 1961 1962 "research/reduce/visitors.ml" 71 2361 2363
+)
+"research/reduce/visitors.ml" 61 1961 1965 "research/reduce/visitors.ml" 61 1961 1976
+type(
+  Cil.exp list -> int
+)
+ident(
+  ext_ref List.length
+)
+"research/reduce/visitors.ml" 61 1961 1977 "research/reduce/visitors.ml" 61 1961 1983
+type(
+  Cil.exp list
+)
+ident(
+  int_ref e_list "research/reduce/visitors.ml" 60 1944 1951 "research/reduce/visitors.ml" 60 1944 1957
+)
+"research/reduce/visitors.ml" 61 1961 1965 "research/reduce/visitors.ml" 61 1961 1983
+call(
+  stack
+)
+type(
+  int
+)
+"research/reduce/visitors.ml" 61 1961 1984 "research/reduce/visitors.ml" 61 1961 1985
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"research/reduce/visitors.ml" 61 1961 1986 "research/reduce/visitors.ml" 61 1961 1987
+type(
+  int
+)
+"research/reduce/visitors.ml" 61 1961 1965 "research/reduce/visitors.ml" 61 1961 1987
+type(
+  bool
+)
+"research/reduce/visitors.ml" 62 1988 1995 "research/reduce/visitors.ml" 62 1988 1996
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 60 1944 1949 "research/reduce/visitors.ml" 60 1944 1950
+)
+"research/reduce/visitors.ml" 62 1988 2021 "research/reduce/visitors.ml" 62 1988 2033
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"research/reduce/visitors.ml" 62 1988 2034 "research/reduce/visitors.ml" 62 1988 2035
+type(
+  int
+)
+"research/reduce/visitors.ml" 62 1988 2021 "research/reduce/visitors.ml" 62 1988 2035
+type(
+  int64
+)
+"research/reduce/visitors.ml" 62 1988 2037 "research/reduce/visitors.ml" 62 1988 2041
+type(
+  Cil.ikind
+)
+"research/reduce/visitors.ml" 62 1988 2043 "research/reduce/visitors.ml" 62 1988 2047
+type(
+  string option
+)
+"research/reduce/visitors.ml" 62 1988 2008 "research/reduce/visitors.ml" 62 1988 2049
+type(
+  Cil.constant
+)
+"research/reduce/visitors.ml" 62 1988 1998 "research/reduce/visitors.ml" 62 1988 2049
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 62 1988 1994 "research/reduce/visitors.ml" 62 1988 2050
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 64 2059 2066 "research/reduce/visitors.ml" 64 2059 2075
+type(
+  Cil.exp
+)
+ident(
+  def query_idx "research/reduce/visitors.ml" 65 2107 2110 "research/reduce/visitors.ml" 70 2335 2360
+)
+"research/reduce/visitors.ml" 64 2059 2078 "research/reduce/visitors.ml" 64 2059 2085
+type(
+  Cil.exp list -> Cil.exp
+)
+ident(
+  ext_ref List.hd
+)
+"research/reduce/visitors.ml" 64 2059 2087 "research/reduce/visitors.ml" 64 2059 2095
+type(
+  Cil.exp list -> Cil.exp list
+)
+ident(
+  ext_ref List.rev
+)
+"research/reduce/visitors.ml" 64 2059 2096 "research/reduce/visitors.ml" 64 2059 2102
+type(
+  Cil.exp list
+)
+ident(
+  int_ref e_list "research/reduce/visitors.ml" 60 1944 1951 "research/reduce/visitors.ml" 60 1944 1957
+)
+"research/reduce/visitors.ml" 64 2059 2086 "research/reduce/visitors.ml" 64 2059 2103
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 64 2059 2078 "research/reduce/visitors.ml" 64 2059 2103
+call(
+  stack
+)
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 65 2107 2114 "research/reduce/visitors.ml" 65 2107 2135
+type(
+  Cil.exp list
+)
+ident(
+  def e_list_without_last_e "research/reduce/visitors.ml" 69 2265 2268 "research/reduce/visitors.ml" 70 2335 2360
+)
+"research/reduce/visitors.ml" 66 2139 2151 "research/reduce/visitors.ml" 66 2139 2159
+type(
+  Cil.exp list -> Cil.exp list
+)
+ident(
+  ext_ref List.rev
+)
+"research/reduce/visitors.ml" 66 2139 2160 "research/reduce/visitors.ml" 66 2139 2166
+type(
+  Cil.exp list
+)
+ident(
+  int_ref e_list "research/reduce/visitors.ml" 60 1944 1951 "research/reduce/visitors.ml" 60 1944 1957
+)
+"research/reduce/visitors.ml" 66 2139 2151 "research/reduce/visitors.ml" 66 2139 2166
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 67 2172 2180 "research/reduce/visitors.ml" 67 2172 2182
+type(
+  Cil.exp
+)
+ident(
+  def hd "research/reduce/visitors.ml" 67 2172 2192 "research/reduce/visitors.ml" 67 2172 2205
+)
+"research/reduce/visitors.ml" 67 2172 2184 "research/reduce/visitors.ml" 67 2172 2188
+type(
+  Cil.exp list
+)
+ident(
+  def rest "research/reduce/visitors.ml" 67 2172 2192 "research/reduce/visitors.ml" 67 2172 2205
+)
+"research/reduce/visitors.ml" 67 2172 2180 "research/reduce/visitors.ml" 67 2172 2188
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 67 2172 2192 "research/reduce/visitors.ml" 67 2172 2200
+type(
+  Cil.exp list -> Cil.exp list
+)
+ident(
+  ext_ref List.rev
+)
+"research/reduce/visitors.ml" 67 2172 2201 "research/reduce/visitors.ml" 67 2172 2205
+type(
+  Cil.exp list
+)
+ident(
+  int_ref rest "research/reduce/visitors.ml" 67 2172 2184 "research/reduce/visitors.ml" 67 2172 2188
+)
+"research/reduce/visitors.ml" 67 2172 2192 "research/reduce/visitors.ml" 67 2172 2205
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 68 2206 2214 "research/reduce/visitors.ml" 68 2206 2216
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 68 2206 2220 "research/reduce/visitors.ml" 68 2206 2225
+type(
+  exn -> Cil.exp list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"research/reduce/visitors.ml" 68 2206 2235 "research/reduce/visitors.ml" 68 2206 2259
+type(
+  string
+)
+"research/reduce/visitors.ml" 68 2206 2226 "research/reduce/visitors.ml" 68 2206 2260
+type(
+  exn
+)
+"research/reduce/visitors.ml" 68 2206 2220 "research/reduce/visitors.ml" 68 2206 2260
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 66 2139 2144 "research/reduce/visitors.ml" 68 2206 2261
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 69 2265 2272 "research/reduce/visitors.ml" 69 2265 2281
+type(
+  Cil.exp
+)
+ident(
+  def query_buf "research/reduce/visitors.ml" 70 2335 2338 "research/reduce/visitors.ml" 70 2335 2360
+)
+"research/reduce/visitors.ml" 69 2265 2284 "research/reduce/visitors.ml" 69 2265 2294
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp
+)
+ident(
+  int_ref build_qbuf "research/reduce/visitors.ml" 50 1506 1514 "research/reduce/visitors.ml" 50 1506 1524
+)
+"research/reduce/visitors.ml" 69 2265 2295 "research/reduce/visitors.ml" 69 2265 2298
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 60 1944 1949 "research/reduce/visitors.ml" 60 1944 1950
+)
+"research/reduce/visitors.ml" 69 2265 2300 "research/reduce/visitors.ml" 69 2265 2308
+type(
+  Cil.exp list -> Cil.exp list
+)
+ident(
+  ext_ref List.rev
+)
+"research/reduce/visitors.ml" 69 2265 2309 "research/reduce/visitors.ml" 69 2265 2330
+type(
+  Cil.exp list
+)
+ident(
+  int_ref e_list_without_last_e "research/reduce/visitors.ml" 65 2107 2114 "research/reduce/visitors.ml" 65 2107 2135
+)
+"research/reduce/visitors.ml" 69 2265 2299 "research/reduce/visitors.ml" 69 2265 2331
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 69 2265 2284 "research/reduce/visitors.ml" 69 2265 2331
+call(
+  stack
+)
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 70 2335 2339 "research/reduce/visitors.ml" 70 2335 2348
+type(
+  Cil.exp
+)
+ident(
+  int_ref query_buf "research/reduce/visitors.ml" 69 2265 2272 "research/reduce/visitors.ml" 69 2265 2281
+)
+"research/reduce/visitors.ml" 70 2335 2350 "research/reduce/visitors.ml" 70 2335 2359
+type(
+  Cil.exp
+)
+ident(
+  int_ref query_idx "research/reduce/visitors.ml" 64 2059 2066 "research/reduce/visitors.ml" 64 2059 2075
+)
+"research/reduce/visitors.ml" 70 2335 2338 "research/reduce/visitors.ml" 70 2335 2360
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 69 2265 2268 "research/reduce/visitors.ml" 70 2335 2360
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 65 2107 2110 "research/reduce/visitors.ml" 70 2335 2360
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 63 2051 2057 "research/reduce/visitors.ml" 71 2361 2363
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 61 1961 1962 "research/reduce/visitors.ml" 71 2361 2363
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 60 1944 1945 "research/reduce/visitors.ml" 71 2361 2363
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp
+)
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 73 2365 2369 "research/reduce/visitors.ml" 73 2365 2382
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.exp list
+)
+ident(
+  def alarmExp2args "research/reduce/visitors.ml" 84 2838 2838 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 73 2365 2383 "research/reduce/visitors.ml" 73 2365 2392
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  def alarm_exp "research/reduce/visitors.ml" 74 2395 2397 "research/reduce/visitors.ml" 82 2796 2836
+)
+"research/reduce/visitors.ml" 74 2395 2403 "research/reduce/visitors.ml" 74 2395 2412
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 73 2365 2383 "research/reduce/visitors.ml" 73 2365 2392
+)
+"research/reduce/visitors.ml" 75 2418 2445 "research/reduce/visitors.ml" 75 2418 2447
+type(
+  Cil.lval
+)
+ident(
+  def lv "research/reduce/visitors.ml" 75 2418 2460 "research/reduce/visitors.ml" 75 2418 2478
+)
+"research/reduce/visitors.ml" 75 2418 2448 "research/reduce/visitors.ml" 75 2418 2451
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 75 2418 2460 "research/reduce/visitors.ml" 75 2418 2478
+)
+"research/reduce/visitors.ml" 75 2418 2452 "research/reduce/visitors.ml" 75 2418 2455
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 75 2418 2460 "research/reduce/visitors.ml" 75 2418 2478
+)
+"research/reduce/visitors.ml" 75 2418 2422 "research/reduce/visitors.ml" 75 2418 2456
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 75 2418 2470 "research/reduce/visitors.ml" 75 2418 2472
+type(
+  Cil.lval
+)
+ident(
+  int_ref lv "research/reduce/visitors.ml" 75 2418 2445 "research/reduce/visitors.ml" 75 2418 2447
+)
+"research/reduce/visitors.ml" 75 2418 2461 "research/reduce/visitors.ml" 75 2418 2472
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 75 2418 2474 "research/reduce/visitors.ml" 75 2418 2477
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 75 2418 2448 "research/reduce/visitors.ml" 75 2418 2451
+)
+"research/reduce/visitors.ml" 75 2418 2460 "research/reduce/visitors.ml" 75 2418 2478
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 76 2479 2505 "research/reduce/visitors.ml" 76 2479 2508
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 78 2608 2611 "research/reduce/visitors.ml" 81 2780 2795
+)
+"research/reduce/visitors.ml" 76 2479 2510 "research/reduce/visitors.ml" 76 2479 2511
+type(
+  Cil.location
+)
+"research/reduce/visitors.ml" 76 2479 2482 "research/reduce/visitors.ml" 76 2479 2512
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 78 2608 2616 "research/reduce/visitors.ml" 78 2608 2617
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 80 2716 2719 "research/reduce/visitors.ml" 81 2780 2795
+)
+"research/reduce/visitors.ml" 78 2608 2619 "research/reduce/visitors.ml" 78 2608 2625
+type(
+  Cil.exp list
+)
+ident(
+  def e_list "research/reduce/visitors.ml" 80 2716 2719 "research/reduce/visitors.ml" 81 2780 2795
+)
+"research/reduce/visitors.ml" 78 2608 2615 "research/reduce/visitors.ml" 78 2608 2626
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 78 2608 2629 "research/reduce/visitors.ml" 78 2608 2646
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp list
+)
+ident(
+  int_ref organize_mem_part "research/reduce/visitors.ml" 42 1212 1216 "research/reduce/visitors.ml" 42 1212 1233
+)
+"research/reduce/visitors.ml" 78 2608 2647 "research/reduce/visitors.ml" 78 2608 2650
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 76 2479 2505 "research/reduce/visitors.ml" 76 2479 2508
+)
+"research/reduce/visitors.ml" 78 2608 2651 "research/reduce/visitors.ml" 78 2608 2653
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 78 2608 2629 "research/reduce/visitors.ml" 78 2608 2653
+call(
+  stack
+)
+type(
+  Cil.exp * Cil.exp list
+)
+"research/reduce/visitors.ml" 80 2716 2724 "research/reduce/visitors.ml" 80 2716 2728
+type(
+  Cil.exp
+)
+ident(
+  def qbuf "research/reduce/visitors.ml" 81 2780 2783 "research/reduce/visitors.ml" 81 2780 2795
+)
+"research/reduce/visitors.ml" 80 2716 2730 "research/reduce/visitors.ml" 80 2716 2734
+type(
+  Cil.exp
+)
+ident(
+  def qidx "research/reduce/visitors.ml" 81 2780 2783 "research/reduce/visitors.ml" 81 2780 2795
+)
+"research/reduce/visitors.ml" 80 2716 2723 "research/reduce/visitors.ml" 80 2716 2735
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 80 2716 2738 "research/reduce/visitors.ml" 80 2716 2767
+type(
+  Cil.exp -> Cil.exp list -> Cil.exp * Cil.exp
+)
+ident(
+  int_ref build_qbuf_qidx_from_derefexp "research/reduce/visitors.ml" 59 1861 1865 "research/reduce/visitors.ml" 59 1861 1894
+)
+"research/reduce/visitors.ml" 80 2716 2768 "research/reduce/visitors.ml" 80 2716 2769
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 78 2608 2616 "research/reduce/visitors.ml" 78 2608 2617
+)
+"research/reduce/visitors.ml" 80 2716 2770 "research/reduce/visitors.ml" 80 2716 2776
+type(
+  Cil.exp list
+)
+ident(
+  int_ref e_list "research/reduce/visitors.ml" 78 2608 2619 "research/reduce/visitors.ml" 78 2608 2625
+)
+"research/reduce/visitors.ml" 80 2716 2738 "research/reduce/visitors.ml" 80 2716 2776
+call(
+  stack
+)
+type(
+  Cil.exp * Cil.exp
+)
+"research/reduce/visitors.ml" 81 2780 2784 "research/reduce/visitors.ml" 81 2780 2788
+type(
+  Cil.exp
+)
+ident(
+  int_ref qbuf "research/reduce/visitors.ml" 80 2716 2724 "research/reduce/visitors.ml" 80 2716 2728
+)
+"research/reduce/visitors.ml" 81 2780 2790 "research/reduce/visitors.ml" 81 2780 2794
+type(
+  Cil.exp
+)
+ident(
+  int_ref qidx "research/reduce/visitors.ml" 80 2716 2730 "research/reduce/visitors.ml" 80 2716 2734
+)
+"research/reduce/visitors.ml" 81 2780 2783 "research/reduce/visitors.ml" 81 2780 2795
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 80 2716 2719 "research/reduce/visitors.ml" 81 2780 2795
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 78 2608 2611 "research/reduce/visitors.ml" 81 2780 2795
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 82 2796 2800 "research/reduce/visitors.ml" 82 2796 2801
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 82 2796 2805 "research/reduce/visitors.ml" 82 2796 2810
+type(
+  exn -> Cil.exp list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"research/reduce/visitors.ml" 82 2796 2820 "research/reduce/visitors.ml" 82 2796 2835
+type(
+  string
+)
+"research/reduce/visitors.ml" 82 2796 2811 "research/reduce/visitors.ml" 82 2796 2836
+type(
+  exn
+)
+"research/reduce/visitors.ml" 82 2796 2805 "research/reduce/visitors.ml" 82 2796 2836
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 74 2395 2397 "research/reduce/visitors.ml" 82 2796 2836
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+type(
+  bool ref
+)
+ident(
+  def inserted "research/reduce/visitors.ml" 86 2864 2864 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 84 2838 2853 "research/reduce/visitors.ml" 84 2838 2856
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"research/reduce/visitors.ml" 84 2838 2857 "research/reduce/visitors.ml" 84 2838 2862
+type(
+  bool
+)
+"research/reduce/visitors.ml" 84 2838 2853 "research/reduce/visitors.ml" 84 2838 2862
+type(
+  bool ref
+)
+"research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  def gen_airac_observe "research/reduce/visitors.ml" 92 3135 3135 "research/reduce/visitors.ml" 1 0 -1
+)
+"research/reduce/visitors.ml" 86 2864 2886 "research/reduce/visitors.ml" 86 2864 2895
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  def alarm_exp "research/reduce/visitors.ml" 86 2864 2896 "research/reduce/visitors.ml" 90 3092 3133
+)
+"research/reduce/visitors.ml" 86 2864 2896 "research/reduce/visitors.ml" 86 2864 2899
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 87 2903 2905 "research/reduce/visitors.ml" 90 3092 3133
+)
+"research/reduce/visitors.ml" 87 2903 2909 "research/reduce/visitors.ml" 87 2903 2912
+type(
+  Cil.varinfo
+)
+ident(
+  def var "research/reduce/visitors.ml" 88 2990 2992 "research/reduce/visitors.ml" 90 3092 3133
+)
+"research/reduce/visitors.ml" 87 2903 2915 "research/reduce/visitors.ml" 87 2903 2932
+type(
+  string -> Cil.typ -> Cil.varinfo
+)
+ident(
+  ext_ref Cil.makeGlobalVar
+)
+"research/reduce/visitors.ml" 87 2903 2933 "research/reduce/visitors.ml" 87 2903 2948
+type(
+  string
+)
+"research/reduce/visitors.ml" 87 2903 2962 "research/reduce/visitors.ml" 87 2903 2964
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 87 2903 2956 "research/reduce/visitors.ml" 87 2903 2964
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 87 2903 2971 "research/reduce/visitors.ml" 87 2903 2973
+type(
+  (string * Cil.typ * Cil.attributes) list
+)
+"research/reduce/visitors.ml" 87 2903 2966 "research/reduce/visitors.ml" 87 2903 2973
+type(
+  (string * Cil.typ * Cil.attributes) list option
+)
+"research/reduce/visitors.ml" 87 2903 2975 "research/reduce/visitors.ml" 87 2903 2979
+type(
+  bool
+)
+"research/reduce/visitors.ml" 87 2903 2981 "research/reduce/visitors.ml" 87 2903 2983
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 87 2903 2949 "research/reduce/visitors.ml" 87 2903 2986
+type(
+  Cil.typ
+)
+"research/reduce/visitors.ml" 87 2903 2915 "research/reduce/visitors.ml" 87 2903 2986
+call(
+  stack
+)
+type(
+  Cil.varinfo
+)
+"research/reduce/visitors.ml" 88 2990 2996 "research/reduce/visitors.ml" 88 2990 3009
+type(
+  Cil.exp
+)
+ident(
+  def airac_observe "research/reduce/visitors.ml" 89 3052 3054 "research/reduce/visitors.ml" 90 3092 3133
+)
+"research/reduce/visitors.ml" 88 2990 3030 "research/reduce/visitors.ml" 88 2990 3033
+type(
+  Cil.varinfo
+)
+ident(
+  int_ref var "research/reduce/visitors.ml" 87 2903 2909 "research/reduce/visitors.ml" 87 2903 2912
+)
+"research/reduce/visitors.ml" 88 2990 3022 "research/reduce/visitors.ml" 88 2990 3033
+type(
+  Cil.lhost
+)
+"research/reduce/visitors.ml" 88 2990 3035 "research/reduce/visitors.ml" 88 2990 3047
+type(
+  Cil.offset
+)
+"research/reduce/visitors.ml" 88 2990 3021 "research/reduce/visitors.ml" 88 2990 3048
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 88 2990 3012 "research/reduce/visitors.ml" 88 2990 3048
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 89 3052 3058 "research/reduce/visitors.ml" 89 3052 3062
+type(
+  Cil.exp list
+)
+ident(
+  def args "research/reduce/visitors.ml" 90 3092 3096 "research/reduce/visitors.ml" 90 3092 3133
+)
+"research/reduce/visitors.ml" 89 3052 3065 "research/reduce/visitors.ml" 89 3052 3078
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.exp list
+)
+ident(
+  int_ref alarmExp2args "research/reduce/visitors.ml" 73 2365 2369 "research/reduce/visitors.ml" 73 2365 2382
+)
+"research/reduce/visitors.ml" 89 3052 3079 "research/reduce/visitors.ml" 89 3052 3088
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 86 2864 2886 "research/reduce/visitors.ml" 86 2864 2895
+)
+"research/reduce/visitors.ml" 89 3052 3065 "research/reduce/visitors.ml" 89 3052 3088
+call(
+  stack
+)
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 90 3092 3102 "research/reduce/visitors.ml" 90 3092 3106
+type(
+  Cil.lval option
+)
+"research/reduce/visitors.ml" 90 3092 3108 "research/reduce/visitors.ml" 90 3092 3121
+type(
+  Cil.exp
+)
+ident(
+  int_ref airac_observe "research/reduce/visitors.ml" 88 2990 2996 "research/reduce/visitors.ml" 88 2990 3009
+)
+"research/reduce/visitors.ml" 90 3092 3123 "research/reduce/visitors.ml" 90 3092 3127
+type(
+  Cil.exp list
+)
+ident(
+  int_ref args "research/reduce/visitors.ml" 89 3052 3058 "research/reduce/visitors.ml" 89 3052 3062
+)
+"research/reduce/visitors.ml" 90 3092 3129 "research/reduce/visitors.ml" 90 3092 3132
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 86 2864 2896 "research/reduce/visitors.ml" 86 2864 2899
+)
+"research/reduce/visitors.ml" 90 3092 3096 "research/reduce/visitors.ml" 90 3092 3133
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 89 3052 3054 "research/reduce/visitors.ml" 90 3092 3133
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 88 2990 2992 "research/reduce/visitors.ml" 90 3092 3133
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 87 2903 2905 "research/reduce/visitors.ml" 90 3092 3133
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 92 3135 3182 "research/reduce/visitors.ml" 92 3135 3188
+type(
+  < queueInstr : Cil.instr list -> unit;
+    unqueueInstr : unit -> Cil.instr list;
+    vattr : Cil.attribute -> Cil.attribute list Cil.visitAction;
+    vattrparam : Cil.attrparam -> Cil.attrparam Cil.visitAction;
+    vblock : Cil.block -> Cil.block Cil.visitAction;
+    vexpr : Cil.exp -> Cil.exp Cil.visitAction;
+    vfunc : Cil.fundec -> Cil.fundec Cil.visitAction;
+    vglob : Cil.global -> Cil.global list Cil.visitAction;
+    vinit : Cil.varinfo -> Cil.offset -> Cil.init -> Cil.init Cil.visitAction;
+    vinitoffs : Cil.offset -> Cil.offset Cil.visitAction;
+    vinst : Cil.instr -> Cil.instr list Cil.visitAction;
+    vlval : Cil.lval -> Cil.lval Cil.visitAction;
+    voffs : Cil.offset -> Cil.offset Cil.visitAction;
+    vstmt : Cil.stmt -> Cil.stmt Cil.visitAction;
+    vtype : Cil.typ -> Cil.typ Cil.visitAction;
+    vvdec : Cil.varinfo -> Cil.varinfo Cil.visitAction;
+    vvrbl : Cil.varinfo -> Cil.varinfo Cil.visitAction; .. >
+)
+"research/reduce/visitors.ml" 94 3214 3230 "research/reduce/visitors.ml" 94 3214 3231
+type(
+  Cil.instr
+)
+ident(
+  def i "research/reduce/visitors.ml" 95 3244 3248 "research/reduce/visitors.ml" 102 3718 3739
+)
+"research/reduce/visitors.ml" 95 3244 3254 "research/reduce/visitors.ml" 95 3244 3255
+type(
+  Cil.instr
+)
+ident(
+  int_ref i "research/reduce/visitors.ml" 94 3214 3230 "research/reduce/visitors.ml" 94 3214 3231
+)
+"research/reduce/visitors.ml" 96 3261 3272 "research/reduce/visitors.ml" 96 3261 3275
+type(
+  Cil.lval
+)
+ident(
+  def lhs "research/reduce/visitors.ml" 96 3261 3287 "research/reduce/visitors.ml" 98 3410 3481
+)
+"research/reduce/visitors.ml" 96 3261 3277 "research/reduce/visitors.ml" 96 3261 3280
+type(
+  Cil.exp
+)
+ident(
+  def rhs "research/reduce/visitors.ml" 96 3261 3287 "research/reduce/visitors.ml" 98 3410 3481
+)
+"research/reduce/visitors.ml" 96 3261 3282 "research/reduce/visitors.ml" 96 3261 3285
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 96 3261 3287 "research/reduce/visitors.ml" 98 3410 3481
+)
+"research/reduce/visitors.ml" 96 3261 3267 "research/reduce/visitors.ml" 96 3261 3286
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 96 3261 3293 "research/reduce/visitors.ml" 96 3261 3296
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 96 3261 3297 "research/reduce/visitors.ml" 96 3261 3298
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 96 3261 3298 "research/reduce/visitors.ml" 96 3261 3306
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 96 3261 3297 "research/reduce/visitors.ml" 96 3261 3306
+type(
+  bool
+)
+"research/reduce/visitors.ml" 96 3261 3292 "research/reduce/visitors.ml" 96 3261 3307
+type(
+  bool
+)
+"research/reduce/visitors.ml" 96 3261 3308 "research/reduce/visitors.ml" 96 3261 3310
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 96 3261 3312 "research/reduce/visitors.ml" 96 3261 3317
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found "research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+)
+"research/reduce/visitors.ml" 96 3261 3319 "research/reduce/visitors.ml" 96 3261 3322
+type(
+  Cil.exp
+)
+ident(
+  int_ref rhs "research/reduce/visitors.ml" 96 3261 3277 "research/reduce/visitors.ml" 96 3261 3280
+)
+"research/reduce/visitors.ml" 96 3261 3324 "research/reduce/visitors.ml" 96 3261 3327
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 96 3261 3282 "research/reduce/visitors.ml" 96 3261 3285
+)
+"research/reduce/visitors.ml" 96 3261 3329 "research/reduce/visitors.ml" 96 3261 3338
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 96 3261 3318 "research/reduce/visitors.ml" 96 3261 3339
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 96 3261 3312 "research/reduce/visitors.ml" 96 3261 3339
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 96 3261 3340 "research/reduce/visitors.ml" 96 3261 3342
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"research/reduce/visitors.ml" 96 3261 3343 "research/reduce/visitors.ml" 96 3261 3348
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found "research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+)
+"research/reduce/visitors.ml" 96 3261 3355 "research/reduce/visitors.ml" 96 3261 3358
+type(
+  Cil.lval
+)
+ident(
+  int_ref lhs "research/reduce/visitors.ml" 96 3261 3272 "research/reduce/visitors.ml" 96 3261 3275
+)
+"research/reduce/visitors.ml" 96 3261 3350 "research/reduce/visitors.ml" 96 3261 3358
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 96 3261 3360 "research/reduce/visitors.ml" 96 3261 3363
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 96 3261 3282 "research/reduce/visitors.ml" 96 3261 3285
+)
+"research/reduce/visitors.ml" 96 3261 3365 "research/reduce/visitors.ml" 96 3261 3374
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 96 3261 3349 "research/reduce/visitors.ml" 96 3261 3375
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 96 3261 3343 "research/reduce/visitors.ml" 96 3261 3375
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 96 3261 3311 "research/reduce/visitors.ml" 96 3261 3376
+type(
+  bool
+)
+"research/reduce/visitors.ml" 96 3261 3292 "research/reduce/visitors.ml" 96 3261 3376
+type(
+  bool
+)
+"research/reduce/visitors.ml" 97 3382 3392 "research/reduce/visitors.ml" 97 3382 3400
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 97 3382 3401 "research/reduce/visitors.ml" 97 3382 3403
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 97 3382 3404 "research/reduce/visitors.ml" 97 3382 3408
+type(
+  bool
+)
+"research/reduce/visitors.ml" 97 3382 3392 "research/reduce/visitors.ml" 97 3382 3408
+type(
+  unit
+)
+"research/reduce/visitors.ml" 98 3410 3430 "research/reduce/visitors.ml" 98 3410 3447
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 98 3410 3448 "research/reduce/visitors.ml" 98 3410 3457
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 98 3410 3458 "research/reduce/visitors.ml" 98 3410 3461
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 96 3261 3282 "research/reduce/visitors.ml" 96 3261 3285
+)
+"research/reduce/visitors.ml" 98 3410 3430 "research/reduce/visitors.ml" 98 3410 3461
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 98 3410 3468 "research/reduce/visitors.ml" 98 3410 3471
+type(
+  Cil.lval
+)
+ident(
+  int_ref lhs "research/reduce/visitors.ml" 96 3261 3272 "research/reduce/visitors.ml" 96 3261 3275
+)
+"research/reduce/visitors.ml" 98 3410 3472 "research/reduce/visitors.ml" 98 3410 3475
+type(
+  Cil.exp
+)
+ident(
+  int_ref rhs "research/reduce/visitors.ml" 96 3261 3277 "research/reduce/visitors.ml" 96 3261 3280
+)
+"research/reduce/visitors.ml" 98 3410 3476 "research/reduce/visitors.ml" 98 3410 3479
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 96 3261 3282 "research/reduce/visitors.ml" 96 3261 3285
+)
+"research/reduce/visitors.ml" 98 3410 3463 "research/reduce/visitors.ml" 98 3410 3480
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 98 3410 3429 "research/reduce/visitors.ml" 98 3410 3481
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 98 3410 3420 "research/reduce/visitors.ml" 98 3410 3481
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 97 3382 3392 "research/reduce/visitors.ml" 98 3410 3481
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 99 3482 3494 "research/reduce/visitors.ml" 99 3482 3497
+type(
+  Cil.lval option
+)
+ident(
+  def ret "research/reduce/visitors.ml" 99 3482 3516 "research/reduce/visitors.ml" 101 3636 3717
+)
+"research/reduce/visitors.ml" 99 3482 3499 "research/reduce/visitors.ml" 99 3482 3503
+type(
+  Cil.exp
+)
+ident(
+  def fexp "research/reduce/visitors.ml" 99 3482 3516 "research/reduce/visitors.ml" 101 3636 3717
+)
+"research/reduce/visitors.ml" 99 3482 3505 "research/reduce/visitors.ml" 99 3482 3509
+type(
+  Cil.exp list
+)
+ident(
+  def args "research/reduce/visitors.ml" 99 3482 3516 "research/reduce/visitors.ml" 101 3636 3717
+)
+"research/reduce/visitors.ml" 99 3482 3511 "research/reduce/visitors.ml" 99 3482 3514
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 99 3482 3516 "research/reduce/visitors.ml" 101 3636 3717
+)
+"research/reduce/visitors.ml" 99 3482 3488 "research/reduce/visitors.ml" 99 3482 3515
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 99 3482 3522 "research/reduce/visitors.ml" 99 3482 3525
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 99 3482 3526 "research/reduce/visitors.ml" 99 3482 3527
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 99 3482 3527 "research/reduce/visitors.ml" 99 3482 3535
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 99 3482 3526 "research/reduce/visitors.ml" 99 3482 3535
+type(
+  bool
+)
+"research/reduce/visitors.ml" 99 3482 3521 "research/reduce/visitors.ml" 99 3482 3536
+type(
+  bool
+)
+"research/reduce/visitors.ml" 99 3482 3537 "research/reduce/visitors.ml" 99 3482 3539
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 99 3482 3541 "research/reduce/visitors.ml" 99 3482 3546
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found "research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+)
+"research/reduce/visitors.ml" 99 3482 3548 "research/reduce/visitors.ml" 99 3482 3552
+type(
+  Cil.exp
+)
+ident(
+  int_ref fexp "research/reduce/visitors.ml" 99 3482 3499 "research/reduce/visitors.ml" 99 3482 3503
+)
+"research/reduce/visitors.ml" 99 3482 3554 "research/reduce/visitors.ml" 99 3482 3557
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 99 3482 3511 "research/reduce/visitors.ml" 99 3482 3514
+)
+"research/reduce/visitors.ml" 99 3482 3559 "research/reduce/visitors.ml" 99 3482 3568
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 99 3482 3547 "research/reduce/visitors.ml" 99 3482 3569
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 99 3482 3541 "research/reduce/visitors.ml" 99 3482 3569
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 99 3482 3570 "research/reduce/visitors.ml" 99 3482 3572
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"research/reduce/visitors.ml" 99 3482 3573 "research/reduce/visitors.ml" 99 3482 3580
+type(
+  Cil.exp list * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found_s "research/reduce/visitors.ml" 11 181 185 "research/reduce/visitors.ml" 11 181 192
+)
+"research/reduce/visitors.ml" 99 3482 3582 "research/reduce/visitors.ml" 99 3482 3586
+type(
+  Cil.exp list
+)
+ident(
+  int_ref args "research/reduce/visitors.ml" 99 3482 3505 "research/reduce/visitors.ml" 99 3482 3509
+)
+"research/reduce/visitors.ml" 99 3482 3588 "research/reduce/visitors.ml" 99 3482 3591
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 99 3482 3511 "research/reduce/visitors.ml" 99 3482 3514
+)
+"research/reduce/visitors.ml" 99 3482 3593 "research/reduce/visitors.ml" 99 3482 3602
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 99 3482 3581 "research/reduce/visitors.ml" 99 3482 3603
+type(
+  Cil.exp list * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 99 3482 3573 "research/reduce/visitors.ml" 99 3482 3603
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 99 3482 3540 "research/reduce/visitors.ml" 99 3482 3604
+type(
+  bool
+)
+"research/reduce/visitors.ml" 99 3482 3521 "research/reduce/visitors.ml" 99 3482 3604
+type(
+  bool
+)
+"research/reduce/visitors.ml" 100 3608 3618 "research/reduce/visitors.ml" 100 3608 3626
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 100 3608 3627 "research/reduce/visitors.ml" 100 3608 3629
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 100 3608 3630 "research/reduce/visitors.ml" 100 3608 3634
+type(
+  bool
+)
+"research/reduce/visitors.ml" 100 3608 3618 "research/reduce/visitors.ml" 100 3608 3634
+type(
+  unit
+)
+"research/reduce/visitors.ml" 101 3636 3656 "research/reduce/visitors.ml" 101 3636 3673
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 101 3636 3674 "research/reduce/visitors.ml" 101 3636 3683
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 101 3636 3684 "research/reduce/visitors.ml" 101 3636 3687
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 99 3482 3511 "research/reduce/visitors.ml" 99 3482 3514
+)
+"research/reduce/visitors.ml" 101 3636 3656 "research/reduce/visitors.ml" 101 3636 3687
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 101 3636 3695 "research/reduce/visitors.ml" 101 3636 3698
+type(
+  Cil.lval option
+)
+ident(
+  int_ref ret "research/reduce/visitors.ml" 99 3482 3494 "research/reduce/visitors.ml" 99 3482 3497
+)
+"research/reduce/visitors.ml" 101 3636 3700 "research/reduce/visitors.ml" 101 3636 3704
+type(
+  Cil.exp
+)
+ident(
+  int_ref fexp "research/reduce/visitors.ml" 99 3482 3499 "research/reduce/visitors.ml" 99 3482 3503
+)
+"research/reduce/visitors.ml" 101 3636 3706 "research/reduce/visitors.ml" 101 3636 3710
+type(
+  Cil.exp list
+)
+ident(
+  int_ref args "research/reduce/visitors.ml" 99 3482 3505 "research/reduce/visitors.ml" 99 3482 3509
+)
+"research/reduce/visitors.ml" 101 3636 3712 "research/reduce/visitors.ml" 101 3636 3715
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 99 3482 3511 "research/reduce/visitors.ml" 99 3482 3514
+)
+"research/reduce/visitors.ml" 101 3636 3689 "research/reduce/visitors.ml" 101 3636 3716
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 101 3636 3655 "research/reduce/visitors.ml" 101 3636 3717
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 101 3636 3646 "research/reduce/visitors.ml" 101 3636 3717
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 100 3608 3618 "research/reduce/visitors.ml" 101 3636 3717
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 102 3718 3724 "research/reduce/visitors.ml" 102 3718 3725
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 102 3718 3729 "research/reduce/visitors.ml" 102 3718 3739
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 95 3244 3248 "research/reduce/visitors.ml" 102 3718 3739
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+type(
+  Cil.stmt
+)
+ident(
+  def s "research/reduce/visitors.ml" 105 3770 3774 "research/reduce/visitors.ml" 121 4983 5004
+)
+"research/reduce/visitors.ml" 105 3770 3780 "research/reduce/visitors.ml" 105 3770 3781
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 105 3770 3780 "research/reduce/visitors.ml" 105 3770 3787
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 106 3794 3804 "research/reduce/visitors.ml" 106 3794 3805
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 106 3794 3820 "research/reduce/visitors.ml" 110 4087 4185
+)
+"research/reduce/visitors.ml" 106 3794 3807 "research/reduce/visitors.ml" 106 3794 3809
+type(
+  Cil.block
+)
+ident(
+  def b1 "research/reduce/visitors.ml" 106 3794 3820 "research/reduce/visitors.ml" 110 4087 4185
+)
+"research/reduce/visitors.ml" 106 3794 3811 "research/reduce/visitors.ml" 106 3794 3813
+type(
+  Cil.block
+)
+ident(
+  def b2 "research/reduce/visitors.ml" 106 3794 3820 "research/reduce/visitors.ml" 110 4087 4185
+)
+"research/reduce/visitors.ml" 106 3794 3815 "research/reduce/visitors.ml" 106 3794 3818
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 106 3794 3820 "research/reduce/visitors.ml" 110 4087 4185
+)
+"research/reduce/visitors.ml" 106 3794 3800 "research/reduce/visitors.ml" 106 3794 3819
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 106 3794 3826 "research/reduce/visitors.ml" 106 3794 3829
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 106 3794 3830 "research/reduce/visitors.ml" 106 3794 3831
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 106 3794 3831 "research/reduce/visitors.ml" 106 3794 3839
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 106 3794 3830 "research/reduce/visitors.ml" 106 3794 3839
+type(
+  bool
+)
+"research/reduce/visitors.ml" 106 3794 3825 "research/reduce/visitors.ml" 106 3794 3840
+type(
+  bool
+)
+"research/reduce/visitors.ml" 106 3794 3841 "research/reduce/visitors.ml" 106 3794 3843
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 106 3794 3844 "research/reduce/visitors.ml" 106 3794 3849
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found "research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+)
+"research/reduce/visitors.ml" 106 3794 3851 "research/reduce/visitors.ml" 106 3794 3852
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 106 3794 3804 "research/reduce/visitors.ml" 106 3794 3805
+)
+"research/reduce/visitors.ml" 106 3794 3854 "research/reduce/visitors.ml" 106 3794 3857
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 106 3794 3815 "research/reduce/visitors.ml" 106 3794 3818
+)
+"research/reduce/visitors.ml" 106 3794 3859 "research/reduce/visitors.ml" 106 3794 3868
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 106 3794 3850 "research/reduce/visitors.ml" 106 3794 3869
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 106 3794 3844 "research/reduce/visitors.ml" 106 3794 3869
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 106 3794 3825 "research/reduce/visitors.ml" 106 3794 3869
+type(
+  bool
+)
+"research/reduce/visitors.ml" 107 3873 3881 "research/reduce/visitors.ml" 107 3873 3889
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 107 3873 3889 "research/reduce/visitors.ml" 107 3873 3891
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 107 3873 3891 "research/reduce/visitors.ml" 107 3873 3895
+type(
+  bool
+)
+"research/reduce/visitors.ml" 107 3873 3881 "research/reduce/visitors.ml" 107 3873 3895
+type(
+  unit
+)
+"research/reduce/visitors.ml" 108 3897 3909 "research/reduce/visitors.ml" 108 3897 3921
+type(
+  Cil.stmt
+)
+ident(
+  def observe_stmt "research/reduce/visitors.ml" 109 4015 4023 "research/reduce/visitors.ml" 110 4087 4185
+)
+"research/reduce/visitors.ml" 108 3897 3932 "research/reduce/visitors.ml" 108 3897 3934
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 108 3897 3951 "research/reduce/visitors.ml" 108 3897 3968
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 108 3897 3969 "research/reduce/visitors.ml" 108 3897 3978
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 108 3897 3979 "research/reduce/visitors.ml" 108 3897 3982
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 106 3794 3815 "research/reduce/visitors.ml" 106 3794 3818
+)
+"research/reduce/visitors.ml" 108 3897 3951 "research/reduce/visitors.ml" 108 3897 3982
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 108 3897 3950 "research/reduce/visitors.ml" 108 3897 3983
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 108 3897 3944 "research/reduce/visitors.ml" 108 3897 3983
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 108 3897 3989 "research/reduce/visitors.ml" 108 3897 3990
+type(
+  int
+)
+"research/reduce/visitors.ml" 108 3897 3998 "research/reduce/visitors.ml" 108 3897 4000
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 108 3897 4008 "research/reduce/visitors.ml" 108 3897 4010
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 108 3897 3924 "research/reduce/visitors.ml" 108 3897 4011
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 109 4015 4027 "research/reduce/visitors.ml" 109 4015 4032
+type(
+  Cil.stmtkind
+)
+ident(
+  def skind "research/reduce/visitors.ml" 110 4087 4095 "research/reduce/visitors.ml" 110 4087 4185
+)
+"research/reduce/visitors.ml" 109 4015 4052 "research/reduce/visitors.ml" 109 4015 4054
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 109 4015 4066 "research/reduce/visitors.ml" 109 4015 4078
+type(
+  Cil.stmt
+)
+ident(
+  int_ref observe_stmt "research/reduce/visitors.ml" 108 3897 3909 "research/reduce/visitors.ml" 108 3897 3921
+)
+"research/reduce/visitors.ml" 109 4015 4079 "research/reduce/visitors.ml" 109 4015 4080
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 109 4015 4065 "research/reduce/visitors.ml" 109 4015 4081
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 109 4015 4041 "research/reduce/visitors.ml" 109 4015 4083
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 109 4015 4035 "research/reduce/visitors.ml" 109 4015 4083
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 110 4087 4114 "research/reduce/visitors.ml" 110 4087 4115
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 110 4087 4114 "research/reduce/visitors.ml" 110 4087 4122
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 110 4087 4132 "research/reduce/visitors.ml" 110 4087 4137
+type(
+  Cil.stmtkind
+)
+ident(
+  int_ref skind "research/reduce/visitors.ml" 109 4015 4027 "research/reduce/visitors.ml" 109 4015 4032
+)
+"research/reduce/visitors.ml" 110 4087 4145 "research/reduce/visitors.ml" 110 4087 4146
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 110 4087 4145 "research/reduce/visitors.ml" 110 4087 4150
+type(
+  int
+)
+"research/reduce/visitors.ml" 110 4087 4160 "research/reduce/visitors.ml" 110 4087 4161
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 110 4087 4160 "research/reduce/visitors.ml" 110 4087 4167
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 110 4087 4177 "research/reduce/visitors.ml" 110 4087 4178
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 110 4087 4177 "research/reduce/visitors.ml" 110 4087 4184
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 110 4087 4104 "research/reduce/visitors.ml" 110 4087 4185
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 110 4087 4095 "research/reduce/visitors.ml" 110 4087 4185
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 109 4015 4023 "research/reduce/visitors.ml" 110 4087 4185
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 108 3897 3905 "research/reduce/visitors.ml" 110 4087 4185
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 107 3873 3881 "research/reduce/visitors.ml" 110 4087 4185
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 111 4186 4205 "research/reduce/visitors.ml" 111 4186 4208
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 111 4186 4215 "research/reduce/visitors.ml" 115 4486 4584
+)
+"research/reduce/visitors.ml" 111 4186 4200 "research/reduce/visitors.ml" 111 4186 4208
+type(
+  Cil.exp option
+)
+"research/reduce/visitors.ml" 111 4186 4210 "research/reduce/visitors.ml" 111 4186 4213
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 111 4186 4215 "research/reduce/visitors.ml" 115 4486 4584
+)
+"research/reduce/visitors.ml" 111 4186 4192 "research/reduce/visitors.ml" 111 4186 4214
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 111 4186 4221 "research/reduce/visitors.ml" 111 4186 4224
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 111 4186 4225 "research/reduce/visitors.ml" 111 4186 4226
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 111 4186 4226 "research/reduce/visitors.ml" 111 4186 4234
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 111 4186 4225 "research/reduce/visitors.ml" 111 4186 4234
+type(
+  bool
+)
+"research/reduce/visitors.ml" 111 4186 4220 "research/reduce/visitors.ml" 111 4186 4235
+type(
+  bool
+)
+"research/reduce/visitors.ml" 111 4186 4236 "research/reduce/visitors.ml" 111 4186 4238
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 111 4186 4239 "research/reduce/visitors.ml" 111 4186 4244
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found "research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+)
+"research/reduce/visitors.ml" 111 4186 4246 "research/reduce/visitors.ml" 111 4186 4249
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 111 4186 4205 "research/reduce/visitors.ml" 111 4186 4208
+)
+"research/reduce/visitors.ml" 111 4186 4251 "research/reduce/visitors.ml" 111 4186 4254
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 111 4186 4210 "research/reduce/visitors.ml" 111 4186 4213
+)
+"research/reduce/visitors.ml" 111 4186 4256 "research/reduce/visitors.ml" 111 4186 4265
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 111 4186 4245 "research/reduce/visitors.ml" 111 4186 4266
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 111 4186 4239 "research/reduce/visitors.ml" 111 4186 4266
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 111 4186 4220 "research/reduce/visitors.ml" 111 4186 4266
+type(
+  bool
+)
+"research/reduce/visitors.ml" 112 4270 4278 "research/reduce/visitors.ml" 112 4270 4286
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 112 4270 4287 "research/reduce/visitors.ml" 112 4270 4289
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 112 4270 4290 "research/reduce/visitors.ml" 112 4270 4294
+type(
+  bool
+)
+"research/reduce/visitors.ml" 112 4270 4278 "research/reduce/visitors.ml" 112 4270 4294
+type(
+  unit
+)
+"research/reduce/visitors.ml" 113 4296 4308 "research/reduce/visitors.ml" 113 4296 4320
+type(
+  Cil.stmt
+)
+ident(
+  def observe_stmt "research/reduce/visitors.ml" 114 4414 4422 "research/reduce/visitors.ml" 115 4486 4584
+)
+"research/reduce/visitors.ml" 113 4296 4331 "research/reduce/visitors.ml" 113 4296 4333
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 113 4296 4350 "research/reduce/visitors.ml" 113 4296 4367
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 113 4296 4368 "research/reduce/visitors.ml" 113 4296 4377
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 113 4296 4378 "research/reduce/visitors.ml" 113 4296 4381
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 111 4186 4210 "research/reduce/visitors.ml" 111 4186 4213
+)
+"research/reduce/visitors.ml" 113 4296 4350 "research/reduce/visitors.ml" 113 4296 4381
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 113 4296 4349 "research/reduce/visitors.ml" 113 4296 4382
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 113 4296 4343 "research/reduce/visitors.ml" 113 4296 4382
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 113 4296 4388 "research/reduce/visitors.ml" 113 4296 4389
+type(
+  int
+)
+"research/reduce/visitors.ml" 113 4296 4397 "research/reduce/visitors.ml" 113 4296 4399
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 113 4296 4407 "research/reduce/visitors.ml" 113 4296 4409
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 113 4296 4323 "research/reduce/visitors.ml" 113 4296 4410
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 114 4414 4426 "research/reduce/visitors.ml" 114 4414 4431
+type(
+  Cil.stmtkind
+)
+ident(
+  def skind "research/reduce/visitors.ml" 115 4486 4494 "research/reduce/visitors.ml" 115 4486 4584
+)
+"research/reduce/visitors.ml" 114 4414 4451 "research/reduce/visitors.ml" 114 4414 4453
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 114 4414 4465 "research/reduce/visitors.ml" 114 4414 4477
+type(
+  Cil.stmt
+)
+ident(
+  int_ref observe_stmt "research/reduce/visitors.ml" 113 4296 4308 "research/reduce/visitors.ml" 113 4296 4320
+)
+"research/reduce/visitors.ml" 114 4414 4478 "research/reduce/visitors.ml" 114 4414 4479
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 114 4414 4464 "research/reduce/visitors.ml" 114 4414 4480
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 114 4414 4440 "research/reduce/visitors.ml" 114 4414 4482
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 114 4414 4434 "research/reduce/visitors.ml" 114 4414 4482
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 115 4486 4513 "research/reduce/visitors.ml" 115 4486 4514
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 115 4486 4513 "research/reduce/visitors.ml" 115 4486 4521
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 115 4486 4531 "research/reduce/visitors.ml" 115 4486 4536
+type(
+  Cil.stmtkind
+)
+ident(
+  int_ref skind "research/reduce/visitors.ml" 114 4414 4426 "research/reduce/visitors.ml" 114 4414 4431
+)
+"research/reduce/visitors.ml" 115 4486 4544 "research/reduce/visitors.ml" 115 4486 4545
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 115 4486 4544 "research/reduce/visitors.ml" 115 4486 4549
+type(
+  int
+)
+"research/reduce/visitors.ml" 115 4486 4559 "research/reduce/visitors.ml" 115 4486 4560
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 115 4486 4559 "research/reduce/visitors.ml" 115 4486 4566
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 115 4486 4576 "research/reduce/visitors.ml" 115 4486 4577
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 115 4486 4576 "research/reduce/visitors.ml" 115 4486 4583
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 115 4486 4503 "research/reduce/visitors.ml" 115 4486 4584
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 115 4486 4494 "research/reduce/visitors.ml" 115 4486 4584
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 114 4414 4422 "research/reduce/visitors.ml" 115 4486 4584
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 113 4296 4304 "research/reduce/visitors.ml" 115 4486 4584
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 112 4270 4278 "research/reduce/visitors.ml" 115 4486 4584
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 116 4585 4599 "research/reduce/visitors.ml" 116 4585 4602
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 116 4585 4613 "research/reduce/visitors.ml" 120 4884 4982
+)
+"research/reduce/visitors.ml" 116 4585 4604 "research/reduce/visitors.ml" 116 4585 4605
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 116 4585 4606 "research/reduce/visitors.ml" 116 4585 4607
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 116 4585 4608 "research/reduce/visitors.ml" 116 4585 4611
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 116 4585 4613 "research/reduce/visitors.ml" 120 4884 4982
+)
+"research/reduce/visitors.ml" 116 4585 4591 "research/reduce/visitors.ml" 116 4585 4612
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 116 4585 4619 "research/reduce/visitors.ml" 116 4585 4622
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 116 4585 4623 "research/reduce/visitors.ml" 116 4585 4624
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 116 4585 4624 "research/reduce/visitors.ml" 116 4585 4632
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 116 4585 4623 "research/reduce/visitors.ml" 116 4585 4632
+type(
+  bool
+)
+"research/reduce/visitors.ml" 116 4585 4618 "research/reduce/visitors.ml" 116 4585 4633
+type(
+  bool
+)
+"research/reduce/visitors.ml" 116 4585 4634 "research/reduce/visitors.ml" 116 4585 4636
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 116 4585 4637 "research/reduce/visitors.ml" 116 4585 4642
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp -> bool
+)
+ident(
+  int_ref found "research/reduce/visitors.ml" 9 87 91 "research/reduce/visitors.ml" 9 87 96
+)
+"research/reduce/visitors.ml" 116 4585 4644 "research/reduce/visitors.ml" 116 4585 4647
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 116 4585 4599 "research/reduce/visitors.ml" 116 4585 4602
+)
+"research/reduce/visitors.ml" 116 4585 4649 "research/reduce/visitors.ml" 116 4585 4652
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 116 4585 4608 "research/reduce/visitors.ml" 116 4585 4611
+)
+"research/reduce/visitors.ml" 116 4585 4654 "research/reduce/visitors.ml" 116 4585 4663
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 116 4585 4643 "research/reduce/visitors.ml" 116 4585 4664
+type(
+  Cil.exp * Cil.location * IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 116 4585 4637 "research/reduce/visitors.ml" 116 4585 4664
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 116 4585 4618 "research/reduce/visitors.ml" 116 4585 4664
+type(
+  bool
+)
+"research/reduce/visitors.ml" 117 4668 4676 "research/reduce/visitors.ml" 117 4668 4684
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 117 4668 4685 "research/reduce/visitors.ml" 117 4668 4687
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 117 4668 4688 "research/reduce/visitors.ml" 117 4668 4692
+type(
+  bool
+)
+"research/reduce/visitors.ml" 117 4668 4676 "research/reduce/visitors.ml" 117 4668 4692
+type(
+  unit
+)
+"research/reduce/visitors.ml" 118 4694 4706 "research/reduce/visitors.ml" 118 4694 4718
+type(
+  Cil.stmt
+)
+ident(
+  def observe_stmt "research/reduce/visitors.ml" 119 4812 4820 "research/reduce/visitors.ml" 120 4884 4982
+)
+"research/reduce/visitors.ml" 118 4694 4729 "research/reduce/visitors.ml" 118 4694 4731
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 118 4694 4748 "research/reduce/visitors.ml" 118 4694 4765
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 118 4694 4766 "research/reduce/visitors.ml" 118 4694 4775
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 92 3135 3162 "research/reduce/visitors.ml" 92 3135 3173
+)
+"research/reduce/visitors.ml" 118 4694 4776 "research/reduce/visitors.ml" 118 4694 4779
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 116 4585 4608 "research/reduce/visitors.ml" 116 4585 4611
+)
+"research/reduce/visitors.ml" 118 4694 4748 "research/reduce/visitors.ml" 118 4694 4779
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 118 4694 4747 "research/reduce/visitors.ml" 118 4694 4780
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 118 4694 4741 "research/reduce/visitors.ml" 118 4694 4780
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 118 4694 4786 "research/reduce/visitors.ml" 118 4694 4787
+type(
+  int
+)
+"research/reduce/visitors.ml" 118 4694 4795 "research/reduce/visitors.ml" 118 4694 4797
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 118 4694 4805 "research/reduce/visitors.ml" 118 4694 4807
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 118 4694 4721 "research/reduce/visitors.ml" 118 4694 4808
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 119 4812 4824 "research/reduce/visitors.ml" 119 4812 4829
+type(
+  Cil.stmtkind
+)
+ident(
+  def skind "research/reduce/visitors.ml" 120 4884 4892 "research/reduce/visitors.ml" 120 4884 4982
+)
+"research/reduce/visitors.ml" 119 4812 4849 "research/reduce/visitors.ml" 119 4812 4851
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 119 4812 4863 "research/reduce/visitors.ml" 119 4812 4875
+type(
+  Cil.stmt
+)
+ident(
+  int_ref observe_stmt "research/reduce/visitors.ml" 118 4694 4706 "research/reduce/visitors.ml" 118 4694 4718
+)
+"research/reduce/visitors.ml" 119 4812 4876 "research/reduce/visitors.ml" 119 4812 4877
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 119 4812 4862 "research/reduce/visitors.ml" 119 4812 4878
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 119 4812 4838 "research/reduce/visitors.ml" 119 4812 4880
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 119 4812 4832 "research/reduce/visitors.ml" 119 4812 4880
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 120 4884 4911 "research/reduce/visitors.ml" 120 4884 4912
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 120 4884 4911 "research/reduce/visitors.ml" 120 4884 4919
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 120 4884 4929 "research/reduce/visitors.ml" 120 4884 4934
+type(
+  Cil.stmtkind
+)
+ident(
+  int_ref skind "research/reduce/visitors.ml" 119 4812 4824 "research/reduce/visitors.ml" 119 4812 4829
+)
+"research/reduce/visitors.ml" 120 4884 4942 "research/reduce/visitors.ml" 120 4884 4943
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 120 4884 4942 "research/reduce/visitors.ml" 120 4884 4947
+type(
+  int
+)
+"research/reduce/visitors.ml" 120 4884 4957 "research/reduce/visitors.ml" 120 4884 4958
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 120 4884 4957 "research/reduce/visitors.ml" 120 4884 4964
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 120 4884 4974 "research/reduce/visitors.ml" 120 4884 4975
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 104 3741 3757 "research/reduce/visitors.ml" 104 3741 3758
+)
+"research/reduce/visitors.ml" 120 4884 4974 "research/reduce/visitors.ml" 120 4884 4981
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 120 4884 4901 "research/reduce/visitors.ml" 120 4884 4982
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 120 4884 4892 "research/reduce/visitors.ml" 120 4884 4982
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 119 4812 4820 "research/reduce/visitors.ml" 120 4884 4982
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 118 4694 4702 "research/reduce/visitors.ml" 120 4884 4982
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 117 4668 4676 "research/reduce/visitors.ml" 120 4884 4982
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 121 4983 4989 "research/reduce/visitors.ml" 121 4983 4990
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 121 4983 4994 "research/reduce/visitors.ml" 121 4983 5004
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 105 3770 3774 "research/reduce/visitors.ml" 121 4983 5004
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 124 5011 5044 "research/reduce/visitors.ml" 124 5011 5053
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+"research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+type(
+  string
+)
+"research/reduce/visitors.ml" 124 5011 5043 "research/reduce/visitors.ml" 124 5011 5072
+type(
+  IntraCfg.Cmd.alarm_exp * string
+)
+"research/reduce/visitors.ml" 124 5011 5081 "research/reduce/visitors.ml" 124 5011 5087
+type(
+  < queueInstr : Cil.instr list -> unit;
+    unqueueInstr : unit -> Cil.instr list;
+    vattr : Cil.attribute -> Cil.attribute list Cil.visitAction;
+    vattrparam : Cil.attrparam -> Cil.attrparam Cil.visitAction;
+    vblock : Cil.block -> Cil.block Cil.visitAction;
+    vexpr : Cil.exp -> Cil.exp Cil.visitAction;
+    vfunc : Cil.fundec -> Cil.fundec Cil.visitAction;
+    vglob : Cil.global -> Cil.global list Cil.visitAction;
+    vinit : Cil.varinfo -> Cil.offset -> Cil.init -> Cil.init Cil.visitAction;
+    vinitoffs : Cil.offset -> Cil.offset Cil.visitAction;
+    vinst : Cil.instr -> Cil.instr list Cil.visitAction;
+    vlval : Cil.lval -> Cil.lval Cil.visitAction;
+    voffs : Cil.offset -> Cil.offset Cil.visitAction;
+    vstmt : Cil.stmt -> Cil.stmt Cil.visitAction;
+    vtype : Cil.typ -> Cil.typ Cil.visitAction;
+    vvdec : Cil.varinfo -> Cil.varinfo Cil.visitAction;
+    vvrbl : Cil.varinfo -> Cil.varinfo Cil.visitAction; .. >
+)
+"research/reduce/visitors.ml" 126 5113 5129 "research/reduce/visitors.ml" 126 5113 5130
+type(
+  Cil.instr
+)
+ident(
+  def i "research/reduce/visitors.ml" 127 5143 5147 "research/reduce/visitors.ml" 134 5673 5694
+)
+"research/reduce/visitors.ml" 127 5143 5153 "research/reduce/visitors.ml" 127 5143 5154
+type(
+  Cil.instr
+)
+ident(
+  int_ref i "research/reduce/visitors.ml" 126 5113 5129 "research/reduce/visitors.ml" 126 5113 5130
+)
+"research/reduce/visitors.ml" 128 5160 5171 "research/reduce/visitors.ml" 128 5160 5174
+type(
+  Cil.lval
+)
+ident(
+  def lhs "research/reduce/visitors.ml" 128 5160 5186 "research/reduce/visitors.ml" 130 5335 5408
+)
+"research/reduce/visitors.ml" 128 5160 5176 "research/reduce/visitors.ml" 128 5160 5179
+type(
+  Cil.exp
+)
+ident(
+  def rhs "research/reduce/visitors.ml" 128 5160 5186 "research/reduce/visitors.ml" 130 5335 5408
+)
+"research/reduce/visitors.ml" 128 5160 5181 "research/reduce/visitors.ml" 128 5160 5184
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 128 5160 5186 "research/reduce/visitors.ml" 130 5335 5408
+)
+"research/reduce/visitors.ml" 128 5160 5166 "research/reduce/visitors.ml" 128 5160 5185
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 128 5160 5192 "research/reduce/visitors.ml" 128 5160 5195
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 128 5160 5196 "research/reduce/visitors.ml" 128 5160 5197
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 128 5160 5197 "research/reduce/visitors.ml" 128 5160 5205
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 128 5160 5196 "research/reduce/visitors.ml" 128 5160 5205
+type(
+  bool
+)
+"research/reduce/visitors.ml" 128 5160 5191 "research/reduce/visitors.ml" 128 5160 5206
+type(
+  bool
+)
+"research/reduce/visitors.ml" 128 5160 5207 "research/reduce/visitors.ml" 128 5160 5209
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 128 5160 5211 "research/reduce/visitors.ml" 128 5160 5222
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  int_ref found_ptsto "research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+)
+"research/reduce/visitors.ml" 128 5160 5224 "research/reduce/visitors.ml" 128 5160 5227
+type(
+  Cil.exp
+)
+ident(
+  int_ref rhs "research/reduce/visitors.ml" 128 5160 5176 "research/reduce/visitors.ml" 128 5160 5179
+)
+"research/reduce/visitors.ml" 128 5160 5229 "research/reduce/visitors.ml" 128 5160 5232
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 128 5160 5181 "research/reduce/visitors.ml" 128 5160 5184
+)
+"research/reduce/visitors.ml" 128 5160 5234 "research/reduce/visitors.ml" 128 5160 5250
+type(
+  string
+)
+ident(
+  int_ref str_of_loc_alexp "research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+)
+"research/reduce/visitors.ml" 128 5160 5223 "research/reduce/visitors.ml" 128 5160 5251
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 128 5160 5211 "research/reduce/visitors.ml" 128 5160 5251
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 128 5160 5252 "research/reduce/visitors.ml" 128 5160 5254
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"research/reduce/visitors.ml" 128 5160 5255 "research/reduce/visitors.ml" 128 5160 5266
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  int_ref found_ptsto "research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+)
+"research/reduce/visitors.ml" 128 5160 5273 "research/reduce/visitors.ml" 128 5160 5276
+type(
+  Cil.lval
+)
+ident(
+  int_ref lhs "research/reduce/visitors.ml" 128 5160 5171 "research/reduce/visitors.ml" 128 5160 5174
+)
+"research/reduce/visitors.ml" 128 5160 5268 "research/reduce/visitors.ml" 128 5160 5276
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 128 5160 5278 "research/reduce/visitors.ml" 128 5160 5281
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 128 5160 5181 "research/reduce/visitors.ml" 128 5160 5184
+)
+"research/reduce/visitors.ml" 128 5160 5283 "research/reduce/visitors.ml" 128 5160 5299
+type(
+  string
+)
+ident(
+  int_ref str_of_loc_alexp "research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+)
+"research/reduce/visitors.ml" 128 5160 5267 "research/reduce/visitors.ml" 128 5160 5300
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 128 5160 5255 "research/reduce/visitors.ml" 128 5160 5300
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 128 5160 5210 "research/reduce/visitors.ml" 128 5160 5301
+type(
+  bool
+)
+"research/reduce/visitors.ml" 128 5160 5191 "research/reduce/visitors.ml" 128 5160 5301
+type(
+  bool
+)
+"research/reduce/visitors.ml" 129 5307 5317 "research/reduce/visitors.ml" 129 5307 5325
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 129 5307 5326 "research/reduce/visitors.ml" 129 5307 5328
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 129 5307 5329 "research/reduce/visitors.ml" 129 5307 5333
+type(
+  bool
+)
+"research/reduce/visitors.ml" 129 5307 5317 "research/reduce/visitors.ml" 129 5307 5333
+type(
+  unit
+)
+"research/reduce/visitors.ml" 130 5335 5356 "research/reduce/visitors.ml" 130 5335 5373
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 130 5335 5374 "research/reduce/visitors.ml" 130 5335 5383
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 124 5011 5044 "research/reduce/visitors.ml" 124 5011 5053
+)
+"research/reduce/visitors.ml" 130 5335 5384 "research/reduce/visitors.ml" 130 5335 5387
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 128 5160 5181 "research/reduce/visitors.ml" 128 5160 5184
+)
+"research/reduce/visitors.ml" 130 5335 5356 "research/reduce/visitors.ml" 130 5335 5387
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 130 5335 5395 "research/reduce/visitors.ml" 130 5335 5398
+type(
+  Cil.lval
+)
+ident(
+  int_ref lhs "research/reduce/visitors.ml" 128 5160 5171 "research/reduce/visitors.ml" 128 5160 5174
+)
+"research/reduce/visitors.ml" 130 5335 5399 "research/reduce/visitors.ml" 130 5335 5402
+type(
+  Cil.exp
+)
+ident(
+  int_ref rhs "research/reduce/visitors.ml" 128 5160 5176 "research/reduce/visitors.ml" 128 5160 5179
+)
+"research/reduce/visitors.ml" 130 5335 5403 "research/reduce/visitors.ml" 130 5335 5406
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 128 5160 5181 "research/reduce/visitors.ml" 128 5160 5184
+)
+"research/reduce/visitors.ml" 130 5335 5390 "research/reduce/visitors.ml" 130 5335 5407
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 130 5335 5354 "research/reduce/visitors.ml" 130 5335 5408
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 130 5335 5345 "research/reduce/visitors.ml" 130 5335 5408
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 129 5307 5317 "research/reduce/visitors.ml" 130 5335 5408
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 131 5409 5421 "research/reduce/visitors.ml" 131 5409 5424
+type(
+  Cil.lval option
+)
+ident(
+  def ret "research/reduce/visitors.ml" 131 5409 5443 "research/reduce/visitors.ml" 133 5589 5672
+)
+"research/reduce/visitors.ml" 131 5409 5426 "research/reduce/visitors.ml" 131 5409 5430
+type(
+  Cil.exp
+)
+ident(
+  def fexp "research/reduce/visitors.ml" 131 5409 5443 "research/reduce/visitors.ml" 133 5589 5672
+)
+"research/reduce/visitors.ml" 131 5409 5432 "research/reduce/visitors.ml" 131 5409 5436
+type(
+  Cil.exp list
+)
+ident(
+  def args "research/reduce/visitors.ml" 131 5409 5443 "research/reduce/visitors.ml" 133 5589 5672
+)
+"research/reduce/visitors.ml" 131 5409 5438 "research/reduce/visitors.ml" 131 5409 5441
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 131 5409 5443 "research/reduce/visitors.ml" 133 5589 5672
+)
+"research/reduce/visitors.ml" 131 5409 5415 "research/reduce/visitors.ml" 131 5409 5442
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 131 5409 5449 "research/reduce/visitors.ml" 131 5409 5452
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 131 5409 5453 "research/reduce/visitors.ml" 131 5409 5454
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 131 5409 5454 "research/reduce/visitors.ml" 131 5409 5462
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 131 5409 5453 "research/reduce/visitors.ml" 131 5409 5462
+type(
+  bool
+)
+"research/reduce/visitors.ml" 131 5409 5448 "research/reduce/visitors.ml" 131 5409 5463
+type(
+  bool
+)
+"research/reduce/visitors.ml" 131 5409 5464 "research/reduce/visitors.ml" 131 5409 5466
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 131 5409 5468 "research/reduce/visitors.ml" 131 5409 5479
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  int_ref found_ptsto "research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+)
+"research/reduce/visitors.ml" 131 5409 5481 "research/reduce/visitors.ml" 131 5409 5485
+type(
+  Cil.exp
+)
+ident(
+  int_ref fexp "research/reduce/visitors.ml" 131 5409 5426 "research/reduce/visitors.ml" 131 5409 5430
+)
+"research/reduce/visitors.ml" 131 5409 5487 "research/reduce/visitors.ml" 131 5409 5490
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 131 5409 5438 "research/reduce/visitors.ml" 131 5409 5441
+)
+"research/reduce/visitors.ml" 131 5409 5492 "research/reduce/visitors.ml" 131 5409 5508
+type(
+  string
+)
+ident(
+  int_ref str_of_loc_alexp "research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+)
+"research/reduce/visitors.ml" 131 5409 5480 "research/reduce/visitors.ml" 131 5409 5509
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 131 5409 5468 "research/reduce/visitors.ml" 131 5409 5509
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 131 5409 5510 "research/reduce/visitors.ml" 131 5409 5512
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"research/reduce/visitors.ml" 131 5409 5513 "research/reduce/visitors.ml" 131 5409 5526
+type(
+  Cil.exp list * Cil.location * string -> bool
+)
+ident(
+  int_ref found_s_ptsto "research/reduce/visitors.ml" 19 480 484 "research/reduce/visitors.ml" 19 480 497
+)
+"research/reduce/visitors.ml" 131 5409 5528 "research/reduce/visitors.ml" 131 5409 5532
+type(
+  Cil.exp list
+)
+ident(
+  int_ref args "research/reduce/visitors.ml" 131 5409 5432 "research/reduce/visitors.ml" 131 5409 5436
+)
+"research/reduce/visitors.ml" 131 5409 5534 "research/reduce/visitors.ml" 131 5409 5537
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 131 5409 5438 "research/reduce/visitors.ml" 131 5409 5441
+)
+"research/reduce/visitors.ml" 131 5409 5539 "research/reduce/visitors.ml" 131 5409 5555
+type(
+  string
+)
+ident(
+  int_ref str_of_loc_alexp "research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+)
+"research/reduce/visitors.ml" 131 5409 5527 "research/reduce/visitors.ml" 131 5409 5556
+type(
+  Cil.exp list * Cil.location * string
+)
+"research/reduce/visitors.ml" 131 5409 5513 "research/reduce/visitors.ml" 131 5409 5556
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 131 5409 5467 "research/reduce/visitors.ml" 131 5409 5557
+type(
+  bool
+)
+"research/reduce/visitors.ml" 131 5409 5448 "research/reduce/visitors.ml" 131 5409 5557
+type(
+  bool
+)
+"research/reduce/visitors.ml" 132 5561 5571 "research/reduce/visitors.ml" 132 5561 5579
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 132 5561 5580 "research/reduce/visitors.ml" 132 5561 5582
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 132 5561 5583 "research/reduce/visitors.ml" 132 5561 5587
+type(
+  bool
+)
+"research/reduce/visitors.ml" 132 5561 5571 "research/reduce/visitors.ml" 132 5561 5587
+type(
+  unit
+)
+"research/reduce/visitors.ml" 133 5589 5610 "research/reduce/visitors.ml" 133 5589 5627
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 133 5589 5628 "research/reduce/visitors.ml" 133 5589 5637
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 124 5011 5044 "research/reduce/visitors.ml" 124 5011 5053
+)
+"research/reduce/visitors.ml" 133 5589 5638 "research/reduce/visitors.ml" 133 5589 5641
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 131 5409 5438 "research/reduce/visitors.ml" 131 5409 5441
+)
+"research/reduce/visitors.ml" 133 5589 5610 "research/reduce/visitors.ml" 133 5589 5641
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 133 5589 5650 "research/reduce/visitors.ml" 133 5589 5653
+type(
+  Cil.lval option
+)
+ident(
+  int_ref ret "research/reduce/visitors.ml" 131 5409 5421 "research/reduce/visitors.ml" 131 5409 5424
+)
+"research/reduce/visitors.ml" 133 5589 5655 "research/reduce/visitors.ml" 133 5589 5659
+type(
+  Cil.exp
+)
+ident(
+  int_ref fexp "research/reduce/visitors.ml" 131 5409 5426 "research/reduce/visitors.ml" 131 5409 5430
+)
+"research/reduce/visitors.ml" 133 5589 5661 "research/reduce/visitors.ml" 133 5589 5665
+type(
+  Cil.exp list
+)
+ident(
+  int_ref args "research/reduce/visitors.ml" 131 5409 5432 "research/reduce/visitors.ml" 131 5409 5436
+)
+"research/reduce/visitors.ml" 133 5589 5667 "research/reduce/visitors.ml" 133 5589 5670
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 131 5409 5438 "research/reduce/visitors.ml" 131 5409 5441
+)
+"research/reduce/visitors.ml" 133 5589 5644 "research/reduce/visitors.ml" 133 5589 5671
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 133 5589 5608 "research/reduce/visitors.ml" 133 5589 5672
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 133 5589 5599 "research/reduce/visitors.ml" 133 5589 5672
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 132 5561 5571 "research/reduce/visitors.ml" 133 5589 5672
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 134 5673 5679 "research/reduce/visitors.ml" 134 5673 5680
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 134 5673 5684 "research/reduce/visitors.ml" 134 5673 5694
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 127 5143 5147 "research/reduce/visitors.ml" 134 5673 5694
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+type(
+  Cil.stmt
+)
+ident(
+  def s "research/reduce/visitors.ml" 137 5724 5728 "research/reduce/visitors.ml" 153 6976 6997
+)
+"research/reduce/visitors.ml" 137 5724 5734 "research/reduce/visitors.ml" 137 5724 5735
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 137 5724 5734 "research/reduce/visitors.ml" 137 5724 5741
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 138 5748 5758 "research/reduce/visitors.ml" 138 5748 5759
+type(
+  Cil.exp
+)
+ident(
+  def e "research/reduce/visitors.ml" 138 5748 5774 "research/reduce/visitors.ml" 142 6054 6152
+)
+"research/reduce/visitors.ml" 138 5748 5761 "research/reduce/visitors.ml" 138 5748 5763
+type(
+  Cil.block
+)
+ident(
+  def b1 "research/reduce/visitors.ml" 138 5748 5774 "research/reduce/visitors.ml" 142 6054 6152
+)
+"research/reduce/visitors.ml" 138 5748 5765 "research/reduce/visitors.ml" 138 5748 5767
+type(
+  Cil.block
+)
+ident(
+  def b2 "research/reduce/visitors.ml" 138 5748 5774 "research/reduce/visitors.ml" 142 6054 6152
+)
+"research/reduce/visitors.ml" 138 5748 5769 "research/reduce/visitors.ml" 138 5748 5772
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 138 5748 5774 "research/reduce/visitors.ml" 142 6054 6152
+)
+"research/reduce/visitors.ml" 138 5748 5754 "research/reduce/visitors.ml" 138 5748 5773
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 138 5748 5780 "research/reduce/visitors.ml" 138 5748 5783
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 138 5748 5784 "research/reduce/visitors.ml" 138 5748 5785
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 138 5748 5785 "research/reduce/visitors.ml" 138 5748 5793
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 138 5748 5784 "research/reduce/visitors.ml" 138 5748 5793
+type(
+  bool
+)
+"research/reduce/visitors.ml" 138 5748 5779 "research/reduce/visitors.ml" 138 5748 5794
+type(
+  bool
+)
+"research/reduce/visitors.ml" 138 5748 5795 "research/reduce/visitors.ml" 138 5748 5797
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 138 5748 5798 "research/reduce/visitors.ml" 138 5748 5809
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  int_ref found_ptsto "research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+)
+"research/reduce/visitors.ml" 138 5748 5811 "research/reduce/visitors.ml" 138 5748 5812
+type(
+  Cil.exp
+)
+ident(
+  int_ref e "research/reduce/visitors.ml" 138 5748 5758 "research/reduce/visitors.ml" 138 5748 5759
+)
+"research/reduce/visitors.ml" 138 5748 5814 "research/reduce/visitors.ml" 138 5748 5817
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 138 5748 5769 "research/reduce/visitors.ml" 138 5748 5772
+)
+"research/reduce/visitors.ml" 138 5748 5819 "research/reduce/visitors.ml" 138 5748 5835
+type(
+  string
+)
+ident(
+  int_ref str_of_loc_alexp "research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+)
+"research/reduce/visitors.ml" 138 5748 5810 "research/reduce/visitors.ml" 138 5748 5836
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 138 5748 5798 "research/reduce/visitors.ml" 138 5748 5836
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 138 5748 5779 "research/reduce/visitors.ml" 138 5748 5836
+type(
+  bool
+)
+"research/reduce/visitors.ml" 139 5840 5848 "research/reduce/visitors.ml" 139 5840 5856
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 139 5840 5856 "research/reduce/visitors.ml" 139 5840 5858
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 139 5840 5858 "research/reduce/visitors.ml" 139 5840 5862
+type(
+  bool
+)
+"research/reduce/visitors.ml" 139 5840 5848 "research/reduce/visitors.ml" 139 5840 5862
+type(
+  unit
+)
+"research/reduce/visitors.ml" 140 5864 5876 "research/reduce/visitors.ml" 140 5864 5888
+type(
+  Cil.stmt
+)
+ident(
+  def observe_stmt "research/reduce/visitors.ml" 141 5982 5990 "research/reduce/visitors.ml" 142 6054 6152
+)
+"research/reduce/visitors.ml" 140 5864 5899 "research/reduce/visitors.ml" 140 5864 5901
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 140 5864 5918 "research/reduce/visitors.ml" 140 5864 5935
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 140 5864 5936 "research/reduce/visitors.ml" 140 5864 5945
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 124 5011 5044 "research/reduce/visitors.ml" 124 5011 5053
+)
+"research/reduce/visitors.ml" 140 5864 5946 "research/reduce/visitors.ml" 140 5864 5949
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 138 5748 5769 "research/reduce/visitors.ml" 138 5748 5772
+)
+"research/reduce/visitors.ml" 140 5864 5918 "research/reduce/visitors.ml" 140 5864 5949
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 140 5864 5917 "research/reduce/visitors.ml" 140 5864 5950
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 140 5864 5911 "research/reduce/visitors.ml" 140 5864 5950
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 140 5864 5956 "research/reduce/visitors.ml" 140 5864 5957
+type(
+  int
+)
+"research/reduce/visitors.ml" 140 5864 5965 "research/reduce/visitors.ml" 140 5864 5967
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 140 5864 5975 "research/reduce/visitors.ml" 140 5864 5977
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 140 5864 5891 "research/reduce/visitors.ml" 140 5864 5978
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 141 5982 5994 "research/reduce/visitors.ml" 141 5982 5999
+type(
+  Cil.stmtkind
+)
+ident(
+  def skind "research/reduce/visitors.ml" 142 6054 6062 "research/reduce/visitors.ml" 142 6054 6152
+)
+"research/reduce/visitors.ml" 141 5982 6019 "research/reduce/visitors.ml" 141 5982 6021
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 141 5982 6033 "research/reduce/visitors.ml" 141 5982 6045
+type(
+  Cil.stmt
+)
+ident(
+  int_ref observe_stmt "research/reduce/visitors.ml" 140 5864 5876 "research/reduce/visitors.ml" 140 5864 5888
+)
+"research/reduce/visitors.ml" 141 5982 6046 "research/reduce/visitors.ml" 141 5982 6047
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 141 5982 6032 "research/reduce/visitors.ml" 141 5982 6048
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 141 5982 6008 "research/reduce/visitors.ml" 141 5982 6050
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 141 5982 6002 "research/reduce/visitors.ml" 141 5982 6050
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 142 6054 6081 "research/reduce/visitors.ml" 142 6054 6082
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 142 6054 6081 "research/reduce/visitors.ml" 142 6054 6089
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 142 6054 6099 "research/reduce/visitors.ml" 142 6054 6104
+type(
+  Cil.stmtkind
+)
+ident(
+  int_ref skind "research/reduce/visitors.ml" 141 5982 5994 "research/reduce/visitors.ml" 141 5982 5999
+)
+"research/reduce/visitors.ml" 142 6054 6112 "research/reduce/visitors.ml" 142 6054 6113
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 142 6054 6112 "research/reduce/visitors.ml" 142 6054 6117
+type(
+  int
+)
+"research/reduce/visitors.ml" 142 6054 6127 "research/reduce/visitors.ml" 142 6054 6128
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 142 6054 6127 "research/reduce/visitors.ml" 142 6054 6134
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 142 6054 6144 "research/reduce/visitors.ml" 142 6054 6145
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 142 6054 6144 "research/reduce/visitors.ml" 142 6054 6151
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 142 6054 6071 "research/reduce/visitors.ml" 142 6054 6152
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 142 6054 6062 "research/reduce/visitors.ml" 142 6054 6152
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 141 5982 5990 "research/reduce/visitors.ml" 142 6054 6152
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 140 5864 5872 "research/reduce/visitors.ml" 142 6054 6152
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 139 5840 5848 "research/reduce/visitors.ml" 142 6054 6152
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 143 6153 6172 "research/reduce/visitors.ml" 143 6153 6175
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 143 6153 6182 "research/reduce/visitors.ml" 147 6466 6564
+)
+"research/reduce/visitors.ml" 143 6153 6167 "research/reduce/visitors.ml" 143 6153 6175
+type(
+  Cil.exp option
+)
+"research/reduce/visitors.ml" 143 6153 6177 "research/reduce/visitors.ml" 143 6153 6180
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 143 6153 6182 "research/reduce/visitors.ml" 147 6466 6564
+)
+"research/reduce/visitors.ml" 143 6153 6159 "research/reduce/visitors.ml" 143 6153 6181
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 143 6153 6188 "research/reduce/visitors.ml" 143 6153 6191
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 143 6153 6192 "research/reduce/visitors.ml" 143 6153 6193
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 143 6153 6193 "research/reduce/visitors.ml" 143 6153 6201
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 143 6153 6192 "research/reduce/visitors.ml" 143 6153 6201
+type(
+  bool
+)
+"research/reduce/visitors.ml" 143 6153 6187 "research/reduce/visitors.ml" 143 6153 6202
+type(
+  bool
+)
+"research/reduce/visitors.ml" 143 6153 6203 "research/reduce/visitors.ml" 143 6153 6205
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 143 6153 6206 "research/reduce/visitors.ml" 143 6153 6217
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  int_ref found_ptsto "research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+)
+"research/reduce/visitors.ml" 143 6153 6219 "research/reduce/visitors.ml" 143 6153 6222
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 143 6153 6172 "research/reduce/visitors.ml" 143 6153 6175
+)
+"research/reduce/visitors.ml" 143 6153 6224 "research/reduce/visitors.ml" 143 6153 6227
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 143 6153 6177 "research/reduce/visitors.ml" 143 6153 6180
+)
+"research/reduce/visitors.ml" 143 6153 6229 "research/reduce/visitors.ml" 143 6153 6245
+type(
+  string
+)
+ident(
+  int_ref str_of_loc_alexp "research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+)
+"research/reduce/visitors.ml" 143 6153 6218 "research/reduce/visitors.ml" 143 6153 6246
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 143 6153 6206 "research/reduce/visitors.ml" 143 6153 6246
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 143 6153 6187 "research/reduce/visitors.ml" 143 6153 6246
+type(
+  bool
+)
+"research/reduce/visitors.ml" 144 6250 6258 "research/reduce/visitors.ml" 144 6250 6266
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 144 6250 6267 "research/reduce/visitors.ml" 144 6250 6269
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 144 6250 6270 "research/reduce/visitors.ml" 144 6250 6274
+type(
+  bool
+)
+"research/reduce/visitors.ml" 144 6250 6258 "research/reduce/visitors.ml" 144 6250 6274
+type(
+  unit
+)
+"research/reduce/visitors.ml" 145 6276 6288 "research/reduce/visitors.ml" 145 6276 6300
+type(
+  Cil.stmt
+)
+ident(
+  def observe_stmt "research/reduce/visitors.ml" 146 6394 6402 "research/reduce/visitors.ml" 147 6466 6564
+)
+"research/reduce/visitors.ml" 145 6276 6311 "research/reduce/visitors.ml" 145 6276 6313
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 145 6276 6330 "research/reduce/visitors.ml" 145 6276 6347
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 145 6276 6348 "research/reduce/visitors.ml" 145 6276 6357
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 124 5011 5044 "research/reduce/visitors.ml" 124 5011 5053
+)
+"research/reduce/visitors.ml" 145 6276 6358 "research/reduce/visitors.ml" 145 6276 6361
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 143 6153 6177 "research/reduce/visitors.ml" 143 6153 6180
+)
+"research/reduce/visitors.ml" 145 6276 6330 "research/reduce/visitors.ml" 145 6276 6361
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 145 6276 6329 "research/reduce/visitors.ml" 145 6276 6362
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 145 6276 6323 "research/reduce/visitors.ml" 145 6276 6362
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 145 6276 6368 "research/reduce/visitors.ml" 145 6276 6369
+type(
+  int
+)
+"research/reduce/visitors.ml" 145 6276 6377 "research/reduce/visitors.ml" 145 6276 6379
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 145 6276 6387 "research/reduce/visitors.ml" 145 6276 6389
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 145 6276 6303 "research/reduce/visitors.ml" 145 6276 6390
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 146 6394 6406 "research/reduce/visitors.ml" 146 6394 6411
+type(
+  Cil.stmtkind
+)
+ident(
+  def skind "research/reduce/visitors.ml" 147 6466 6474 "research/reduce/visitors.ml" 147 6466 6564
+)
+"research/reduce/visitors.ml" 146 6394 6431 "research/reduce/visitors.ml" 146 6394 6433
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 146 6394 6445 "research/reduce/visitors.ml" 146 6394 6457
+type(
+  Cil.stmt
+)
+ident(
+  int_ref observe_stmt "research/reduce/visitors.ml" 145 6276 6288 "research/reduce/visitors.ml" 145 6276 6300
+)
+"research/reduce/visitors.ml" 146 6394 6458 "research/reduce/visitors.ml" 146 6394 6459
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 146 6394 6444 "research/reduce/visitors.ml" 146 6394 6460
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 146 6394 6420 "research/reduce/visitors.ml" 146 6394 6462
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 146 6394 6414 "research/reduce/visitors.ml" 146 6394 6462
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 147 6466 6493 "research/reduce/visitors.ml" 147 6466 6494
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 147 6466 6493 "research/reduce/visitors.ml" 147 6466 6501
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 147 6466 6511 "research/reduce/visitors.ml" 147 6466 6516
+type(
+  Cil.stmtkind
+)
+ident(
+  int_ref skind "research/reduce/visitors.ml" 146 6394 6406 "research/reduce/visitors.ml" 146 6394 6411
+)
+"research/reduce/visitors.ml" 147 6466 6524 "research/reduce/visitors.ml" 147 6466 6525
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 147 6466 6524 "research/reduce/visitors.ml" 147 6466 6529
+type(
+  int
+)
+"research/reduce/visitors.ml" 147 6466 6539 "research/reduce/visitors.ml" 147 6466 6540
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 147 6466 6539 "research/reduce/visitors.ml" 147 6466 6546
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 147 6466 6556 "research/reduce/visitors.ml" 147 6466 6557
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 147 6466 6556 "research/reduce/visitors.ml" 147 6466 6563
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 147 6466 6483 "research/reduce/visitors.ml" 147 6466 6564
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 147 6466 6474 "research/reduce/visitors.ml" 147 6466 6564
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 146 6394 6402 "research/reduce/visitors.ml" 147 6466 6564
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 145 6276 6284 "research/reduce/visitors.ml" 147 6466 6564
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 144 6250 6258 "research/reduce/visitors.ml" 147 6466 6564
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 148 6565 6579 "research/reduce/visitors.ml" 148 6565 6582
+type(
+  Cil.exp
+)
+ident(
+  def exp "research/reduce/visitors.ml" 148 6565 6593 "research/reduce/visitors.ml" 152 6877 6975
+)
+"research/reduce/visitors.ml" 148 6565 6584 "research/reduce/visitors.ml" 148 6565 6585
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 148 6565 6586 "research/reduce/visitors.ml" 148 6565 6587
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 148 6565 6588 "research/reduce/visitors.ml" 148 6565 6591
+type(
+  Cil.location
+)
+ident(
+  def loc "research/reduce/visitors.ml" 148 6565 6593 "research/reduce/visitors.ml" 152 6877 6975
+)
+"research/reduce/visitors.ml" 148 6565 6571 "research/reduce/visitors.ml" 148 6565 6592
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 148 6565 6599 "research/reduce/visitors.ml" 148 6565 6602
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"research/reduce/visitors.ml" 148 6565 6603 "research/reduce/visitors.ml" 148 6565 6604
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"research/reduce/visitors.ml" 148 6565 6604 "research/reduce/visitors.ml" 148 6565 6612
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 148 6565 6603 "research/reduce/visitors.ml" 148 6565 6612
+type(
+  bool
+)
+"research/reduce/visitors.ml" 148 6565 6598 "research/reduce/visitors.ml" 148 6565 6613
+type(
+  bool
+)
+"research/reduce/visitors.ml" 148 6565 6614 "research/reduce/visitors.ml" 148 6565 6616
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"research/reduce/visitors.ml" 148 6565 6617 "research/reduce/visitors.ml" 148 6565 6628
+type(
+  Cil.exp * Cil.location * string -> bool
+)
+ident(
+  int_ref found_ptsto "research/reduce/visitors.ml" 14 298 302 "research/reduce/visitors.ml" 14 298 313
+)
+"research/reduce/visitors.ml" 148 6565 6630 "research/reduce/visitors.ml" 148 6565 6633
+type(
+  Cil.exp
+)
+ident(
+  int_ref exp "research/reduce/visitors.ml" 148 6565 6579 "research/reduce/visitors.ml" 148 6565 6582
+)
+"research/reduce/visitors.ml" 148 6565 6635 "research/reduce/visitors.ml" 148 6565 6638
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 148 6565 6588 "research/reduce/visitors.ml" 148 6565 6591
+)
+"research/reduce/visitors.ml" 148 6565 6640 "research/reduce/visitors.ml" 148 6565 6656
+type(
+  string
+)
+ident(
+  int_ref str_of_loc_alexp "research/reduce/visitors.ml" 124 5011 5055 "research/reduce/visitors.ml" 124 5011 5071
+)
+"research/reduce/visitors.ml" 148 6565 6629 "research/reduce/visitors.ml" 148 6565 6657
+type(
+  Cil.exp * Cil.location * string
+)
+"research/reduce/visitors.ml" 148 6565 6617 "research/reduce/visitors.ml" 148 6565 6657
+call(
+  stack
+)
+type(
+  bool
+)
+"research/reduce/visitors.ml" 148 6565 6598 "research/reduce/visitors.ml" 148 6565 6657
+type(
+  bool
+)
+"research/reduce/visitors.ml" 149 6661 6669 "research/reduce/visitors.ml" 149 6661 6677
+type(
+  bool ref
+)
+ident(
+  int_ref inserted "research/reduce/visitors.ml" 84 2838 2842 "research/reduce/visitors.ml" 84 2838 2850
+)
+"research/reduce/visitors.ml" 149 6661 6678 "research/reduce/visitors.ml" 149 6661 6680
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"research/reduce/visitors.ml" 149 6661 6681 "research/reduce/visitors.ml" 149 6661 6685
+type(
+  bool
+)
+"research/reduce/visitors.ml" 149 6661 6669 "research/reduce/visitors.ml" 149 6661 6685
+type(
+  unit
+)
+"research/reduce/visitors.ml" 150 6687 6699 "research/reduce/visitors.ml" 150 6687 6711
+type(
+  Cil.stmt
+)
+ident(
+  def observe_stmt "research/reduce/visitors.ml" 151 6805 6813 "research/reduce/visitors.ml" 152 6877 6975
+)
+"research/reduce/visitors.ml" 150 6687 6722 "research/reduce/visitors.ml" 150 6687 6724
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 150 6687 6741 "research/reduce/visitors.ml" 150 6687 6758
+type(
+  IntraCfg.Cmd.alarm_exp -> Cil.location -> Cil.instr
+)
+ident(
+  int_ref gen_airac_observe "research/reduce/visitors.ml" 86 2864 2868 "research/reduce/visitors.ml" 86 2864 2885
+)
+"research/reduce/visitors.ml" 150 6687 6759 "research/reduce/visitors.ml" 150 6687 6768
+type(
+  IntraCfg.Cmd.alarm_exp
+)
+ident(
+  int_ref alarm_exp "research/reduce/visitors.ml" 124 5011 5044 "research/reduce/visitors.ml" 124 5011 5053
+)
+"research/reduce/visitors.ml" 150 6687 6769 "research/reduce/visitors.ml" 150 6687 6772
+type(
+  Cil.location
+)
+ident(
+  int_ref loc "research/reduce/visitors.ml" 148 6565 6588 "research/reduce/visitors.ml" 148 6565 6591
+)
+"research/reduce/visitors.ml" 150 6687 6741 "research/reduce/visitors.ml" 150 6687 6772
+call(
+  stack
+)
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 150 6687 6740 "research/reduce/visitors.ml" 150 6687 6773
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 150 6687 6734 "research/reduce/visitors.ml" 150 6687 6773
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 150 6687 6779 "research/reduce/visitors.ml" 150 6687 6780
+type(
+  int
+)
+"research/reduce/visitors.ml" 150 6687 6788 "research/reduce/visitors.ml" 150 6687 6790
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 150 6687 6798 "research/reduce/visitors.ml" 150 6687 6800
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 150 6687 6714 "research/reduce/visitors.ml" 150 6687 6801
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 151 6805 6817 "research/reduce/visitors.ml" 151 6805 6822
+type(
+  Cil.stmtkind
+)
+ident(
+  def skind "research/reduce/visitors.ml" 152 6877 6885 "research/reduce/visitors.ml" 152 6877 6975
+)
+"research/reduce/visitors.ml" 151 6805 6842 "research/reduce/visitors.ml" 151 6805 6844
+type(
+  Cil.attributes
+)
+"research/reduce/visitors.ml" 151 6805 6856 "research/reduce/visitors.ml" 151 6805 6868
+type(
+  Cil.stmt
+)
+ident(
+  int_ref observe_stmt "research/reduce/visitors.ml" 150 6687 6699 "research/reduce/visitors.ml" 150 6687 6711
+)
+"research/reduce/visitors.ml" 151 6805 6869 "research/reduce/visitors.ml" 151 6805 6870
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 151 6805 6855 "research/reduce/visitors.ml" 151 6805 6871
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 151 6805 6831 "research/reduce/visitors.ml" 151 6805 6873
+type(
+  Cil.block
+)
+"research/reduce/visitors.ml" 151 6805 6825 "research/reduce/visitors.ml" 151 6805 6873
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 152 6877 6904 "research/reduce/visitors.ml" 152 6877 6905
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 152 6877 6904 "research/reduce/visitors.ml" 152 6877 6912
+type(
+  Cil.label list
+)
+"research/reduce/visitors.ml" 152 6877 6922 "research/reduce/visitors.ml" 152 6877 6927
+type(
+  Cil.stmtkind
+)
+ident(
+  int_ref skind "research/reduce/visitors.ml" 151 6805 6817 "research/reduce/visitors.ml" 151 6805 6822
+)
+"research/reduce/visitors.ml" 152 6877 6935 "research/reduce/visitors.ml" 152 6877 6936
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 152 6877 6935 "research/reduce/visitors.ml" 152 6877 6940
+type(
+  int
+)
+"research/reduce/visitors.ml" 152 6877 6950 "research/reduce/visitors.ml" 152 6877 6951
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 152 6877 6950 "research/reduce/visitors.ml" 152 6877 6957
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 152 6877 6967 "research/reduce/visitors.ml" 152 6877 6968
+type(
+  Cil.stmt
+)
+ident(
+  int_ref s "research/reduce/visitors.ml" 136 5696 5712 "research/reduce/visitors.ml" 136 5696 5713
+)
+"research/reduce/visitors.ml" 152 6877 6967 "research/reduce/visitors.ml" 152 6877 6974
+type(
+  Cil.stmt list
+)
+"research/reduce/visitors.ml" 152 6877 6894 "research/reduce/visitors.ml" 152 6877 6975
+type(
+  Cil.stmt
+)
+"research/reduce/visitors.ml" 152 6877 6885 "research/reduce/visitors.ml" 152 6877 6975
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 151 6805 6813 "research/reduce/visitors.ml" 152 6877 6975
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 150 6687 6695 "research/reduce/visitors.ml" 152 6877 6975
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 149 6661 6669 "research/reduce/visitors.ml" 152 6877 6975
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 153 6976 6982 "research/reduce/visitors.ml" 153 6976 6983
+type(
+  Cil.stmtkind
+)
+"research/reduce/visitors.ml" 153 6976 6987 "research/reduce/visitors.ml" 153 6976 6997
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 137 5724 5728 "research/reduce/visitors.ml" 153 6976 6997
+type(
+  Cil.stmt Cil.visitAction
+)
+"research/reduce/visitors.ml" 156 7004 7031 "research/reduce/visitors.ml" 156 7004 7033
+type(
+  unit
+)
+"research/reduce/visitors.ml" 156 7004 7042 "research/reduce/visitors.ml" 156 7004 7048
+type(
+  < queueInstr : Cil.instr list -> unit;
+    unqueueInstr : unit -> Cil.instr list;
+    vattr : Cil.attribute -> Cil.attribute list Cil.visitAction;
+    vattrparam : Cil.attrparam -> Cil.attrparam Cil.visitAction;
+    vblock : Cil.block -> Cil.block Cil.visitAction;
+    vexpr : Cil.exp -> Cil.exp Cil.visitAction;
+    vfunc : Cil.fundec -> Cil.fundec Cil.visitAction;
+    vglob : Cil.global -> Cil.global list Cil.visitAction;
+    vinit : Cil.varinfo -> Cil.offset -> Cil.init -> Cil.init Cil.visitAction;
+    vinitoffs : Cil.offset -> Cil.offset Cil.visitAction;
+    vinst : Cil.instr -> Cil.instr list Cil.visitAction;
+    vlval : Cil.lval -> Cil.lval Cil.visitAction;
+    voffs : Cil.offset -> Cil.offset Cil.visitAction;
+    vstmt : Cil.stmt -> Cil.stmt Cil.visitAction;
+    vtype : Cil.typ -> Cil.typ Cil.visitAction;
+    vvdec : Cil.varinfo -> Cil.varinfo Cil.visitAction;
+    vvrbl : Cil.varinfo -> Cil.varinfo Cil.visitAction; .. >
+)
+"research/reduce/visitors.ml" 158 7073 7089 "research/reduce/visitors.ml" 158 7073 7090
+type(
+  Cil.instr
+)
+ident(
+  def i "research/reduce/visitors.ml" 159 7103 7107 "research/reduce/visitors.ml" 162 7234 7255
+)
+"research/reduce/visitors.ml" 159 7103 7113 "research/reduce/visitors.ml" 159 7103 7114
+type(
+  Cil.instr
+)
+ident(
+  int_ref i "research/reduce/visitors.ml" 158 7073 7089 "research/reduce/visitors.ml" 158 7073 7090
+)
+"research/reduce/visitors.ml" 160 7120 7132 "research/reduce/visitors.ml" 160 7120 7136
+type(
+  Cil.lval option
+)
+"research/reduce/visitors.ml" 160 7120 7156 "research/reduce/visitors.ml" 160 7120 7157
+type(
+  Cil.varinfo
+)
+ident(
+  def f "research/reduce/visitors.ml" 160 7120 7180 "research/reduce/visitors.ml" 161 7214 7233
+)
+"research/reduce/visitors.ml" 160 7120 7148 "research/reduce/visitors.ml" 160 7120 7157
+type(
+  Cil.lhost
+)
+"research/reduce/visitors.ml" 160 7120 7159 "research/reduce/visitors.ml" 160 7120 7171
+type(
+  Cil.offset
+)
+"research/reduce/visitors.ml" 160 7120 7147 "research/reduce/visitors.ml" 160 7120 7172
+type(
+  Cil.lval
+)
+"research/reduce/visitors.ml" 160 7120 7138 "research/reduce/visitors.ml" 160 7120 7172
+type(
+  Cil.exp
+)
+"research/reduce/visitors.ml" 160 7120 7174 "research/reduce/visitors.ml" 160 7120 7175
+type(
+  Cil.exp list
+)
+"research/reduce/visitors.ml" 160 7120 7177 "research/reduce/visitors.ml" 160 7120 7178
+type(
+  Cil.location
+)
+"research/reduce/visitors.ml" 160 7120 7126 "research/reduce/visitors.ml" 160 7120 7179
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 160 7120 7185 "research/reduce/visitors.ml" 160 7120 7186
+type(
+  Cil.varinfo
+)
+ident(
+  int_ref f "research/reduce/visitors.ml" 160 7120 7156 "research/reduce/visitors.ml" 160 7120 7157
+)
+"research/reduce/visitors.ml" 160 7120 7185 "research/reduce/visitors.ml" 160 7120 7192
+type(
+  string
+)
+"research/reduce/visitors.ml" 160 7120 7193 "research/reduce/visitors.ml" 160 7120 7194
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"research/reduce/visitors.ml" 160 7120 7195 "research/reduce/visitors.ml" 160 7120 7210
+type(
+  string
+)
+"research/reduce/visitors.ml" 160 7120 7185 "research/reduce/visitors.ml" 160 7120 7210
+type(
+  bool
+)
+"research/reduce/visitors.ml" 161 7214 7231 "research/reduce/visitors.ml" 161 7214 7233
+type(
+  Cil.instr list
+)
+"research/reduce/visitors.ml" 161 7214 7222 "research/reduce/visitors.ml" 161 7214 7233
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 162 7234 7240 "research/reduce/visitors.ml" 162 7234 7241
+type(
+  Cil.instr
+)
+"research/reduce/visitors.ml" 162 7234 7245 "research/reduce/visitors.ml" 162 7234 7255
+type(
+  Cil.instr list Cil.visitAction
+)
+"research/reduce/visitors.ml" 159 7103 7107 "research/reduce/visitors.ml" 162 7234 7255
+type(
+  Cil.instr list Cil.visitAction
+)
