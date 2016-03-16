@@ -28,7 +28,7 @@ let rec nodes_reachable : IntraCfg.t -> node -> nodes -> nodes -> nodes
 	else
 		visited
 		
-let cfg_to_query_map : InterCfg.t -> query list -> (IntraCfg.t, query list) BatMap.t
+let dug_to_query_map : InterCfg.t -> query list -> (IntraCfg.t, query list) BatMap.t
 = fun icfg qs ->
 	List.fold_left (fun acc q ->
 		let pid = Report.get_pid q in
@@ -47,53 +47,39 @@ let query_to_depend_map : (IntraCfg.t, query list) BatMap.t -> (query, node BatS
 		BatMap.add q nodes acc) BatMap.empty qs in
 	BatMap.union map_from_each_cfg acc) cfg2qs BatMap.empty
 
-(*for training*)
-let q2feat_from_training : Global.t -> query list -> (Report.query, qtrain) BatMap.t -> (query, CF.t) BatMap.t
-= fun global qs q_qtrain_map ->
-	let icfg_org = global.icfg in
-	let dep_global = {global with icfg = Depend.get_interdug global.icfg} in
-	let cfg2q = cfg_to_query_map dep_global.icfg qs in
-	let q2depnodes = query_to_depend_map cfg2q in
-	let q2depnodes = BatMap.filter (fun q _ ->		(*only queries not in _G_.*)
+(*Generate (query, featurized-query) map from the training program.*)
+let q2feat_from_training : InterCfg.t -> InterCfg.t -> query list -> (query, node BatSet.t) BatMap.t -> (Report.query, qtrain) BatMap.t -> (query, CF.t) BatMap.t
+= fun icfg idug qs q2depnodes q_qtrain_map ->
+	(*Ignore queries in _G_.*)
+	let q2depnodes = BatMap.filter (fun q _ ->
 			(Report.get_pid q) <> "_G_"
 		) q2depnodes in
-	(*translate*)
+	(*Translate.*)
 	BatMap.mapi (fun q nodes -> 
 			let pid = Report.get_pid q in
-			let sccs = InterCfg.cfgof icfg_org pid |> Loop.sccs_from_cfg in
-			let cfg = InterCfg.cfgof dep_global.icfg pid in
-			let _ = prerr_endline ("@ Generate features from a query in " ^ pid) in
+			let sccs = InterCfg.cfgof icfg pid |> Loop.sccs_from_cfg in
+			let cfg = InterCfg.cfgof idug pid in
 			let pseudo_ftype = if (BatMap.find q q_qtrain_map).answer then Inspector.POS else Inspector.NEG in
 			let (qnode, rest_nodes) = BatSet.partition (fun n -> IntraCfg.Node.equal n (snd q.node)) nodes in
 			CF.tgen pseudo_ftype cfg sccs q (BatSet.choose qnode) rest_nodes
 		) q2depnodes
 
-(*for newprog*)
-let q2feat_from_newprog : Global.t -> query list -> (query, CF.t) BatMap.t
-=fun global qs ->
-	let icfg_org = global.icfg in
-	let dep_global = {global with icfg = Depend.get_interdug global.icfg} in
-	let cfg2q = cfg_to_query_map dep_global.icfg qs in
-	let q2depnodes = query_to_depend_map cfg2q in
-	let q2depnodes = BatMap.filter (fun q _ ->		(*only queries not in _G_.*)
+(*Generate (query, featurized-query) map from the test program.*)
+let q2feat_from_newprog : InterCfg.t -> InterCfg.t -> query list -> (query, node BatSet.t) BatMap.t -> (query, CF.t) BatMap.t
+=fun icfg idug qs q2depnodes ->
+	(*Ignore queries in _G_.*)
+	let q2depnodes = BatMap.filter (fun q _ ->
 			(Report.get_pid q) <> "_G_"
 		) q2depnodes in
-	(*translate*)
-	BatMap.mapi (fun q nodes -> 
+	(*Translate.*)
+	BatMap.mapi (fun q nodes ->
 			let pid = Report.get_pid q in
-			let sccs = InterCfg.cfgof icfg_org pid |> Loop.sccs_from_cfg in
-			let cfg = InterCfg.cfgof dep_global.icfg pid in
-			let _ = prerr_endline ("@ Generate features from a query in " ^ pid) in
+			let sccs = InterCfg.cfgof icfg pid |> Loop.sccs_from_cfg in
+			let cfg = InterCfg.cfgof idug pid in
+			let _ = prerr_endline ("@ Featurization of a query in " ^ pid) in
 			let (qnode, rest_nodes) = BatSet.partition (fun n -> IntraCfg.Node.equal n (snd q.node)) nodes in
 			CF.tgen Inspector.NEG cfg sccs q (BatSet.choose qnode) rest_nodes
 		) q2depnodes
-
-let q2dep_nodes : Global.t -> query list -> (query, node BatSet.t) BatMap.t
-=fun global qs ->
-	let dep_global = {global with icfg = Depend.get_interdug global.icfg} in
-	let cfg2q = cfg_to_query_map (Global.get_icfg dep_global) qs in
-	let q2depnodes = query_to_depend_map cfg2q in
-	BatMap.filter (fun q _ -> (Report.get_pid q) <> "_G_") q2depnodes
 
 (*Filter unproven FI alarms only, and make qtrain with answer.*)
 let get_training_queries : InterCfg.t -> query list -> query list -> (query * qtrain) list
@@ -126,7 +112,7 @@ let prepare_gen_feat : Global.t -> IntraCfg.t * node BatSet.t * node * node BatS
 	let (qnode, rest_nodes) = (qnode, BatSet.remove qnode nodes) in
 	(observe_dug, sccs, qnode, rest_nodes)
 
-(*Construct feature.*)
+(*Construct a feature.*)
 let gen_ord_feat : Global.t -> Inspector.ftype -> CF.t
 =fun global ftype ->
 	let (dug, sccs, qnode, rest_nodes) = prepare_gen_feat global in
@@ -139,3 +125,49 @@ let gen_ord_feat_with_dep_cmds : Global.t -> Inspector.ftype -> (CF.t * IntraCfg
 	let cf = CF.fgen ftype dug sccs qnode rest_nodes in
 	let cmds = BatSet.map (fun node -> IntraCfg.find_cmd node dug) (BatSet.add qnode rest_nodes) in
 	(cf, cmds)
+
+(*=================================
+ * all variables from alarm expression
+ *=================================*)
+
+let rec vnames_from_exp : Cil.exp -> string BatSet.t -> string BatSet.t
+=fun exp acc ->
+	match exp with
+	| Lval lv -> vnames_from_lval lv acc
+	| UnOp (_, e, _) -> vnames_from_exp e acc
+	| BinOp (_, e1, e2, _) -> BatSet.union (vnames_from_exp e1 acc) (vnames_from_exp e2 acc)
+	| CastE (_, e) -> vnames_from_exp e acc
+	| AddrOf lv -> vnames_from_lval lv acc
+	| StartOf lv -> vnames_from_lval lv acc
+
+and vnames_from_offset : Cil.offset -> string BatSet.t -> string BatSet.t
+=fun os acc ->
+	match os with
+	| NoOffset
+	| Field (_, _) -> acc
+	| Index (e, os') -> BatSet.union (vnames_from_exp e acc) (vnames_from_offset os' acc)
+
+and vnames_from_lval : Cil.lval -> string BatSet.t -> string BatSet.t
+=fun lv acc ->
+	let (lhost, offset) = lv in
+	match lhost with
+	| Var vinfo -> 
+			(match offset with
+			 | NoOffset
+			 | Field (_, _) -> BatSet.add vinfo.vname acc
+			 | Index (e, os) -> BatSet.union (vnames_from_exp e (BatSet.add vinfo.vname acc)) (vnames_from_offset os acc)) 
+	| Mem e -> vnames_from_exp e acc
+
+(*Get all variable names from the alarm expression.*)
+let vnames_from_alarmexp : AlarmExp.t -> string BatSet.t
+=fun alarmexp ->
+	match alarmexp with
+	| ArrayExp (lv, e, _) -> BatSet.union (vnames_from_lval lv BatSet.empty) (vnames_from_exp e BatSet.empty)
+	| DerefExp (e, _) -> vnames_from_exp e BatSet.empty
+	| Strcpy (e1, e2, _)
+	| Strcat (e1, e2, _)
+	| DivExp (e1, e2, _) -> BatSet.union (vnames_from_exp e1 BatSet.empty) (vnames_from_exp e2 BatSet.empty)
+	| Strncpy (e1, e2, e3, _)
+	| Memcpy (e1, e2, e3, _)
+	| Memmove (e1, e2, e3, _) -> BatSet.union (BatSet.union (vnames_from_exp e1 BatSet.empty) (vnames_from_exp e2 BatSet.empty)) (vnames_from_exp e3 BatSet.empty)
+

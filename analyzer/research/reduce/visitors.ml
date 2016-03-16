@@ -52,6 +52,7 @@ let rec build_qbuf : Cil.exp -> Cil.exp list -> Cil.exp
 	match e_list_rev with
 	| hd::rest -> 
 			if List.length rest = 0
+			(*ArrayExp(배열) 와 똑같이 Cil.Lval로 만들어낸다.*)
 			then Cil.Lval (Cil.mkMem (Cil.BinOp (Cil.PlusPI, e, hd, Cil.intPtrType)) (Cil.NoOffset))
 			else Cil.Lval (Cil.mkMem (Cil.BinOp (Cil.PlusPI, build_qbuf e rest, hd, Cil.intPtrType)) (Cil.NoOffset))
 	| [] -> e

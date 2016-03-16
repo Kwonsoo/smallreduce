@@ -52,7 +52,7 @@ let q2feat_from_newprog : Global.t -> query list -> (query, CF.t) BatMap.t * q2d
 =fun global qs ->
 	let icfg_org = global.icfg in
 	let dep_global = {global with icfg = Depend.get_interdug global.icfg} in
-	let cfg2q = cfg_to_query_map dep_global.icfg qs in
+	let cfg2q = dug_to_query_map dep_global.icfg qs in
 	let q2depnodes = query_to_depend_map cfg2q in
 	let q2depnodes = BatMap.filter (fun q _ ->
 		(Report.get_pid q) <> "_G_"
@@ -110,7 +110,8 @@ let get_promising_locs : candidate list -> Loc.t BatSet.t
 		List.fold_left2 (fun acc answer candidate ->
 			if answer == '1' then BatSet.union acc (snd candidate) else acc) BatSet.empty answers candidates 
 	with _ -> raise (Failure "Optimize.get_promising_locs")
-		
+
+(*수정해야 함.*)
 let filter_unique_features : CF.ORD_SET.t -> CF.ORD_SET.t
 =fun features ->
 	CF.ORD_SET.fold (fun feature acc ->
@@ -119,9 +120,4 @@ let filter_unique_features : CF.ORD_SET.t -> CF.ORD_SET.t
 		let including = CF.ORD_SET.filter (fun f -> CF.pred f feature) rest in
 		let equal =CF.ORD_SET.inter included including in
 		CF.ORD_SET.diff acc including) features features
-		
-		
-
-
-
 

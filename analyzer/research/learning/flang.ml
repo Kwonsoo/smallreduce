@@ -88,6 +88,12 @@ let rec with_offset : Cil.offset -> string BatSet.t -> idmap -> exp list -> exp 
  +		*( ( *p ) + i)		-> ArrAcc (ArrAcc (p, []), [i])
  *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*)
 
+(*****************************************************************************************************
+ *	Implementation Note: AirrAcc 번역 방법 -> 뒤에서부터 모은다.
+ *		ArrAcc(p,[e1;e2;e3])로 번역할 때,
+ *		trans_mem_part / trans_mem_binop_part 가 번갈아가며 ArrAcc의 뒤(i.e., e3) 에서부터 쌓아나간다.
+ *****************************************************************************************************)
+
 and trans_mem_binop_part : Cil.exp -> Cil.exp -> exp list -> string BatSet.t -> idmap -> (exp * idmap)
 =fun e1 e2 idx_list_collecting fparams idmap ->
 	match e1 with
@@ -151,7 +157,7 @@ and trans_lval : Cil.lval -> string BatSet.t -> idmap -> (exp * idmap)
 					then (FPVar varid', idmap')
 					else (Var varid', idmap')
 			 | Index (e, os) -> 
-					(*여기 ArrAcc를 생성해버리면 ArrAcc가 두 개 막 이렇게 될 것 같다. ArrAcc 는 trans_mem_part / trans_mem_binop_part 쪽에서 담당해야 할 것 같다.*)
+					(*NOTE: (아직은 전혀 문제되고 있지 않은데) 여기 ArrAcc를 생성해버리면 ArrAcc가 두 개 막 이렇게 될 것 같다. ArrAcc 는 trans_mem_part / trans_mem_binop_part 쪽에서 담당해야 할 것 같다.*)
 					let idx_list = with_offset offset fparams idmap [] in
 					if BatSet.mem vname fparams
 					then (ArrAcc (FPVar varid', idx_list), idmap')
@@ -250,7 +256,6 @@ let trans_f_query_node : IntraCfg.t -> node BatSet.t -> IntraCfg.Node.t -> idmap
 					let qbuf = List.nth qbuf_qidx 0 in	(*  \*(\*(p+0)+0) *)
 					let qidx = List.nth qbuf_qidx 1 in	(*   a    *)
 					let (exp', idmap') = trans_exp qidx formal_params idmap in
-					(*print_endline ("    " ^ (Pretty.sprint ~width:4 (Cil.d_exp () qbuf)));*)
 					let (exp'', idmap'') = trans_exp qbuf formal_params idmap' in
 					(Query (exp'', exp'), idmap'')
 			| _ -> raise (Failure "flang.trans_f_query_node")) in

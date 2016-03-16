@@ -241,6 +241,19 @@ let init_analysis one =
     else (pre, global) (* nothing inlined *) in
   (pre, global)
 
+(*Select queries from same CIL location without providing redundancy on involved variables.
+  i.e., each selected query has at least one unique variable that are not included other query expressions.*)
+let rec select_queries_from_same_cil_loc : Report.query list -> string BatSet.t -> Report.query list -> Report.query list
+=fun qlist vnames_selected queries_selected ->
+	match qlist with
+	| q::rest ->	
+			(*all variable names from the alarm expression of the query*)
+			let vnames_in_alarmexp = Feature.vnames_from_alarmexp q.exp in
+			if BatSet.subset vnames_in_alarmexp vnames_selected
+			then select_queries_from_same_cil_loc rest vnames_selected queries_selected
+			else select_queries_from_same_cil_loc rest (BatSet.union vnames_in_alarmexp vnames_selected) (q::queries_selected)
+	| [] -> queries_selected
+
 let rec insert_observe_imprecise_fs : Cil.file -> unit
 = fun file ->
 	match get_alarm_type () with
@@ -344,7 +357,7 @@ and insert_observe_imprecise_bo_fs : Cil.file -> unit
 		prerr_endline ("Inserted " ^ string_of_int !no ^ " files");
 		prerr_endline ("Skipped  " ^ string_of_int !skipped ^ " files")
 
-(* 이게 기존의 diff에만 observe 삽입하는 insert_observe *)
+(*Insert observe for FS-effective or -ineffective alarms.*)
 and insert_observe_bo_fs : Cil.file -> unit
 =fun file ->
   let (pre,global) = init_analysis file in
@@ -357,30 +370,35 @@ and insert_observe_bo_fs : Cil.file -> unit
   let queries_FS = StepManager.stepf true "Generate report (FS)" Report.generate (global,inputof,alarm_type) in 
   let queries_FI = StepManager.stepf true "Generate report (FI)" Report.generate (global,inputof_FI,alarm_type) in
   let diff,_,_ = Report.get_alarm_diff queries_FI queries_FS in
+	(*-imprecise 옵션을 주었다면 ineffective한 쿼리들에 observe 삽입, 그렇지 않으면 effective(diff)한 쿼리들에 observe 삽입*)
 	let diff = 
 			if (not !Options.opt_imprecise) then diff
 			else Report.get_alarm_ineffective queries_FI queries_FS in
   let _ = Report.display_alarms "" diff in
   let no = ref 0 in
   let skipped = ref 0 in
-    BatMap.iter (fun loc (al::_) ->  (* take the first alarm only *)
-        inserted := false;
-        let _ = visitCilFile (new removeObserveVisitor ()) file in
-        let vis = new insertObserveVisitor (al.Report.exp)
-        in  visitCilFile vis file;
-          if !inserted then (
-            Report.display_alarms "Insert airac_observe for the following alarm" (BatMap.add loc [al] BatMap.empty);
-            no:=!no+1;
-            let out = open_out (!Options.opt_dir ^ "/" ^ string_of_int !no ^ ".c") in 
-              print_cil out file; 
-              flush out;
-              close_out out
-              )
-          else (
-            skipped := !skipped + 1;
-            Report.display_alarms "Skip airac_observe for the following alarm" (BatMap.add loc [al] BatMap.empty)
-          )
-    ) diff;
+		(*NOTE: 맨 첫버번째 쿼리 뿐만 아니라, 새로운 변수를 가지고 있는 쿼리라면 같은 Cil.location에서도 추가로 더 선택.*)
+    BatMap.iter (fun loc qlist ->
+				let selected_qs = select_queries_from_same_cil_loc qlist BatSet.empty [] in
+				List.iter (fun al -> 
+						inserted := false;
+						let _ = visitCilFile (new removeObserveVisitor ()) file in
+						let vis = new insertObserveVisitor (al.Report.exp)
+						in  visitCilFile vis file;
+						if !inserted then (
+								Report.display_alarms "Insert airac_observe for the following alarm" (BatMap.add loc [al] BatMap.empty);
+								no:=!no+1;
+								let out = open_out (!Options.opt_dir ^ "/" ^ string_of_int !no ^ ".c") in 
+								print_cil out file; 
+								flush out;
+								close_out out
+            )
+						else (
+								skipped := !skipped + 1;
+								Report.display_alarms "Skip airac_observe for the following alarm" (BatMap.add loc [al] BatMap.empty)
+						)		
+					) selected_qs
+			) diff;
     prerr_endline ("Inserted " ^ string_of_int !no ^ " files");
     prerr_endline ("Skipped  " ^ string_of_int !skipped ^ " files")
 
@@ -606,29 +624,28 @@ let gen_t_from_query : (Report.query, Feature.qtrain) BatMap.t -> Report.query -
 	tdata_detail
 
 (*Generate a list of training-data from the given file.*)
-let gen_t_from_file : string -> CF.ORD_SET.t -> tdata_detail list
-=fun file fset ->
+let gen_t_from_file : string -> ItvPre.t -> Global.t -> CF.ORD_SET.t -> tdata_detail list
+=fun file pre global fset ->
 	let _ = prerr_endline ("@ T-Data from " ^ file) in
-	let _ = initCIL () in
-	let one = Frontend.parseOneFile file in
-	let _ = makeCFGinfo one in
-	let (pre, global) = init_analysis one in
 	let (inputof, _, _, _, _, _) = StepManager.stepf true "Main Sparse Analysis" do_sparse_analysis (pre, global) in
 	let inputof_FI = fill_deadcode_with_premem pre global Table.empty in
 	let queries_FS = StepManager.stepf true "Generate report (FS)" Report.generate (global, inputof, Report.BO) in
 	let queries_FI = StepManager.stepf true "Generate report (FI)" Report.generate (global, inputof_FI, Report.BO) in
-
 	let loc2fiqs = Report.get_alarms_fi queries_FI in
 	let queries_FI = BatMap.fold (fun (q::_) acc -> q::acc) loc2fiqs [] in
-	let _ = prerr_endline ("@ Queries to CF's in " ^ file) in
+	let _ = prerr_endline ("@ Featurization of queries in " ^ file) in
 
 	let q_qtrain_list = Feature.get_training_queries (Global.get_icfg global) queries_FI queries_FS in
 	let q_qtrain_map = List.fold_right (fun q_qtrain_tuple acc ->
 			BatMap.add (fst q_qtrain_tuple) (snd q_qtrain_tuple) acc
 		) q_qtrain_list BatMap.empty in
 	let (queries_FI, _) = List.split q_qtrain_list in
-	
-	let q2fmap = Feature.q2feat_from_training global queries_FI q_qtrain_map in
+
+	let idug = Depend.get_interdug global.icfg in
+	let dug2q = Feature.dug_to_query_map idug queries_FI in
+	let q2depnodes = Feature.query_to_depend_map dug2q in
+	let q2fmap = Feature.q2feat_from_training global.icfg idug queries_FI q2depnodes q_qtrain_map in
+
 	let tdata_detail_list = BatMap.foldi (fun query f acc ->
 			let tdata_detail = gen_t_from_query q_qtrain_map query f fset in
 			tdata_detail::acc
@@ -641,7 +658,10 @@ let gen_tdata : string -> CF.ORD_SET.t -> tdata_detail list
 	let files = Array.to_list (Sys.readdir tdir) in
 	let all_tdata_details = List.fold_right (fun f acc ->
 			let filepath = tdir ^ f in
-			let tdata_details_from_one_file = gen_t_from_file filepath fset in
+			let one = Frontend.parseOneFile filepath in
+			let _ = makeCFGinfo one in
+			let (pre, global) = init_analysis one in
+			let tdata_details_from_one_file = gen_t_from_file filepath pre global fset in
 			tdata_details_from_one_file @ acc
 		) files [] in
 	T_DETAIL_SET.of_list all_tdata_details |> T_DETAIL_SET.to_list
@@ -693,7 +713,7 @@ let write_all_tdata_details_to_file : tdata_detail list -> string -> unit
 			Printf.fprintf out "%s\n" (one_tdata_detail_to_str tdata_detail)
 			(*
 			let dugout = open_out ("../classifier/tdata_detail_dugs/" ^ (string_of_int tdata_detail.id) ^ ".dot") in
-			let dug = tdata_detail.qtrain.cfg |> Depend.get_dug in	(*NOTE: 그냥 CFG별로 DUG 또 그린다.*)
+			let dug = tdata_detail.qtrain.cfg |> Depend.get_dug in	(*NOTE: 그냥 CFG별로 DUG 또 그린다.*) (*이 방식으로 dug그리는 건 버그*)
 			let _ = IntraCfg.print_dot_rednode dugout dug tdata_detail.qtrain.qnode in
 			flush dugout; close_out dugout
 			*)
@@ -817,23 +837,34 @@ let gen_candidate_from_query : Report.query -> CF.t -> InterCfg.t -> (Report.que
 (*Generate candidates from the given new program.*)
 let gen_candidates_from_file : string -> ItvPre.t -> Global.t -> CF.ORD_SET.t -> candidate_kit list
 =fun file pre global fset ->
-	let icfg = global.icfg in
 	(*no need for sparse analysis: we just need FI alarms.*)
 	let inputof_FI = fill_deadcode_with_premem pre global Table.empty in
 	let queries_FI = StepManager.stepf true "Generate report (FI)" Report.generate (global, inputof_FI, Report.BO) in
 	let loc2fiqs = Report.get_alarms_fi queries_FI in
-	let queries_FI = BatMap.fold (fun (q::_) acc -> q::acc) loc2fiqs [] in
-	let q2fmap = Feature.q2feat_from_newprog global queries_FI in
-	let q2depnodes = Feature.q2dep_nodes global queries_FI in
+	
+	(*let queries_FI = BatMap.fold (fun (q::_) acc -> q::acc) loc2fiqs [] in*)
+	(*단순히 loc별로 첫번째 쿼리와 그 해당 변수들만 기회주는 방식 말고, 이전에 쿼리를 선택했어도 새로운 변수를 가진 쿼리가 있으면 추가로 선택*)
+	let selected_queries_FI = BatMap.fold (fun qlist acc ->
+			let selected_qs = select_queries_from_same_cil_loc qlist BatSet.empty [] in
+			selected_qs @ acc
+		) loc2fiqs [] in
+
+	(*Draw idug only once here.*)
+	let idug = Depend.get_interdug global.icfg in
+	let dug2q = Feature.dug_to_query_map idug selected_queries_FI in
+	let q2depnodes = Feature.query_to_depend_map dug2q in
+	let q2fmap = Feature.q2feat_from_newprog global.icfg idug selected_queries_FI q2depnodes in
+
 	let candidate_kit_list = BatMap.foldi (fun query f acc ->
-			let (candidate, featnums_matched_pos, featnums_matched_neg, dep_cmds) = gen_candidate_from_query query f icfg q2depnodes fset in
+			let (candidate, featnums_matched_pos, featnums_matched_neg, dep_cmds) = gen_candidate_from_query query f global.icfg q2depnodes fset in
 			{candidate=candidate;
 			 query=query;
 			 cf=f;
 			 filename=file;
 			 featnums_matched_pos=(List.rev featnums_matched_pos);
 			 featnums_matched_neg=(List.rev featnums_matched_neg);
-			 dep_cmds=dep_cmds}::acc
+			 dep_cmds=dep_cmds
+			}::acc
 		) q2fmap [] in
 	candidate_kit_list
 
@@ -973,17 +1004,21 @@ let test_ttrans : string -> unit
 	let inputof_FI = fill_deadcode_with_premem pre global Table.empty in
 	let queries_FS = StepManager.stepf true "Generate report (FS)" Report.generate (global, inputof, Report.BO) in
 	let queries_FI = StepManager.stepf true "Generate report (FI)" Report.generate (global, inputof_FI, Report.BO) in 
-	
 	let loc2fiqs = Report.get_alarms_fi queries_FI in
 	let queries_FI = BatMap.fold (fun (q::_) acc -> q::acc) loc2fiqs [] in
-	let _ = prerr_endline ("@ Queries to CF's in " ^ file) in
+	let _ = prerr_endline ("@ Featurization of queries in " ^ file) in
 	  
 	let q_qtrain_list = Feature.get_training_queries (Global.get_icfg global) queries_FI queries_FS in
 	let q_qtrain_map = List.fold_right (fun q_qtrain_tuple acc ->
 			BatMap.add (fst q_qtrain_tuple) (snd q_qtrain_tuple) acc
 		) q_qtrain_list BatMap.empty in
 	let (queries_FI, _) = List.split q_qtrain_list in
-	let q2fmap = Feature.q2feat_from_training global queries_FI q_qtrain_map in
+	
+	let idug = Depend.get_interdug global.icfg in
+	let dug2q = Feature.dug_to_query_map idug queries_FI in
+	let q2depnodes = Feature.query_to_depend_map dug2q in
+	let q2fmap = Feature.q2feat_from_training global.icfg idug queries_FI q2depnodes q_qtrain_map in
+	
 	let _ = print_endline "***** T-trans result *****" in
 	BatMap.iter (fun q f ->
 			print_endline ("\nCIL loc line: " ^ (string_of_int q.Report.loc.line));
@@ -1003,6 +1038,7 @@ let main () =
 	
 	List.iter (fun f -> prerr_string (f ^ " ")) !files;
 	prerr_endline "";
+	Cil.initCIL ();
 
 	(*Check if T2 programs have consistency in terms of the relation between "actual DUG(i.e. answer)" and "our CF."*)
 	(*
@@ -1017,7 +1053,6 @@ let main () =
 		let t_entire = Sys.time () in
 		let features = Optimize.unmarshal_feature !Options.opt_feats in
 
-		Cil.initCIL ();
 		let one = StepManager.stepf true "Parse-and-merge" Frontend.parse_and_merge () in
 		let _ = makeCFGinfo one in
 		let (pre, global) = init_analysis one in
@@ -1083,8 +1118,11 @@ let main () =
 				) q_qtrain_list BatMap.empty in
 			let (queries_FI, _) = List.split q_qtrain_list in
 			
-			let q2fmap = Feature.q2feat_from_training t_global queries_FI q_qtrain_map in
-			
+			let idug = Depend.get_interdug t_global.icfg in
+			let dug2q = Feature.dug_to_query_map idug queries_FI in
+			let q2depnodes = Feature.query_to_depend_map dug2q in
+			let q2fmap = Feature.q2feat_from_training t_global.icfg idug queries_FI q2depnodes q_qtrain_map in
+
 			let match_exists = BatMap.exists (fun q f -> 
 					prerr_endline "match try";
 					CF.print f;
@@ -1140,7 +1178,6 @@ let main () =
 		let features = gen_ordfeat_set !Options.opt_reduced in
 		
 		let _ = prerr_endline "-------------------imprecise analysis (FI)" in
-		let _ = Cil.initCIL () in
 		let one = StepManager.stepf true "parse-one-file" Frontend.parseOneFile (List.nth !files 0) in
 		let _ = makeCFGinfo one in
 		let (pre, global) = init_analysis one in
@@ -1188,7 +1225,6 @@ let main () =
 			CF.print feature) features in
 		exit 1);
 
-	Cil.initCIL ();
 	let one = StepManager.stepf true "Parse-and-merge" Frontend.parse_and_merge () in
 	
 	try 
