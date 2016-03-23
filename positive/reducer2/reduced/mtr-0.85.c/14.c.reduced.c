@@ -1,0 +1,12 @@
+char fld_active[40];
+xml_close() {
+  int i = 0;
+  while (1) {
+    if (!(i < 20))
+      goto while_break___0;
+    airac_observe(fld_active, i);
+    i++;
+  }
+while_break___0:
+  ;
+}
