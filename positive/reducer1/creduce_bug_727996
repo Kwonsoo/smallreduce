@@ -1,0 +1,24 @@
+int ExpandMetatag_attrib;
+ExpandMetatag_htmlMarkup (  )
+{
+  ExpandMetatag_attrib = UnlinkAttributeInMarkup (  );
+  DestroyAttribute ( ExpandMetatag_attrib );
+}
+DestroyAttribute ( htmlAttribute )
+{
+  airac_observe ( htmlAttribute, 0 );
+}
+int **PlaintextToMarkup_attribLink;
+void *PlaintextToMarkup_tmp___3;
+int FullyCheckDependencies_markup_htmlMarkup_0;
+FullyCheckDependencies_markup (  )
+{
+  PlaintextToMarkup_attribLink = &FullyCheckDependencies_markup_htmlMarkup_0;
+  PlaintextToMarkup_tmp___3 = malloc ( sizeof ( int ) );
+  *PlaintextToMarkup_attribLink = PlaintextToMarkup_tmp___3;
+  DestroyAttribute ( FullyCheckDependencies_markup_htmlMarkup_0 );
+}
+
+
+// this should reproduce the crash:
+// /usr/local/libexec/clang_delta --transformation=aggregate-to-scalar --counter=1 /home/kwonsoo/redu/positive/reducer1/creduce_bug_727996
